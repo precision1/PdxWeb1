@@ -14,56 +14,91 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
     <!--Custom Fonts & Icons -->
-  
+
 
 
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="navbar">
+    <!-- Header-->
+     <header>
 
-            <h1>Precision Diagnostics</h1>
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">Precision Diagnostics Logo</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
 
-            <ul>
-                <li>
-                    <a class="border-right" href="./contact.html">Contact</a>
-                </li>
-                <li>
-                    <a class="border-right" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a class="border-right" href="./index.html">About</a>
-                </li>
-            </ul>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <div class="navbar-nav">
+             <a class="nav-item nav-link active" href="#">Services <span class="sr-only">(current)</span></a>
+             <a class="nav-item nav-link" href="#">About Us</a>
+             <a class="nav-item nav-link" href="#">Contact</a>
+           <button id="myBtn">  <a class="nav-item nav-link" href="#">Store</a></button>
+           <!-- The Modal -->
+           <div id="myModal" class="modal">
 
-        </div>
-    </nav>
+             <!-- Modal content -->
+             <div class="modal-content">
+               <span class="close">&times;</span>
+               <p>Some text in the Modal..</p>
+             </div>
+
+           </div>
+           </div>
+         </div>
+
+
+       </nav>
+         <div class="header-content">
+             <div class="header-content-inner">
+
+             </div>
+         </div>
+
+
+     </header>   <!--- Should we take this out: https://github.com/precision1/PdxWeb1.git -->
+
+       <!-- Main Body-->
+       <main>
+
+       <section class ="home-visual">
+       </section>
+
+       <section class ="home-container">
+       </section>
+
+       </main>
 
 
 
-   
+
+
             <!-- footer
             <div class="well well-md bg-dark">
                 <footer class="text-center text-muted">
                     <h5>Copyright &copy; 2018 Precision Diagnostics</h5>
-                </footer> -->
- 
+                </footer>
+
 
         <!-- jQuery -->
-        <!-- <script src="jquery/jquery.min.js"></script> -->
+        <script src="jquery/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+         <script src="bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Plugin JavaScript -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="scrollreveal/scrollreveal.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="scrollreveal/scrollreveal.min.js"></script>
 
 
         <!-- Theme JavaScript -->
-        <!-- <script src="js/creative.min.js"></script> -->
+         <script src="js/creative.min.js"></script>
+
+         <!-- Person JavaScript -->
+         <script src="js/index.js"></script>
 </body>
 
 
