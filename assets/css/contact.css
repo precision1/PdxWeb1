@@ -95,12 +95,15 @@ h6{
 .contact{
     text-align: center;
     justify-content: space-between;
+  
 }
 
 .card-body{
     background-color: whitesmoke;
 }
 
-p {
-    
+#contact{
+    float:right;
+    margin-top:180px;
 }
+
