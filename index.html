@@ -13,6 +13,7 @@
         crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+
     <!--Custom Fonts & Icons -->
 
 
@@ -25,8 +26,8 @@
      <header>
 
        <!-- Navbar -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="#">Precision Diagnostics Logo</a>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
+         <a class="navbar-brand" href="index.html"><img id="main-logo" src="assets/images/Logo.svg" alt="Kiwi standing on oval"></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button>
@@ -34,8 +35,8 @@
          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
            <div class="navbar-nav">
              <a class="nav-item nav-link active" href="#">Services <span class="sr-only">(current)</span></a>
-             <a class="nav-item nav-link" href="#">About Us</a>
-             <a class="nav-item nav-link" href="#">Contact</a>
+             <a class="nav-item nav-link aboutus" href="about.html">About Us</a>
+             <a class="nav-item nav-link" href="contact.html">Contact</a>
            <button id="myBtn">  <a class="nav-item nav-link" href="#">Store</a></button>
            <!-- The Modal -->
            <div id="myModal" class="modal">
@@ -43,17 +44,31 @@
              <!-- Modal content -->
              <div class="modal-content">
                <span class="close">&times;</span>
-               <p>Some text in the Modal..</p>
+                  <p>Please navigate to your personalized store by choosing one of the two options. </p>
+                      <button> <a class="client-portal" href="#">Client / Specimen Technician</a> </button>
+                      <button> <a class="client-portal" href="#">Sales Representative</a> </button>
              </div>
-
            </div>
-           <button> <a class="client-portal" href="#">Client Portal</a> </button>
-
            </div>
          </div>
 
+            <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
+            <!-- The Modal -->
+<div id="homeModal" class="hmemodal">
+
+  <!-- Modal content -->
+  <div class="home-modal-content">
+    <span class="homeclose">&times;</span>
+    <p>Some text in the Modal..</p>
+        <button> <a class="client-portal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a> </button>
+        <button> <a class="client-portal" href="#">Precision Analytics</a> </button>
+  </div>
+
+</div>
+
 
        </nav>
+
          <div class="header-content">
              <div class="header-content-inner">
 
@@ -77,13 +92,56 @@
              </p>
            </div>
 
+           <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2 class="title-home">Is your clinical laboratory providing you with the most accurate, accessible, and comprehensive data possible?</h2>
+    <p class="lead-hello">_____</p>
+  </div>
+
+</div>
+
+  <div class="container">
+  <div class="row">
+
+
+</div>
+</div>
+
+<div class="card-group home">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title"> Revolutionizing the Healthcare Community Through Clinical Laboratory Science</h3>
+      <p class="lead-hello">_____</p>
+      <p class="card-text">Precision Diagnostics was founded on four core principles: Integrity, Innovation, Insights, and Outcomes.
+        These pillars guide our organization towards innovation in the healthcare industry.
+        We instill integrity into everything we do in the hopes of providing critical insights and information
+        to healthcare providers who can improve the outcomes of patients.</p>
+      <a class="btn btn-primary btn-lg home-btn" href="#" role="button">About Us</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body-right">
+      <img class="core-principles" src="assets/images/home/Core-Principles-homepage-1200x800_c.jpg" alt="Precision Diagnostics Core Principles">
+    </div>
+  </div>
+
+</div>
+
+
+
        <section class ="home-visual">
+
+
        </section>
 
-       <section class ="home-container">
+       <section class ="home-container-image">
+         <div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>
+         <img src="assets/images/home/2ndfloor01.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto">
+
        </section>
 
        </main>
+
 
 
 
@@ -94,6 +152,9 @@
                 <footer class="text-center text-muted">
                     <h5>Copyright &copy; 2018 Precision Diagnostics</h5>
                 </footer>
+
+
+
 
 
         <!-- jQuery -->
@@ -112,6 +173,8 @@
 
          <!-- Person JavaScript -->
          <script src="js/index.js"></script>
+
+
 </body>
 
 
