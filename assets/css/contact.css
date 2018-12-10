@@ -67,18 +67,17 @@
 }
 
 a{
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     color:white;
 }
 
-.card-body{
-    /* box-shadow: 4px 4px grey, -1em 0 .4em #4587a4; */
-    box-shadow: 4px 4px grey;
-    
+  
+body{
+    background-color:lightgray;
 }
 
-body{
-    background-color: lightgray;
+.card{
+    box-shadow: 12px 12px 2px 1px darkgray;
 }
 
 h2,h3,h4,h5,{
@@ -110,3 +109,22 @@ h6{
     margin-top:50px;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4587a4;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
