@@ -51,131 +51,130 @@
                     <div class="row">
                         <div class="col-md-6" id="form">
 
-                        <div class="col-xl-8 offset-xl-2 py-5">
+                            <div class="col-xl-8 offset-xl-2 py-5">
 
-                            <h1>Get in Touch</h1>
-                            <p>Please fill out the quick form and we will be in touch.</p>
+                                <h1>Get in Touch</h1>
+                                <p>Please fill out the quick form and we will be in touch.</p>
 
-                            <form>
-                                <form id="contact-form" method="post" action="contact.php" role="form">
+                                <form>
+                                    <form id="contact-form" method="post" action="contact.php" role="form">
 
-                                    <div class="messages"></div>
+                                        <div class="messages"></div>
 
-                                    <div class="controls">
+                                        <div class="controls">
 
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_name">First name *</label>
-                                                    <input id="form_name" type="text" name="name" class="form-control"
-                                                        placeholder="Firstname *" required="required"
-                                                        data-error="Firstname is required.">
-                                                    <div class="help-block with-errors"></div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_name">First name *</label>
+                                                        <input id="form_name" type="text" name="name" class="form-control"
+                                                            placeholder="Firstname *" required="required" data-error="Firstname is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_lastname">Last name *</label>
+                                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                                            placeholder="Lastname *" required="required" data-error="Lastname is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_lastname">Last name *</label>
-                                                    <input id="form_lastname" type="text" name="surname" class="form-control"
-                                                        placeholder="Lastname *" required="required"
-                                                        data-error="Lastname is required.">
-                                                    <div class="help-block with-errors"></div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_email">Email *</label>
+                                                        <input id="form_email" type="email" name="email" class="form-control"
+                                                            placeholder="Email *" required="required" data-error="Valid email is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_need">Specify your need *</label>
+                                                        <select id="form_need" name="need" class="form-control"
+                                                            required="required" data-error="Please specify your need.">
+                                                            <option value=""></option>
+                                                            <option value="Request quotation">Request quotation</option>
+                                                            <option value="Request order status">Request shipping order
+                                                                status</option>
+                                                            <option value="Request copy of an invoice">Request copy of
+                                                                a
+                                                                report</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_message">Message *</label>
+                                                        <textarea id="form_message" name="message" class="form-control"
+                                                            placeholder="Message for us *" rows="4" required="required"
+                                                            data-error="Please, leave us a message."></textarea>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text-muted">
+                                                        <strong>*</strong> These fields are required.
+
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_email">Email *</label>
-                                                    <input id="form_email" type="email" name="email" class="form-control"
-                                                        placeholder="Email *" required="required"
-                                                        data-error="Valid email is required.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_need">Specify your need *</label>
-                                                    <select id="form_need" name="need" class="form-control" required="required"
-                                                        data-error="Please specify your need.">
-                                                        <option value=""></option>
-                                                        <option value="Request quotation">Request quotation</option>
-                                                        <option value="Request order status">Request shipping order
-                                                            status</option>
-                                                        <option value="Request copy of an invoice">Request copy of a
-                                                            report</option>
-                                                        <option value="Other">Other</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="form_message">Message *</label>
-                                                    <textarea id="form_message" name="message" class="form-control"
-                                                        placeholder="Message for us *" rows="4" required="required"
-                                                        data-error="Please, leave us a message."></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="text-muted">
-                                                    <strong>*</strong> These fields are required.
 
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </form>
+                                    </form>
                             </div>
+                        </div>
+
+                        <div class="col-md-6" id="contact">
+                            <div class="contact">
+                                <h6>Contact Us</h6>
+                                <!-- <div class="row"> -->
+                                <!-- <div class="row" id="row-billing"> -->
+                                <p class="billing">
+                                    <br>
+                                    <h2>Billing Department</h2>
+                                    <p><i class="fas fa-phone"></i> (800) 635-6901 Option 1</p>
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 4 PM (PST) / 8 AM - 7 PM
+                                        (EST)</p>
+                                </p>
+                                <!-- </div> -->
+
+                                <!-- <div class="row" id="row-cs"> -->
+                                <p class="client-services">
+                                    <br>
+                                    <h3>Client Services</h3>
+                                    <p><i class="fas fa-phone"></i> (800) 635-6901 Option 2</p>
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 7 PM (PST) / 8 AM - 10
+                                        PM
+                                        (EST) </p>
+                                </p>
+                                <!-- </div> -->
+
+                                <!-- </div> -->
+                                <br>
+                                <p class="email">
+                                    <h4>Email</h4>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
+                                </p>
                             </div>
-                        
-<div class="col-md-6" id="contact">
-                <div class="contact">
-                    <h6>Contact Us</h6>
-                    <!-- <div class="row"> -->
-                        <!-- <div class="row" id="row-billing"> -->
-                            <p class="billing">
-                                <br>
-                                <h2>Billing Department</h2>
-                                <p><i class="fas fa-phone"></i> (800) 635-6901 Option 1</p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 4 PM (PST) / 8 AM - 7 PM
-                                    (EST)</p>
-                            </p>
-                        <!-- </div> -->
-
-                        <!-- <div class="row" id="row-cs"> -->
-                            <p class="client-services">
-                                <br>
-                                <h3>Client Services</h3>
-                                <p><i class="fas fa-phone"></i> (800) 635-6901 Option 2</p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 7 PM (PST) / 8 AM - 10 PM
-                                    (EST) </p>
-                            </p>
-                        <!-- </div> -->
-
-                    <!-- </div> -->
-                    <br>
-                    <p class="email">
-                        <h4>Email</h4>
-                        <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
-                    </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            </div>
             </div>
         </div>
     </div>
-</div>
-</div>
+    </div>
+    </div>
     <!--/Get in Touch and Contact-->
 
     <!--Map Images-->
@@ -209,6 +208,7 @@
 
                     <div class="container-links">
                         <div class="row5">
+                            <div class="col1"><a href="#" class="card-link">Careers</a></div>
                             <div class="col1"><a href="#" class="card-link">Services</a></div>
                             <div class="col1"><a href="#" class="card-link">Store</a></div>
                             <div class="w-100"></div>
