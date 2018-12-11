@@ -258,3 +258,15 @@ a{
     /* text-shadow: 2px 2px 4px #000000; */
     color:white;
 }
+
+button#storeBtn{
+  width:125px;
+  height: 78px;
+  background-color:pink;
+}
+
+.sr-only{
+  width:125px;
+  height: 78px;
+  background-color:pink;
+}
