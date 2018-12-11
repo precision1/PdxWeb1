@@ -22,97 +22,157 @@
 </head>
 
 <body>
-    <!-- Navbar -->
 
-    <!--/Navbar-->
+    <!-- Header-->
+    <header>
 
-    <!--Jumbotron-->
-    <div class="jumbotron">
-        <h1 class="display-4">Careers</h1>
-        <p class="lead">We're changing the drug testing industry.</p>
-        <hr class="my-4">
-        <p>And recruiting the best talent to help.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">View Open Positions</a>
-        </p>
-    </div>
-    <!--/Jumbotron-->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
+            <a class="navbar-brand" href="index.html"><img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Services <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link aboutus" href="about.html">About Us</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <button id="storeBtn"> <a class="nav-item nav-link" href="#">Store</a></button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
 
-    <!--View Open Positions-->
-
-    <!--Scroll Button-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i></button>
-    <!--/Scroll Button-->
-
-
-   
-    <!--/View Open Positions-->
-
-    
-    <!--Footer-->
-    <footer>
-        <div class="footercard">
-            <div class="footer-container">
-                <div class="row1">
-                    <div class="col">
-                        <h1>Precision Diagnostics</h1>
-                    </div>
-
-                    <div class="container-links">
-                        <div class="row5">
-
-                            <div class="w-100"></div>
-                            <div class="col1"><a href="#" class="card-link">Services</a></div>
-                            <div class="col1"><a href="#" class="card-link">Store</a></div>
-                            <div class="w-100"></div>
-                            <div class="col1"><a href="#" class="card-link">Privacy & Notice</a></div>
-                            <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
-                                    Reports</a></div>
-                            <div class="col1"><a href="#" class="card-link">Careers</a></div>
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Please navigate to your personalized store by choosing one of the two options. </p>
+                            <button> <a class="client-portal" href="storeClientST.html">Client / Specimen Technician</a>
+                            </button>
+                            <button> <a class="client-portal" href="storeRep.html">Sales Representative</a> </button>
                         </div>
                     </div>
-
-                </div>
-                <div class="row2">
-                    <div class="col">
-                        <i class="fas fa-map-marker-alt"></i> 4215 Sorrento Valley Blvd., San
-                        Diego, CA 92121
-                    </div>
-                </div>
-
-                <div class="row3">
-                    <div class="col">
-                        <i class="fas fa-map-marker-alt"></i> 49 State Road, Suite N 103,
-                        Dartmouth, MA 02747
-                    </div>
-                </div>
-                <div class="row4">
-                    <div class="col">
-                        <i class="fas fa-phone"></i> 800.635.6901
-                    </div>
-
-                </div>
-
-                <div class="media-container">
-                    <div class="row">
-                        <div class="col2"><a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f"></a></div>
-                        <div class="col2"><a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin"></a></div>
-                        <div class="col2"><a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter"></a></div>
-                        <div class="col2"><a href="https://form.jotform.com/51114198189964" class="fas fa-clipboard-check"></a></div>
-
-                    </div>
-                </div>
-
-                <div class="copyright-container">
-                    <div class="col3">©2018 Precision Diagnostics. All rights reserved.</div>
                 </div>
             </div>
 
+            <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
+            <!-- The Modal -->
+            <div id="homeModal" class="hmemodal">
+
+                <!-- Modal content -->
+                <div class="home-modal-content">
+                    <span class="homeclose">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    <button> <a class="client-portal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
+                    </button>
+                    <button> <a class="client-portal" href="https://analytics.precisiondxlab.com/">Precision Analytics</a>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+        <div class="header-content">
+            <div class="header-content-inner">
+
+            </div>
         </div>
 
-    </footer>
-    <!--/Footer-->
+
+    </header>
+
+    <main>
+        <!--/Navbar-->
+
+        <!--Jumbotron-->
+        <div class="jumbotron">
+            <h1 class="display-4">Careers</h1>
+            <p class="lead">We're changing the drug testing industry.</p>
+            <hr class="my-4">
+            <p>And recruiting the best talent to help.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">View Open Positions</a>
+            </p>
+        </div>
+        <!--/Jumbotron-->
+
+
+        <!--View Open Positions-->
+
+        <!--Scroll Button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i></button>
+        <!--/Scroll Button-->
+
+
+
+        <!--/View Open Positions-->
+
+
+        <!--Footer-->
+        <footer>
+            <div class="footercard">
+                <div class="footer-container">
+                    <div class="row1">
+                        <div class="col">
+                            <h1>Precision Diagnostics</h1>
+                        </div>
+
+                        <div class="container-links">
+                            <div class="row5">
+
+                                <div class="w-100"></div>
+                                <div class="col1"><a href="#" class="card-link">Services</a></div>
+                                <div class="col1"><a href="#" class="card-link">Store</a></div>
+                                <div class="w-100"></div>
+                                <div class="col1"><a href="#" class="card-link">Privacy & Notice</a></div>
+                                <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
+                                        Reports</a></div>
+                                <div class="col1"><a href="#" class="card-link">Careers</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row2">
+                        <div class="col">
+                            <i class="fas fa-map-marker-alt"></i> 4215 Sorrento Valley Blvd., San
+                            Diego, CA 92121
+                        </div>
+                    </div>
+
+                    <div class="row3">
+                        <div class="col">
+                            <i class="fas fa-map-marker-alt"></i> 49 State Road, Suite N 103,
+                            Dartmouth, MA 02747
+                        </div>
+                    </div>
+                    <div class="row4">
+                        <div class="col">
+                            <i class="fas fa-phone"></i> 800.635.6901
+                        </div>
+
+                    </div>
+
+                    <div class="media-container">
+                        <div class="row">
+                            <div class="col2"><a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f"></a></div>
+                            <div class="col2"><a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin"></a></div>
+                            <div class="col2"><a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter"></a></div>
+                            <div class="col2"><a href="https://form.jotform.com/51114198189964" class="fas fa-clipboard-check"></a></div>
+
+                        </div>
+                    </div>
+
+                    <div class="copyright-container">
+                        <div class="col3">©2018 Precision Diagnostics. All rights reserved.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+        <!--/Footer-->
 
 
 
@@ -121,25 +181,25 @@
 
 
 
-    <!-- jQuery -->
+        <!-- jQuery -->
 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
-        crossorigin="anonymous"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+            integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
 
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
 
 
-    <!-- JavaScript -->
-    <script src="../js/topScroll.js"></script>
+        <!-- JavaScript -->
+        <script src="../js/topScroll.js"></script>
 </body>
 
 

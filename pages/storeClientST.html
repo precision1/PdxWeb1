@@ -23,7 +23,64 @@
 
 <body>
     <!-- Navbar -->
+    <header>
 
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
+            <a class="navbar-brand" href="./pages/index.html"><img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Services <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link aboutus" href="./pages/about.html">About Us</a>
+                    <a class="nav-item nav-link" href="./pages/contact.html">Contact</a>
+                    <button id="storeBtn"> <a class="nav-item nav-link" href="#">Store</a></button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Please navigate to your personalized store by choosing one of the two options. </p>
+                            <button> <a class="client-portal" href="storeClientST.html">Client / Specimen Technician</a>
+                            </button>
+                            <button> <a class="client-portal" href="storeRep.html">Sales Representative</a> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
+            <!-- The Modal -->
+            <div id="homeModal" class="hmemodal">
+
+                <!-- Modal content -->
+                <div class="home-modal-content">
+                    <span class="homeclose">&times;</span>
+                    <p>Some text in the Modal..</p>
+                    <button> <a class="client-portal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
+                    </button>
+                    <button> <a class="client-portal" href="https://analytics.precisiondxlab.com/">Precision Analytics</a>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+        <div class="header-content">
+            <div class="header-content-inner">
+
+            </div>
+        </div>
+
+
+    </header>
     <!--/Navbar-->
 
     <!--Jumbotron-->
@@ -38,11 +95,11 @@
 
     <!--Client & ST Content-->
 
-     <!--Scroll Button-->
-     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i></button>
-     <!--/Scroll Button-->
- 
- 
+    <!--Scroll Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i></button>
+    <!--/Scroll Button-->
+
+
     <!---Row1-->
     <div class="card-deck">
         <div class="card">
