@@ -1,4 +1,4 @@
-.modal {
+.storemodal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -13,7 +13,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.storemodal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -22,15 +22,15 @@
 }
 
 /* The Close Button */
-.close {
+.storeclose {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.storeclose:hover,
+.storeclose:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -257,16 +257,4 @@ main{
 a{
     /* text-shadow: 2px 2px 4px #000000; */
     color:white;
-}
-
-button#storeBtn{
-  width:125px;
-  height: 78px;
-  background-color:pink;
-}
-
-.sr-only{
-  width:125px;
-  height: 78px;
-  background-color:pink;
 }
