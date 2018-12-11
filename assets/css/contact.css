@@ -4,6 +4,7 @@
     color: white;
     /* text-shadow: 2px 2px 4px #000000; */
     font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
 
 }
 
@@ -64,6 +65,7 @@
     margin-right: 50px;
     margin-top: 100px;
     margin-bottom: 100px;
+   
 }
 
 a{
@@ -95,14 +97,15 @@ h6{
 }
 
 .contact{
-    /* text-align: center; */
     justify-content: space-between;
+    
 
 
 }
 
 .card-body{
     background-color: whitesmoke;
+    width:100%;
 
 }
 
@@ -120,16 +123,16 @@ h6{
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 20px;
     z-index: 99;
-    font-size: 18px;
+    font-size: 5px;
     border: none;
     outline: none;
     background-color: #4587a4;
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
   }
 
