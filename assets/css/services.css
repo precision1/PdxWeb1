@@ -176,8 +176,6 @@ main{
   border-radius: 15px;
 }
 
-
-
 .core-principles{
   max-width:100%;
   max-height:100%;
@@ -201,8 +199,6 @@ main{
   color:white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 .row1{
     margin-top: 75px;
@@ -248,10 +244,10 @@ main{
 }
 
 .card-deck{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin:auto;
+
+    width: 50%;
+    height:auto;
 }
 
 a{
@@ -271,13 +267,7 @@ a{
 
 }
 
-.card-title{
 
-  display:block;
-  width: 350px;
-  text-align:left;
-  background-color:pink;
-}
 
 .services-card-container{
   display:flex;
@@ -286,13 +276,10 @@ a{
   display:flex;
 }
 
-.services-title-body{
-  background-color:yellow;
-  width:350px;
-  height:auto;
-}
 
 .card{
+
+  margin-top:25px;
 
 }
 .services-images{
@@ -308,4 +295,18 @@ a{
 
 .services-sub-title{
   text-align:center;
+}
+
+.subtitle-services{
+  text-align:left;
+
+}
+
+.no-button{
+  background-color:black;
+  border-color: transparent;
+  position: absolute;
+  width: 100%;
+  border-radius: 0;
+
 }
