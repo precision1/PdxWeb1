@@ -259,23 +259,7 @@ a{
     color:white;
 }
 
-
-/* Splash header*/
-/* Header */
-.large-header {
-  position: relative;
-  width: 100%;
-  background: black;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  /* z-index: 1; */
-}
-
-.jumbotron{
-background-color: black;
-}
-
+/*Scroll Button*/
 #myBtn {
   display: none;
   position: fixed;
@@ -306,5 +290,29 @@ iframe {
     width:100%;
     height:100%;
 }
+
+/*Splash page*/
+.large-header .jumbotron {
+	position: relative;
+	width: 100%;
+  min-height: 1000px;
+  height:100%;
+  margin-left:50%;
+  margin-right:50%;
+  padding:50%;
+background-color:black;
+	overflow: hidden;
+	background-size: cover;
+  background-position: center center;
+  
+
+}
+
+}
+
+.jumbotron{
+background-image: url("https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif");  
+background-repeat: no-repeat;
+ background-size: cover;
 
 }
