@@ -129,15 +129,15 @@ h6{
     font-size: 5px;
     border: none;
     outline: none;
-    background-color: #4587a4;
+    background-color: lightgray;
     color: white;
     cursor: pointer;
     padding: 5px;
     border-radius: 4px;
   }
-
+  
   #myBtn:hover {
-    background-color: #555;
+    background-color: lightgray;
   }
 
   @media only screen
