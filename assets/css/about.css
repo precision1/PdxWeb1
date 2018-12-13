@@ -80,6 +80,7 @@
 .navcustom{
   background-color:black !important;
   padding:0;
+  margin:0;
 }
 
 .navbar-light .navbar-nav .nav-link{
