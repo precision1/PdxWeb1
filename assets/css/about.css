@@ -161,3 +161,12 @@ h2.title-home{
 #myBtn:hover {
   background-color: lightgray;
 }
+
+main{
+  padding-top:80px;
+}
+
+.aboutContainer{
+  background-image: url("../assets/images/about/Precision-Front-750x350.jpg");
+
+}
