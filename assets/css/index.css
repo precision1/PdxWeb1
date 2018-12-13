@@ -314,5 +314,55 @@ background-color:black;
 background-image: url("https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif");  
 background-repeat: no-repeat;
  background-size: cover;
+background-color:black;
+background-position-y: -200px;
+margin:0;
+padding:0;
+max-height:500px;
+}
+
+
+/*Text animation */
+
+.sentence > p {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+	padding: 20px;;
+	box-sizing: border-box;
+	font-size: 50px;
+  font-family: sans-serif;
+  max-height:400px;
 
 }
+.credit {
+	position: fixed;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	font-size: 14px;
+	text-decoration: none;
+  color: white;
+  margin:0;
+padding:0;
+max-height:400px;
+}
+
+
+
+/*background #2////*/
+.site-header {
+
+  position:absolute;
+  top:left;
+    padding:-1px;
+    height:900px;
+    width:auto;
+    background-size:100px;
+    overflow:hidden;
+    background-color:none;
+    background-repeat:no-repeat;
+    max-height:400px;
+  }
+  
