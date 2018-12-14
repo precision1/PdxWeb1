@@ -233,22 +233,6 @@ iframe {
     height:100%;
 }
 
-/* Splash page */
-.large-header .jumbotron {
-	position: relative;
-	width: 100%;
-  min-height: 1000px;
-  height:100%;
-   margin-left:50%;
-  margin-right:50%;
-  padding:50%;
-background-color:black;
-	 overflow: hidden;
-	 background-size: cover;
-  background-position: center center;
-
-
-}
 
 .jumbotron{
 /* background-image: url("https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif");   */
@@ -306,24 +290,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 input[type=text1], select, textarea {
   width: 100%;
-<<<<<<< HEAD
   background: transparent;
   border: none;
   border-bottom: 1px solid #ccc;
   resize: vertical;
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   background:transparent;
-=======
-  height:25px;
-  padding: 2px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  /* margin-top: 6px; */
-  /* margin-bottom: 16px; */
-  resize: vertical;
-  background: transparent;
->>>>>>> d65057e10fc86af3e558a560b80c1aadcbe06327
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ccc;
@@ -332,10 +304,9 @@ input[type=text1], select, textarea {
 
 
 input[type=submit1] {
-<<<<<<< HEAD
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   color: white;
-  padding: 3px 30px;
+  padding: 3px 10px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -344,19 +315,6 @@ input[type=submit1] {
   margin-left: 20px;
   background:transparent;
 
-=======
-  background: transparent;
-  color: white;
-  width:300px;
-  padding: 3px 5px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  text-align: center;
-  border: 1px solid #ccc;
-  font-weight: bold;
-  text-transform: uppercase;
->>>>>>> d65057e10fc86af3e558a560b80c1aadcbe06327
 }
 
 /* input[type=submit1]:hover {
@@ -369,22 +327,16 @@ input[type=submit1] {
 }
 
 
-.media-container{
-    width: 30%;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
 .copyright-container{
     width: 100%;
     text-align: center;
 }
 
 
-a{
+a {
     /* text-shadow: 2px 2px 4px #000000; */
     color:white;
+   
 }
 
 .lookWrap{
@@ -402,21 +354,23 @@ a{
   /* overflow: hidden; */
   float: left;
   display: inline;
-  width: 200px;
-  /* margin: 15px 25px 15px 25px; */
-  font: 10pt;
+  width: 160px;
+  margin: 15px 25px 15px 25px;
+  font: 5pt;
   line-height: 1.6em;
-  margin-top:50px;
-  margin-left: 100px;
+  margin-top:230px;
+  margin-left: 75px;
   margin-right:0;
 }
 
-
+.card-link .find-us .lets-talk {
+  font-size: 5pt;
+}
 .section a{
   display: block;
 }
 
-.bottom-footer{
+.bottom-footer {
   margin:0;
   width: 100%;
   text-align: center;
@@ -425,30 +379,24 @@ a{
   line-height: 2em;
   margin-right:0;
   margin-bottom:0;
-  font-size: 10pt;
+  font-size: 10pt; 
 }
 
 
-.section2{
-  /* overflow: hidden; */
+.section2 *{
   float: left;
-
-  width: 200px;
-  font: 10pt;
+  width: 300px;
+  font: 5pt;
   line-height: 1.6em;
-  margin-right:0;
   margin-left:200px;
-
+  margin-right:100px;
+  display: inline;
+ 
 }
 
-#icon{
-  /* margin-left:5px; */
-
-}
-
-.container-links {
-  margin-left: 50px;
-
+.section3 *{
+  margin-left: 15px;
+  
 }
 
 .find-us .lets-talk{
@@ -534,7 +482,7 @@ p {
 
 /*Chart Animation*/
 figure {
-  background-color:black;
+  background:transparent;
   display: block;
   height: 0;
   margin: 0 auto;
