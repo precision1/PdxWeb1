@@ -138,7 +138,6 @@ header{
 }
 
 
-
 .lead-hello{
   text-align: center;
 }
@@ -158,46 +157,38 @@ main{
 
 }
 
-.card{
 
+/* //////Middle of Body/////*/
+.card-group{
   width:100%;
-  height:400px;
+  height:380px;
 }
-
-.card-body{
-  /* padding:40px; */
-  margin: 0;
-  font-size:40px;
-  width:100%;
-  height:400px;
-
-}
-
-.paragraph-title .lead-hello{
-  text-align:center;
-  padding:0;
-  margin:0;
-  width:400px;
-  height:400px;
+.col{
+  text-align: left;
+  width:100px;
+  height:100px;
+  margin-bottom:100px;
+  margin-top:50px;
 
 }
 
-.paragraph{
-  text-align:left;
-  font-size: 30px;
-  margin:0;
-  padding:0;
+.card-img-top2{
+  width: 75px;
+  height: 75px;
 }
 
-.home-btn{
-  margin:auto;
-  display:block;
-  width: 150px;
-  margin-top:20px;
-  border-radius: 15px;
+.card1{
+width:50%;
+}
+p *{
+  line-height: 2em;
+  font-size: 1pt;
 }
 
-/*Scroll Button*/
+.h7{
+  font-weight: bolder;
+}
+/*//////Scroll Button/////////*/
 #myBtn {
   display: none;
   position: fixed;
@@ -218,15 +209,6 @@ main{
   background-color: lightgray;
 }
 
-/* @media only screen
-and (min-device-width: 1280px) {
-body html main{
-  background: linear-gradient(to bottom right, #013378 0%, #004087 100%);
-  height:100%;
-  margin:0;
-  padding:0;
-}
-} */
 
 iframe {
     width:100%;
@@ -235,11 +217,7 @@ iframe {
 
 
 .jumbotron{
-/* background-image: url("https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif");   */
-background-repeat: no-repeat;
- background-size: cover;
 background-color:black;
-/* background-position-y: -200px; */
 margin:0;
 padding:0;
 max-height:500px;
@@ -576,3 +554,41 @@ circle {
 @keyframes pie4 {
   50%,100% {stroke-dasharray: 0,90,10,0;}
 }
+
+
+/*////////Media Queries/////*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 320px) {  
+ .body-container{
+   width:100%;
+   height:100%;
+ }
+.footercard .lookWrap .section .section2 .section3 .parallax2{ 
+  width:50%;
+  height:50%;
+
+}
+
+
+
+ 
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+ 
