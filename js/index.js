@@ -183,145 +183,165 @@
     }
     
 })()
-
-/////////Text Animation///////
-function textRotate(classSelector,animationTime,ease,intervalLength,color){
-	
-    var spanHeight = $(classSelector+" > p").height();
-    $(classSelector).parent().css("height",spanHeight+"px")
-    $(".sentence > p").css("display","inline");
-    $("head").append("<style>.sentence p {display: inline-block;}.sentence span {overflow: hidden;display: inline-block;position: relative;-webkit-transform: translateY(20%);-ms-transform: translateY(20%);transform: translateY(20%);}.sentence span div {display: inline-block;}.sentence span div p {display: block;background-color: transparent;top: 0;}.sentence span div p span {top: 0;height: auto;display: inline;}</style>")
-    if(color != ""){
-        $(classSelector+" > p").css("color", color);
-    }
-    var iniElmWidth = $(classSelector+" > p:nth-child(1) > span").width();
-    $(classSelector).css("width",iniElmWidth);
-    $(classSelector+" > p").each(function(){
-        var newValue = $(this).html().split(" ").join("&nbsp;");
-        $(this).html(newValue);
-    });
-    var numOfWords = $(classSelector+" > p").length;
-    var count = 1;
-    $(classSelector).css("will-change","transform");
-    $(classSelector).css("transform", "translateY(0)");
-    $(classSelector).css("transition", "transform "+animationTime+"s "+ease+", width "+animationTime+"s "+ease);
-    setInterval(function(){
-        if(count < numOfWords){
-            count++;
-            var elmWidth = $(classSelector+" > p:nth-child("+count+") > span").width();
-            $(classSelector).css("width",elmWidth);
-            var move = (count - 1)*spanHeight;	$(classSelector).css("transform","translateY(-"+move+"px)");
-        } else if (count >= numOfWords){	
-            count = 1;
-            var elmWidth = $(classSelector+" > p:nth-child(1) > span").width();
-            $(classSelector).css("width",elmWidth);
-            $(classSelector).css("transform","translateY(0px)");
-        }
-        },intervalLength);
-    }
     
-    textRotate(".rotate",1,"ease",5000,"#F30A49");
+// /////////////////////////////Background #2/////////////////
+// $(function(){
     
-/////////////////////////////Background #2/////////////////
-$(function(){
-    
-    var header = $('.site-header'),
-        canvas = $('<canvas></canvas>').appendTo(header)[0],
+//     var header = $('.site-header'),
+//         canvas = $('<canvas></canvas>').appendTo(header)[0],
           
-        ctx    = canvas.getContext('2d'),
-        color  = '#9ae7fa',
-        idle   = mousePosition;
+//         ctx    = canvas.getContext('2d'),
+//         color  = '#9ae7fa',
+//         idle   = mousePosition;
 
-    canvas.width         = window.innerWidth;
-    canvas.height        = header.outerHeight();
-    canvas.style.display = 'block';
+//     canvas.width         = window.innerWidth;
+//     canvas.height        = header.outerHeight();
+//     canvas.style.display = 'block';
 
-    ctx.fillStyle = color;
-    ctx.lineWidth = 1.0;
-    ctx.strokeStyle = color;
+//     ctx.fillStyle = color;
+//     ctx.lineWidth = 1.0;
+//     ctx.strokeStyle = color;
     
 
-    var mousePosition = { x: 100 * canvas.width / 100, y: 100 * canvas.height / 100 },
-        dots = { nb: 150, distance: 75, d_radius: 150, array: [], mousePosition: 100 };
+//     var mousePosition = { x: 100 * canvas.width / 100, y: 100 * canvas.height / 100 },
+//         dots = { nb: 150, distance: 75, d_radius: 150, array: [], mousePosition: 100 };
 
-    function Dot(){
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+//     function Dot(){
+//         this.x = Math.random() * canvas.width;
+//         this.y = Math.random() * canvas.height;
 
-        this.vx = -.8 + Math.random();
-        this.vy = -.4 + Math.random();
+//         this.vx = -.8 + Math.random();
+//         this.vy = -.4 + Math.random();
 
-        this.radius = Math.random();
-    }
+//         this.radius = Math.random();
+//     }
 
-    Dot.prototype = {
-        create: function(){
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.radius * 2.5, 0,Math.PI * 3, false);
-            ctx.fill();
-        },
+//     Dot.prototype = {
+//         create: function(){
+//             ctx.beginPath();
+//             ctx.arc(this.x, this.y, this.radius * 2.5, 0,Math.PI * 3, false);
+//             ctx.fill();
+//         },
 
-        animate: function(){
+//         animate: function(){
             
-            for(var i = 1, dot=false; i < dots.nb; i++){
+//             for(var i = 1, dot=false; i < dots.nb; i++){
 
-                dot = dots.array[i];
+//                 dot = dots.array[i];
 
-                if(dot.y < 0 || dot.y > canvas.height){
-                    dot.vx = dot.vx;
-                    dot.vy = - dot.vy;
-                }else if(dot.x < 0 || dot.x > canvas.width){
-                    dot.vx = - dot.vx;
-                    dot.vy = dot.vy;
-                }
-                dot.x += dot.vx;
-                dot.y += dot.vy;
-            }
-        },
+//                 if(dot.y < 0 || dot.y > canvas.height){
+//                     dot.vx = dot.vx;
+//                     dot.vy = - dot.vy;
+//                 }else if(dot.x < 0 || dot.x > canvas.width){
+//                     dot.vx = - dot.vx;
+//                     dot.vy = dot.vy;
+//                 }
+//                 dot.x += dot.vx;
+//                 dot.y += dot.vy;
+//             }
+//         },
 
-        line: function(){
-            for(var i = 0; i < dots.nb; i++){
-                for(var j = 0; j < dots.nb; j++){
-                    i_dot = dots.array[i];
-                    j_dot = dots.array[j];
+//         line: function(){
+//             for(var i = 0; i < dots.nb; i++){
+//                 for(var j = 0; j < dots.nb; j++){
+//                     i_dot = dots.array[i];
+//                     j_dot = dots.array[j];
 
-                    if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
-                        if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
-                            ctx.beginPath();
-                            ctx.moveTo(i_dot.x, i_dot.y) ;
-                            ctx.lineTo(j_dot.x, j_dot.y) ;
-                            ctx.stroke();
-                            ctx.closePath();
-                        }
-                    }
-                }
-            }
-        }
-    };
+//                     if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
+//                         if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
+//                             ctx.beginPath();
+//                             ctx.moveTo(i_dot.x, i_dot.y) ;
+//                             ctx.lineTo(j_dot.x, j_dot.y) ;
+//                             ctx.stroke();
+//                             ctx.closePath();
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     };
 
-    function createDots(){
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for(var i = 0; i < dots.nb; i++){
-            dots.array.push(new Dot());
-            dot = dots.array[i];
+//     function createDots(){
+//         ctx.clearRect(0, 0, canvas.width, canvas.height);
+//         for(var i = 0; i < dots.nb; i++){
+//             dots.array.push(new Dot());
+//             dot = dots.array[i];
 
-            dot.create();
-        }
+//             dot.create();
+//         }
 
-        dot.line();
-        dot.animate();
-    }
+//         dot.line();
+//         dot.animate();
+//     }
 
-    idle = setInterval(createDots, 1000/50);   
+//     idle = setInterval(createDots, 1000/50);   
 
-    $(canvas).on('mousemove mouseleave', function(e){
-        if(e.type == 'mousemove'){
-            mousePosition.x = e.pageX;
-            mousePosition.y = e.pageY;
-        }
-        if(e.type == 'mouseleave'){
-            mousePosition.x = canvas.width / last;
-            mousePosition.y = canvas.height / 2;
-        }
-    });
-});
+//     $(canvas).on('mousemove mouseleave', function(e){
+//         if(e.type == 'mousemove'){
+//             mousePosition.x = e.pageX;
+//             mousePosition.y = e.pageY;
+//         }
+//         if(e.type == 'mouseleave'){
+//             mousePosition.x = canvas.width / last;
+//             mousePosition.y = canvas.height / 2;
+//         }
+//     });
+//  })
+
+//////////////////Text Animation for Jumbotron///////////////////
+
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
