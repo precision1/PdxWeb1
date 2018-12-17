@@ -1,5 +1,6 @@
 
 
+
 header{
   width:100%;
   margin:0;
@@ -25,7 +26,52 @@ header{
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    max-width: 750px;
+    border-radius: 5px;
+}
+
+p.index-modal-title{
+  font-size:35px;
+  text-align: center;
+  position: relative;
+}
+
+p.index-modal-title{
+  margin-bottom: 25px;
+}
+
+p.index-modal-subtitle{
+  font-size:15px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.index-modal-btn-store{
+  background-color: #337ab7;
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+  border-style: none;
+  color: white;
+  margin:0 auto;
+  width: 300px;
+  height:60px;
+}
+
+.index-modal-btn-store:hover{
+  background-color: #2e6da4;
+
+}
+
+a.client-portal-modal{
+  color: white;
+  line-height: none;
+  text-decoration: none;
+}
+
+.modal-buttons-index{
+  display: flex;
 }
 
 /* The Close Button */
@@ -60,11 +106,12 @@ header{
 
 /* Modal Content */
 .home-modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 750px;
+  border-radius: 5px;
 }
 
 /* The Close Button */
@@ -90,6 +137,28 @@ header{
 
 .navbar-light .navbar-nav .nav-link{
   color:white !important;
+  text-align: center;
+  padding-top:28px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  height:80px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+.principles-index{
+  text-align: center;
+
+}
+
+a.navbar-light .navbar-nav .nav-link{
+margin-top:10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+background-color:rgb(1,51,120, 0.4);
+
 }
 
 #main-logo{
@@ -314,7 +383,7 @@ input[type=submit1] {
 a {
     /* text-shadow: 2px 2px 4px #000000; */
     color:white;
-   
+
 }
 
 .lookWrap{
@@ -357,7 +426,7 @@ a {
   line-height: 2em;
   margin-right:0;
   margin-bottom:0;
-  font-size: 10pt; 
+  font-size: 10pt;
 }
 
 
@@ -369,12 +438,12 @@ a {
   margin-left:200px;
   margin-right:100px;
   display: inline;
- 
+
 }
 
 .section3 *{
   margin-left: 15px;
-  
+
 }
 
 .find-us .lets-talk{
@@ -558,35 +627,35 @@ circle {
 
 /*////////Media Queries/////*/
 
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-  
+
   //CSS
-  
+
 }
 
-/* 
+/*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+
   //CSS
-  
+
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+
   .storemodal-content {
     width: 100%;
     margin:0;
@@ -599,7 +668,7 @@ circle {
   margin:0;
   padding:0;
 
-  
+
 }
 
 #main-logo #homeBtn *{
@@ -639,7 +708,7 @@ padding:0;
   width:100%;
   height:100%;
   padding:0;
-  
+
 }
 
 #look{
@@ -655,7 +724,7 @@ padding:0;
 .media-container{
   display: block;
   flex-direction: row;
-  
+
 }
 form{
   width:100%;
@@ -668,16 +737,16 @@ form{
   margin-top:-300px;
   margin-bottom:-200px;
 } */
-  
+
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+
   .storemodal-content {
     width: 100%;
     margin:0;
@@ -690,7 +759,7 @@ form{
   margin:0;
   padding:0;
 
-  
+
 }
 
 #main-logo #homeBtn *{
@@ -730,7 +799,7 @@ padding:0;
   width:100%;
   height:100%;
   padding:0;
-  
+
 }
 
 /* #look{
@@ -746,7 +815,7 @@ padding:0;
 .media-container{
   display: block;
   flex-direction: row;
-  
+
 }
 form{
   width:100%;
@@ -759,15 +828,15 @@ form{
   margin-top:-300px;
   margin-bottom:-200px;
 } */
-  
+
 }
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+
   .storemodal-content {
     width: 100%;
     margin:0;
@@ -780,7 +849,7 @@ form{
   margin:0;
   padding:0;
 
-  
+
 }
 
 #main-logo #homeBtn *{
@@ -807,7 +876,7 @@ padding:0;
 
 .card-img-top2 .card-img-top{
   height:200px;
-} 
+}
 .card-group .card1{
   width:100%;
   height:100%;
@@ -820,7 +889,7 @@ padding:0;
   height:100%;
   margin: -100%;
   padding:0;
-  
+
 }
 
 .copyright-container{
@@ -833,7 +902,7 @@ padding:0;
 .media-container{
   display: block;
   flex-direction: row;
-  
+
 }
 form{
   margin-top: 100%;
@@ -847,16 +916,16 @@ form{
   margin-top:-300px;
   margin-bottom:-200px;
 }
-  
+
 }
 
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+
   .storemodal-content {
     width: 100%;
     margin:0;
@@ -869,7 +938,7 @@ form{
   margin:0;
   padding:0;
 
-  
+
 }
 
 #main-logo #homeBtn *{
@@ -906,7 +975,7 @@ padding:0;
   height:100%;
   margin: -100%;
   padding:0;
-  
+
 }
 
 .copyright-container{
@@ -922,7 +991,7 @@ padding:0;
   flex-direction: row;
   size: 9px;
   margin-bottom: 50px;
-  
+
 }
 form {
   margin-top: 100%;
