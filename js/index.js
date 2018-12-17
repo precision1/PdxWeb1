@@ -80,6 +80,7 @@ homemodal.style.display = "none";
 
 }
 
+////////////////////////////////Modal//////////////////////////////////
 
 // Order of Modal function needs to stay on top of page
 
@@ -243,5 +244,3 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
-
-////////////////////////////////Modal//////////////////////////////////
