@@ -339,7 +339,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width:300px !important;
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
 }
-input[type=text1], select, textarea {
+input[type=text], select, textarea {
   width: 100%;
   background: transparent;
   border: none;
@@ -354,7 +354,7 @@ input[type=text1], select, textarea {
 }
 
 
-input[type=submit1] {
+input[type=submit] {
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   color: white;
   padding: 3px 10px;
@@ -637,15 +637,9 @@ circle {
 */
 
 @media (min-width: 1281px) {
-<<<<<<< HEAD
   
   
   
-=======
-
-  //CSS
-
->>>>>>> 871596fabb196c054f91b49deb7287287093860e
 }
 
 /*
@@ -654,15 +648,9 @@ circle {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-<<<<<<< HEAD
   
   
   
-=======
-
-  //CSS
-
->>>>>>> 871596fabb196c054f91b49deb7287287093860e
 }
 
 /*

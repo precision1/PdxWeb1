@@ -50,12 +50,16 @@
               <!-- Modal content -->
               <div class="storemodal-content">
                 <span class="storeclose">&times;</span>
-                <p class="index-modal-title">Please navigate to your personalized store by choosing one of the two options. </p>
-                    <p class="index-modal-subtitle"> Please navigate to your personalized store by choosing one of the two options.  </p>
-              <div class="modal-buttons-index">
-                <button class= "index-modal-btn-store"> <a class="client-portal-modal" href="storeClientST.html">Client / Specimen Technician</a> </button>
-                <button class= "index-modal-btn-store"> <a class="client-portal-modal" href="storeRep.html">Sales Representative</a> </button>
-              </div>
+                <p class="index-modal-title">Please navigate to your personalized store by choosing one of the two
+                  options. </p>
+                <p class="index-modal-subtitle"> Please navigate to your personalized store by choosing one of the two
+                  options. </p>
+                <div class="modal-buttons-index">
+                  <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeClientST.html">Client
+                      / Specimen Technician</a> </button>
+                  <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/ßstoreRep.html">Sales
+                      Representative</a> </button>
+                </div>
               </div>
             </div>
           </div>
@@ -69,14 +73,16 @@
           <div class="home-modal-content">
             <span class="homeclose">&times;</span>
             <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two options.</p>
-            <p class="index-modal-subtitle">Please navigate to your personalized store by choosing one of the two options.  </p>
-              <div class="modal-buttons-index">
-            <button class= "index-modal-btn-store"> <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
-            </button>
-            <button class= "index-modal-btn-store"> <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision Analytics</a>
-            </button>
+            <p class="index-modal-subtitle">Please navigate to your personalized store by choosing one of the two
+              options. </p>
+            <div class="modal-buttons-index">
+              <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
+              </button>
+              <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision
+                  Analytics</a>
+              </button>
+            </div>
           </div>
-        </div>
 
         </div>
 
@@ -94,22 +100,22 @@
     <!--Jumbotron-->
 
     <main>
-    <div class="parallax1">
-      <div class="jumbotron" style="background-color:black;">
+      <div class="parallax1">
+        <div class="jumbotron" style="background-color:black;">
 
-        <!-- Animated Backgrounds-->
-        <figure>
-          <figcaption>Precision Analytics</figcaption>
-          <svg viewBox="0 0 63.6619772368 63.6619772368">
-            <circle class="pie1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="pie2" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="pie3" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="pie4" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          </svg>
-        </figure>
+          <!-- Animated Backgrounds-->
+          <figure>
+            <figcaption>Precision Analytics</figcaption>
+            <svg viewBox="0 0 63.6619772368 63.6619772368">
+              <circle class="pie1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie2" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie3" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie4" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+            </svg>
+          </figure>
 
-        <!--Animated Text-->
-        <!-- <div class="text">
+          <!--Animated Text-->
+          <!-- <div class="text">
           <h1>What we do</h1>
           <p>We Are</p>
           <p>
@@ -120,11 +126,11 @@
             <span class="word midnight">efficient.</span>
           </p>
         </div> -->
-        <!--Scroll Button-->
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
-        <!--/Scroll Button-->
+          <!--Scroll Button-->
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
+          <!--/Scroll Button-->
+        </div>
       </div>
-    </div>
 
   </div>
   <!--/Jumbotron-->
@@ -184,8 +190,8 @@
       </div>
     </div>
   </div>
-</main>
-  
+  </main>
+
   <!--/Middle of Body-->
 
 
@@ -206,18 +212,39 @@
               <h3 style="margin-top:10px;">Get In Touch Today</h3>
               <!-- <h4>__________________</h4> -->
 
-              <form action="/action_page.php">
+              <form method="post" name="myemailform" action="form-to-email.php">
+
+
+
+                Name: <input type="text" name="name">
+
+                <br>
+
+                Email: <input type="text" name="email">
+
+                <br>
+
+                Enter your message: <textarea name="message"></textarea>
+
+
+                <br>
+                <input type="submit" value="Send Form">
+
+              </form>
+
+
+              <!-- <form action="../pages/contact.php">
                 <label for="fname"></label>
                 <input type="text1" id="name" name="name" placeholder="Name" style="height:50px; width:250px;">
 
                 <label for="lname"></label>
                 <input type="text1" id="email" name="email" placeholder="Email" style="height:50px; width:250px;">
 
-                <label for="subject"></label>
-                <textarea id="subject1" name="subject" placeholder="Enter your message" style="height:50px; width:250px;"></textarea>
+                <label for="comment"></label>
+                <textarea id="subject1" name="comment" placeholder="Enter your message" style="height:50px; width:250px;"></textarea>
 
                 <input type="submit1" value="Submit">
-              </form>
+              </form> -->
             </div>
           </div>
 
