@@ -167,6 +167,44 @@ main{
 }
 
 .aboutContainer{
-  background-image: url("../assets/images/about/Precision-Front-750x350.jpg");
+  background-image: url("../assets/images/about/precisionbuilding.pdf");
+  width:100vw;
+  height:auto;
 
+}
+
+.jumbotron.jumbotron-fluid-about{
+  background-color: white;
+  padding-top: 35px;
+  padding-bottom:35px;
+
+}
+
+.video-container-about{
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-video{
+
+}
+
+.video-about{
+  width:100%;
+}
+
+.jumbotron.aboutContainer{
+  background-color: #e9ecef;
+}
+
+.company-title{
+  color:white;
+}
+
+.about-widgets{
+  width:100vw;
+  height:auto;
+  background-color: blue;
 }

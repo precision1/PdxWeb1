@@ -147,6 +147,8 @@ a.client-portal-modal{
 
 }
 
+
+
 .principles-index{
   text-align: center;
 
@@ -228,10 +230,11 @@ main{
 
 
 /* //////Middle of Body/////*/
-.card-group{
+/* .card-group{
   width:100%;
   height:380px;
-}
+} */
+
 .col{
   text-align: left;
   width:100px;
@@ -631,9 +634,9 @@ circle {
 */
 
 @media (min-width: 1281px) {
-  
-  
-  
+
+
+
 }
 
 /*
@@ -642,9 +645,9 @@ circle {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-  
+
+
+
 }
 
 /*
@@ -694,13 +697,13 @@ padding:0;
   height:100%;
   width:100%;
 }
-.card-group .card1{
+/* .card-group .card1{
   width:50%;
   height:50%;
   margin:0;
   padding:0;
   margin-top:50px;
-}
+} */
 
 .footercard .lookWrap .container-form .section2 .section3 *{
   width:100%;
@@ -785,13 +788,13 @@ padding:0;
   height:100%;
   width:100%;
 }
-.card-group .card1{
+/* .card-group .card1{
   width:50%;
   height:50%;
   margin:0;
   padding:0;
   margin-top:50px;
-}
+} */
 
 .footercard .lookWrap .container-form .section2 .section3 *{
   width:100%;
@@ -875,12 +878,13 @@ padding:0;
 .card-img-top2 .card-img-top{
   height:200px;
 }
-.card-group .card1{
+
+/* .card-group .card1{
   width:100%;
   height:100%;
   margin:0;
   padding:0;
-}
+} */
 
 .footercard .lookWrap .container-form .section2 .section3 *{
   width:100%;
@@ -960,10 +964,10 @@ padding:0;
 }
 
 
-.card-group .card1{
+/* .card-group .card1{
   width:100%;
   height:100%;
-}
+} */
 
 .card-img-top{
   margin-top:100px;
@@ -1005,4 +1009,21 @@ form {
   margin-top:-300px;
   margin-bottom:-200px;
 }
+}
+
+
+.principles-container{
+  width:100%;
+  height:500px;;
+  display: flex;
+
+}
+
+.card-body{
+
+}
+
+.home-video-container{
+  width:100vw;
+  height:500vh;
 }
