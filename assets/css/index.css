@@ -357,13 +357,13 @@ input[type=text], select, textarea {
 input[type=submit] {
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   color: white;
-  padding: 3px 10px;
+  padding: 3px 100px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   text-align: center;
   border: 1px solid #ccc;
-  margin-left: 20px;
+  margin-left: 15px;
   background:transparent;
 
 }
@@ -458,7 +458,7 @@ h4{
   text-align: left;
 }
 
-/*Text Animation*/
+/* Text Animation
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
 .text {
@@ -591,13 +591,6 @@ circle {
   animation-name: pie4;
 }
 /*
- pie percentage made by stroke-dasharray.
- stroke-dasharray format is...
-
- keyframe 100% : 0 offset this-percentage rest
-
- I added keyframe 50% for infinite presentation.
-*/
 
 /* 1st pie is 40% */
 @-webkit-keyframes pie1 {
@@ -626,7 +619,7 @@ circle {
 }
 @keyframes pie4 {
   50%,100% {stroke-dasharray: 0,90,10,0;}
-}
+} */
 
 
 /*////////Media Queries/////*/

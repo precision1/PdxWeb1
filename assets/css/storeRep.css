@@ -2,72 +2,6 @@
   /* background-image: url("https://i.postimg.cc/jSXdShzn/cart.jpg"); */
   background-size: cover;
   background-position: center; 
-
-
-
-  
-}
-
-.footercard{
-    width: 100%;
-    background-color: #4587a4;
-    color: white;
-    /* text-shadow: 2px 2px 4px #000000; */
-    font-family: Arial, Helvetica, sans-serif;
-   font-size: 15px;
-
-}
-
-.footer-container{
-    margin-left: 100px;
-    /* text-shadow: 2px 2px 4px #000000; */
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-}
- 
-
-
-.row1{
-    margin-top: 75px;
-    margin-bottom:25px;
-}
-
-.col{
-    margin-top: 15px;
-}
-
-.col1{
-    margin-top: 20px;
-  
-}
-
-
-.col2{
-    margin-right: 10px;
-    padding: 10px;;
-}
-
-.media-container{
-    width: 30%;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.copyright-container{
-    width: 100%;
-    text-align: center;
-}
-
-.col3{
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.container-links{
-    float: right;
-    margin-top:0;
-    margin-right:250px;
 }
 
 .card-deck{
@@ -89,6 +23,29 @@ body{
 .card{
     box-shadow: 12px 12px 2px 1px darkgray;
 }
+
+.card-last1{
+    width:400px; 
+    height:520px;
+    box-shadow: 12px 12px 2px 1px darkgray;
+    background-color:white;
+    margin-top:-100px;
+    margin-left:100px ;
+ 
+    
+}
+
+.card-last2{
+    width:400px; 
+    height:520px;
+    box-shadow: 12px 12px 2px 1px darkgray;
+    background-color:white;
+    margin-top: -0px;
+    margin-left:100px;
+ 
+    
+}
+
 
 button{
     background-color:rgb(238, 5, 5);
@@ -265,4 +222,534 @@ h2.title-home{
   text-align:center;
 }
 
+/*Footer*/
+.footercard{
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
+     height:100%;
+    
+    }
+    
+    .footer-container{
+    margin-left: 100px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    /*Footer Contact form*/
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    .container-form{
+      width:300px !important;
+      /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
+    }
+    input[type=text], select, textarea {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+      /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
+      background:transparent;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #ccc;
+      opacity: 1; /* Firefox */
+    }
+    
 
+    input[type=submit] {
+      /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
+      color: white;
+      padding: 3px 100px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin-left: 15px;
+      background:transparent;
+    
+    }
+    
+    /* input[type=submit1]:hover {
+      background-color: #45a049;
+    } */
+    
+    .core-principles{
+      max-width:100%;
+      max-height:100%;
+    }
+    
+    
+    .copyright-container{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    a {
+        /* text-shadow: 2px 2px 4px #000000; */
+        color:white;
+    
+    }
+    
+    .lookWrap{
+      overflow:hidden;
+      float: left;
+      width: 100%;
+      height:auto;
+      background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
+      -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
+      clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
+    
+    }
+    
+    .section{
+      /* overflow: hidden; */
+      float: left;
+      display: inline;
+      width: 160px;
+      margin: 15px 25px 15px 25px;
+      font: 5pt;
+      line-height: 1.6em;
+      margin-top:230px;
+      margin-left: 75px;
+      margin-right:0;
+    }
+    
+    .card-link .find-us .lets-talk {
+      font-size: 5pt;
+    }
+    .section a{
+      display: block;
+    }
+    
+    .bottom-footer {
+      margin:0;
+      width: 100%;
+      text-align: center;
+      clear: both;
+      font: 10pt;
+      line-height: 2em;
+      margin-right:0;
+      margin-bottom:0;
+      font-size: 10pt;
+    }
+    
+    
+    .section2 *{
+      float: left;
+      width: 300px;
+      font: 5pt;
+      line-height: 1.6em;
+      margin-left:200px;
+      margin-right:100px;
+      display: inline;
+    
+    }
+    
+    .section3 *{
+      margin-left: 15px;
+    
+    }
+    
+    .find-us .lets-talk{
+      margin-top:80px !important;
+    }
+    
+    h4{
+      text-align: left;
+    }
+    
+   
+    
+    /*////////Media Queries/////*/
+    
+    /*
+      ##Device = Desktops
+      ##Screen = 1281px to higher resolution desktops
+    */
+    
+    @media (min-width: 1281px) {
+      
+      
+      
+    }
+    
+    /*
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+    
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      
+      
+      
+    }
+    
+    /*
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+    
+      .storemodal-content {
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .navbar-nav .navbar-brand  .nav-item *{
+      width: 100%;
+      height:100%;
+      margin:0;
+      padding:0;
+    
+    
+    }
+    
+    #main-logo #homeBtn *{
+    width: 50px;
+    height:20px;
+    margin:0;
+    padding:0;
+    }
+    
+    
+    .home-modal-content{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    .jumbotron .jumbotron.jumbotron-fluid{
+      width:100%;
+      height:50%;
+      margin:0;
+      padding:0;
+    }
+    
+    .card-img-top2 *{
+      height:100%;
+      width:100%;
+    }
+    .card-group .card1{
+      width:50%;
+      height:50%;
+      margin:0;
+      padding:0;
+      margin-top:50px;
+    }
+    
+    .footercard .lookWrap .container-form .section2 .section3 *{
+      width:100%;
+      height:100%;
+      padding:0;
+    
+    }
+    
+    #look{
+      margin-top:10%;
+    }
+    .copyright-container{
+      margin-left:-200px;
+      display: block;
+      flex-direction: column;
+      font-size: 9px;
+    }
+    
+    .media-container{
+      display: block;
+      flex-direction: row;
+    
+    }
+    form{
+      width:100%;
+      height:50%;
+    }
+    
+    /* .lets-talk h7 .find-us {
+      padding:0;
+      margin:0;
+      margin-top:-300px;
+      margin-bottom:-200px;
+    } */
+    
+    }
+    
+    /*
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+    
+      .storemodal-content {
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .navbar-nav .navbar-brand  .nav-item *{
+      width: 100%;
+      height:100%;
+      margin:0;
+      padding:0;
+    
+    
+    }
+    
+    #main-logo #homeBtn *{
+    width: 50px;
+    height:20px;
+    margin:0;
+    padding:0;
+    }
+    
+    
+    .home-modal-content{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    .jumbotron .jumbotron.jumbotron-fluid{
+      width:100%;
+      height:50%;
+      margin:0;
+      padding:0;
+    }
+    
+    .card-img-top2 *{
+      height:100%;
+      width:100%;
+    }
+    .card-group .card1{
+      width:50%;
+      height:50%;
+      margin:0;
+      padding:0;
+      margin-top:50px;
+    }
+    
+    .footercard .lookWrap .container-form .section2 .section3 *{
+      width:100%;
+      height:100%;
+      padding:0;
+    
+    }
+    
+    /* #look{
+      margin-top:10%;
+    } */
+    .copyright-container{
+      margin-left:-200px;
+      display: block;
+      flex-direction: column;
+      font-size: 9px;
+    }
+    
+    .media-container{
+      display: block;
+      flex-direction: row;
+    
+    }
+    form{
+      width:100%;
+      height:50%;
+    }
+    
+    /* .lets-talk h7 .find-us {
+      padding:0;
+      margin:0;
+      margin-top:-300px;
+      margin-bottom:-200px;
+    } */
+    
+    }
+    /*
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+    
+    @media (min-width: 481px) and (max-width: 767px) {
+    
+      .storemodal-content {
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .navbar-nav .navbar-brand  .nav-item *{
+      width: 100%;
+      height:100%;
+      margin:0;
+      padding:0;
+    
+    
+    }
+    
+    #main-logo #homeBtn *{
+    width: 50px;
+    height:20px;
+    margin:0;
+    padding:0;
+    }
+    
+    
+    .home-modal-content{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    .jumbotron .jumbotron.jumbotron-fluid{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    
+    
+    .card-img-top2 .card-img-top{
+      height:200px;
+    }
+    .card-group .card1{
+      width:100%;
+      height:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    .footercard .lookWrap .container-form .section2 .section3 *{
+      width:100%;
+      height:100%;
+      margin: -100%;
+      padding:0;
+    
+    }
+    
+    .copyright-container{
+      margin-left:-200px;
+      display: block;
+      flex-direction: column;
+      font-size: 9px;
+    }
+    
+    .media-container{
+      display: block;
+      flex-direction: row;
+    
+    }
+    form{
+      margin-top: 100%;
+      width:100%;
+      height:50%;
+    }
+    
+    .lets-talk h7 .find-us *{
+      padding:0;
+      margin:0;
+      margin-top:-300px;
+      margin-bottom:-200px;
+    }
+    
+    }
+    
+    /*
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+    
+      .storemodal-content {
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .navbar-nav .navbar-brand  .nav-item *{
+      width: 100%;
+      height:100%;
+      margin:0;
+      padding:0;
+    
+    
+    }
+    
+    #main-logo #homeBtn *{
+    width: 50px;
+    height:20px;
+    margin:0;
+    padding:0;
+    }
+    
+    
+    .home-modal-content{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    .jumbotron .jumbotron.jumbotron-fluid{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    
+    
+    .card-group .card1{
+      width:100%;
+      height:100%;
+    }
+    
+    .card-img-top{
+      margin-top:100px;
+    }
+    .footercard .lookWrap .container-form .section2 .section3 *{
+      width:100%;
+      height:100%;
+      margin: -100%;
+      padding:0;
+    
+    }
+    
+    .copyright-container{
+      margin-left:-200px;
+      display: block;
+      flex-direction: column;
+      font-size: 6px;
+      margin-bottom: 50px;
+    }
+    
+    .media-container{
+      display: block;
+      flex-direction: row;
+      size: 9px;
+      margin-bottom: 50px;
+    
+    }
+    form {
+      margin-top: 100%;
+      margin-left:0%;
+      width:100%;
+      height:100%;
+    }
+    
+    
+    .lets-talk h7 .find-us *{
+      padding:0;
+      margin:0;
+      margin-top:-300px;
+      margin-bottom:-200px;
+    }
+    }
+    
