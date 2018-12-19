@@ -222,6 +222,8 @@ height:400px;
 
 
 /* //////Middle of Body/////*/
+
+/*/////Precision Principles//////*/
 .card-group{
   width:100%;
   height:380px;
@@ -254,6 +256,11 @@ h7{
 }
 
 
+/*//////////////////////////Precision Analytics Section in Body//////////////////////*/
+
+#analytic-img{
+height:300px;
+}
 
 
 /*//////Scroll Button/////////*/
@@ -279,7 +286,7 @@ h7{
 
 
 
-/*Footer*/
+/*//////////////////Footer////////////////////////*/
 .footercard{
 width: 100%;
 color: white;
@@ -805,7 +812,7 @@ form {
 }
 }
 
-
+/*//////////////End Media Queries///////////*/
 
 /* .triangle-home{
   width:100%;
