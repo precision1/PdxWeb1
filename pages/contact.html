@@ -22,329 +22,339 @@
 </head>
 
 <body>
-    <!-- Header-->
-    <header>
+    <div class="body-container">
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
-            <a class="navbar-brand" href="index.html"><img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!--Header is here: uncollapse to see code-->
+        <header>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Services <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link aboutus" href="about.html">About Us</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                    <button id="storeBtn"> <a class="nav-item nav-link" href="#">Store</a></button>
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
+                <a class="navbar-brand" href="../pages/index.html"><img id="main-logo" src="../assets/images/Logo.svg"
+                        alt="Kiwi standing on oval"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Please navigate to your personalized store by choosing one of the two options. </p>
-                            <button> <a class="client-portal" href="storeClientST.html">Client / Specimen Technician</a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="../pages/services.html">Services <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link aboutus" href="../pages/about.html">About Us</a>
+                        <a class="nav-item nav-link" href="../pages/contact.html">Contact</a>
+                        <a class="nav-item nav-link" href="../pages/careers.html">Careers</a>
+                        <button id="storeBtn"> <a class="nav-item nav-link" href="#">Store</a></button>
+                        <!-- The Modal -->
+                        <div id="storeModal" class="storemodal">
+
+                            <!-- Modal content -->
+                            <div class="storemodal-content">
+                                <span class="storeclose">&times;</span>
+                                <p class="index-modal-title">Please navigate to your personalized store by choosing one
+                                    of the two
+                                    options. </p>
+                                <div class="modal-buttons-index">
+                                    <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeClientST.html">Client
+                                            / Specimen Technician</a> </button>
+                                    <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeRep.html">Sales
+                                            Representative</a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
+                <!-- The Modal -->
+                <div id="homeModal" class="hmemodal">
+
+                    <!-- Modal content -->
+                    <div class="home-modal-content">
+                        <span class="homeclose">&times;</span>
+                        <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two
+                            options.</p>
+                        <div class="modal-buttons-index">
+                            <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
                             </button>
-                            <button> <a class="client-portal" href="storeRep.html">Sales Representative</a> </button>
+                            <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision
+                                    Analytics</a>
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
-            <!-- The Modal -->
-            <div id="homeModal" class="hmemodal">
-
-                <!-- Modal content -->
-                <div class="home-modal-content">
-                    <span class="homeclose">&times;</span>
-                    <p>Some text in the Modal..</p>
-                    <button> <a class="client-portal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
-                    </button>
-                    <button> <a class="client-portal" href="https://analytics.precisiondxlab.com/">Precision Analytics</a>
-                    </button>
-                </div>
-
-            </div>
-
-
-        </nav>
-
-        <div class="header-content">
-            <div class="header-content-inner">
-
-            </div>
-        </div>
-
-
-    </header>
-
-    <main>
-
-        <!--Jumbotron-->
-        <div class="jumbotron" style="background:black;">
-            <h1 class="display-4">Contact Us</h1>
-            
-          
-        </div>
-        <!--/Jumbotron-->
-
-
-        <!--Get in Touch and Contact-->
-
-        <!--Scroll Button-->
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
-        <!--/Scroll Button-->
-
-
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <!--Form-->
-                    <h1 id="header-contact-us">Contact Us Today!</h1>
-                    <h2 id="your-information">Your Information</h2>
-                    <br>
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-
-                        <div class="messages"></div>
-
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">First name *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder=""
-                                            required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Last name *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control"
-                                            placeholder="" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control"
-                                            placeholder="Email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_need">Please specify your need *</label>
-                                        <select id="form_need" name="need" class="form-control" required="required"
-                                            data-error="Specify your need.">
-                                            <option value=""></option>
-                                            <option value="Request quotation">Request quotation</option>
-                                            <option value="Request order status">Request shipping order status</option>
-                                            <option value="Request copy of an invoice">Request copy of a report</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
-                                            rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message" style="background-color:#4587a4;">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted">
-                                        <strong>*</strong> These fields are required.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
 
                 </div>
+
+
+            </nav>
+
+        </header>
+        <main>
+
+            <!--Jumbotron-->
+            <div class="jumbotron">
+                <image src="../assets/images/lab-images/Lobby01.jpg" class="contact-image"></image>
+
+
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="contact">
-                        <h1>Company Information</h1>
-                        <p class="billing">
-                            <br>
-                            <h2>Billing Department</h2>
-                            <p><i class="fas fa-phone"></i> (800) 635-6901 Option 1</p>
-                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 4 PM (PST) / 8 AM -
-                                7 PM
-                                (EST)</p>
-                        </p>
-                        <p class="client-services">
-                            <br>
-                            <h3>Client Services</h3>
-                            <p><i class="fas fa-phone"></i> (800) 635-6901 Option 2</p>
-                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 7 PM (PST) / 8 AM -
-                                10
-                                PM
-                                (EST) </p>
-                        </p>
+            <!--/Jumbotron-->
+
+
+            <!--Get in Touch and Contact-->
+
+            <!--Scroll Button-->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
+            <!--/Scroll Button-->
+
+
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <!--Form-->
+                        <h1 id="header-contact-us">Contact Us Today!</h1>
+                        <h2 id="your-information">Your Information</h2>
                         <br>
-                        <p class="email">
-                            <h4>Email</h4>
-                            <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
-                        </p>
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">First name *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control"
+                                                placeholder="" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Last name *</label>
+                                            <input id="form_lastname" type="text" name="surname" class="form-control"
+                                                placeholder="" required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                placeholder="Email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_need">Please specify your need *</label>
+                                            <select id="form_need" name="need" class="form-control" required="required"
+                                                data-error="Specify your need.">
+                                                <option value=""></option>
+                                                <option value="Request quotation">Request quotation</option>
+                                                <option value="Request order status">Request shipping order status</option>
+                                                <option value="Request copy of an invoice">Request copy of a report</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                                                rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message"
+                                            style="background-color:#4587a4;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> These fields are required.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!--/Get in Touch and Contact-->
-
-        <!--Map Images-->
-
-        <div class="card-deck" style="margin:0; padding:0;">
-            <div class="card">
-                <div class="card-body1" style="width:100%;min-width:320px;height:450px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.766158136369!2d-117.21642628533235!3d32.904350384790135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc070473a826d1%3A0x4fe87f9e6cf9388d!2s4215+Sorrento+Valley+Blvd%2C+San+Diego%2C+CA+92121!5e0!3m2!1sen!2sus!4v1544226741655"
-                        width="540" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body1" style="width:100%;min-width:320px;height:450px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.864149047736!2d-70.96617308506431!3d41.63706778844316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4e37066b26da7%3A0xabb857620b2a074a!2s49+State+Rd+%23103P%2C+Dartmouth%2C+MA+02747!5e0!3m2!1sen!2sus!4v1544226877427"
-                        width="540" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <!--/Map Images-->
-
-    </main>
-
-    <!--Footer-->
-    <div class="parallax2">
-        <div class="footercard">
-            <!-- <div class="footer-container"> -->
-            <!--Top Footer-->
-            <div class="lookWrap">
-                <div id="look">
-                    <!--Section 1-->
-                    <div class="section">
-                        <!--Logo-->
-                        <img id="main-logo" src="../assets/images/Logo.svg"></img>
-                        <br>
-                        <!--Get in touch form-->
-                        <div class="container-form">
-                            <h3 style="margin-top:10px;">Get In Touch Today</h3>
-                            <!-- <h4>__________________</h4> -->
-
-                            <form method="post" name="myemailform" action="form-to-email.php">
-
-
-
-                                Name: <input type="text" name="name">
-
+                <div class="card">
+                    <div class="card-body">
+                        <div class="contact">
+                            <h1>Company Information</h1>
+                            <p class="billing">
                                 <br>
-
-                                Email: <input type="text" name="email">
-
+                                <h2>Billing Department</h2>
+                                <p><i class="fas fa-phone"></i> (800) 635-6901 Option 1</p>
+                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 4 PM (PST) / 8 AM -
+                                    7 PM
+                                    (EST)</p>
+                            </p>
+                            <p class="client-services">
                                 <br>
-
-                                Enter your message: <textarea name="message"></textarea>
-
-
-                                <br>
-                                <input type="submit" value="Send Form">
-
-                            </form>
-                        </div>
-                    </div>
-
-                    <!--End Section 1-->
-                    <!--Section 2-->
-                    <div class="section">
-                        <!--Menu-->
-                        <div class="container-links" style="margin-left:100px; font-size:9pt;">
-                            <h5>Menu</h5>
-                            <div class="w-100"></div>
-                            <div class="col1"><a href="#" class="card-link">Services</a></div>
-                            <div class="col1"><a href="#" class="card-link">Store</a></div>
-                            <div class="w-100"></div>
-                            <div class="col1"><a href="#" class="card-link">Privacy & Notice</a></div>
-                            <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
-                                    Reports</a></div>
-                            <div class="col1"><a href="#" class="card-link">Careers</a></div>
-                            <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Feedback</a></div>
-                        </div>
-                    </div>
-                    <!--End Section 2-->
-                    <!--Section 3-->
-                    <div class="section">
-                        <!--Find Us-->
-                        <h5>Find Us</h5>
-                        <div class="find-us" style=" font-size:9pt;">
-                            <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
-                            Diego, CA 92121
+                                <h3>Client Services</h3>
+                                <p><i class="fas fa-phone"></i> (800) 635-6901 Option 2</p>
+                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 7 PM (PST) / 8 AM -
+                                    10
+                                    PM
+                                    (EST) </p>
+                            </p>
                             <br>
-                            <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N 103,
-                            Dartmouth, MA 02747
-                        </div>
-                    </div>
-                    <!--End Section 3-->
-                    <!--Section 4-->
-                    <div class="section">
-                        <!---Lets Talk-->
-                        <div class="lets-talk">
-                            <h5>Lets Talk</h5>
-                            <div class="lets-talk" style=" font-size:9pt;">
-                                <i class="fas fa-phone"></i> 800.635.6901
-                                <br>
+                            <p class="email">
+                                <h4>Email</h4>
                                 <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <!--End Section 4-->
+                </div>
+            </div>
 
-                    <!--Bottom of Footer-->
+            <!--/Get in Touch and Contact-->
 
+            <!--Map Images-->
 
-                    <div class="bottom-footer">
-                        <!---Copyright-->
-                        <div class="section2">
-                            <div class="copyright-container">
-                                <div class="" style="width:100%; margin-left:350px;">©2018 Precision Diagnostics. All
-                                    rights
-                                    reserved.</div>
-                            </div>
-                        </div>
-                        <!--Social Media-->
-                        <div class="section3">
-                            <div class="media-container">
-                                <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f" id="icon"></a>
-                                <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin" id="icon"></a>
-                                <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
-                            </div>
-                        </div>
+            <div class="card-deck" style="margin:0; padding:0;">
+                <div class="card">
+                    <div class="card-body1" style="width:100%;min-width:320px;height:450px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.766158136369!2d-117.21642628533235!3d32.904350384790135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc070473a826d1%3A0x4fe87f9e6cf9388d!2s4215+Sorrento+Valley+Blvd%2C+San+Diego%2C+CA+92121!5e0!3m2!1sen!2sus!4v1544226741655"
+                            width="540" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <!--End bottom footer-->
+                </div>
+
+                <div class="card">
+                    <div class="card-body1" style="width:100%;min-width:320px;height:450px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.864149047736!2d-70.96617308506431!3d41.63706778844316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4e37066b26da7%3A0xabb857620b2a074a!2s49+State+Rd+%23103P%2C+Dartmouth%2C+MA+02747!5e0!3m2!1sen!2sus!4v1544226877427"
+                            width="540" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/Map Images-->
+
+        </main>
+
+        <!--Footer-->
+        <div class="parallax2">
+            <div class="footercard">
+                <!-- <div class="footer-container"> -->
+                <!--Top Footer-->
+                <div class="lookWrap">
+                    <div id="look">
+                        <!--Section 1-->
+                        <div class="section">
+                            <!--Logo-->
+                            <img id="main-logo" src="../assets/images/Logo.svg"></img>
+                            <br>
+                            <!--Get in touch form-->
+                            <div class="container-form">
+                                <h3 style="margin-top:10px;">Get In Touch Today</h3>
+                                <!-- <h4>__________________</h4> -->
+
+                                <form method="post" name="myemailform" action="form-to-email.php">
+
+
+
+                                    Name: <input type="text" name="name">
+
+                                    <br>
+
+                                    Email: <input type="text" name="email">
+
+                                    <br>
+
+                                    Enter your message: <textarea name="message"></textarea>
+
+
+                                    <br>
+                                    <input type="submit" value="Send Form">
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--End Section 1-->
+                        <!--Section 2-->
+                        <div class="section">
+                            <!--Menu-->
+                            <div class="container-links" style="margin-left:100px; font-size:9pt;">
+                                <h5>Menu</h5>
+                                <div class="w-100"></div>
+                                <div class="col1"><a href="#" class="card-link">Services</a></div>
+                                <div class="col1"><a href="#" class="card-link">Store</a></div>
+                                <div class="w-100"></div>
+                                <div class="col1"><a href="#" class="card-link">Privacy & Notice</a></div>
+                                <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
+                                        Reports</a></div>
+                                <div class="col1"><a href="#" class="card-link">Careers</a></div>
+                                <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Feedback</a></div>
+                            </div>
+                        </div>
+                        <!--End Section 2-->
+                        <!--Section 3-->
+                        <div class="section">
+                            <!--Find Us-->
+                            <h5>Find Us</h5>
+                            <div class="find-us" style=" font-size:9pt;">
+                                <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
+                                Diego, CA 92121
+                                <br>
+                                <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N
+                                103,
+                                Dartmouth, MA 02747
+                            </div>
+                        </div>
+                        <!--End Section 3-->
+                        <!--Section 4-->
+                        <div class="section">
+                            <!---Lets Talk-->
+                            <div class="lets-talk">
+                                <h5>Lets Talk</h5>
+                                <div class="lets-talk" style=" font-size:9pt;">
+                                    <i class="fas fa-phone"></i> 800.635.6901
+                                    <br>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Section 4-->
+
+                        <!--Bottom of Footer-->
+
+
+                        <div class="bottom-footer">
+                            <!---Copyright-->
+                            <div class="section2">
+                                <div class="copyright-container">
+                                    <div class="" style="width:100%; margin-left:350px;">©2018 Precision Diagnostics.
+                                        All
+                                        rights
+                                        reserved.</div>
+                                </div>
+                            </div>
+                            <!--Social Media-->
+                            <div class="section3">
+                                <div class="media-container">
+                                    <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f"
+                                        id="icon"></a>
+                                    <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin"
+                                        id="icon"></a>
+                                    <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End bottom footer-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
 
