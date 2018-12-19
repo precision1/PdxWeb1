@@ -219,16 +219,16 @@ main{
   background:	#181818;
 }
 
-#video-background { 
+#video-background {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
     overflow: hidden;
     z-index: -100;
     width:100%;
     height:600px;
-} 
+}
 
 
 
@@ -261,7 +261,7 @@ width:50%;
 p *{
   line-height: 2em;
   font-size: 1pt;
- 
+
 }
 
 h7{
@@ -364,7 +364,7 @@ h7{
 
 /**
  * ==========================
- * Arrows 
+ * Arrows
  *
  */
 .arrow{
@@ -541,10 +541,14 @@ a {
   font: 5pt;
   line-height: 1.6em;
   margin-top:230px;
-  margin-left: 75px;
+  margin-left: 140px;
   margin-right:0;
 }
 
+.container-links{
+  width:100%;
+
+}
 .card-link .find-us .lets-talk {
   font-size: 5pt;
 }
@@ -970,11 +974,3 @@ form {
 }
 
 /*//////////////End Media Queries///////////*/
-
-
-  
-
-  
-
-
- 
