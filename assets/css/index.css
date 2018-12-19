@@ -3,7 +3,6 @@ header{
   width:100%;
   margin:0;
 }
-
 .storemodal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
