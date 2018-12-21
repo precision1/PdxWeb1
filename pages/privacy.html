@@ -27,81 +27,79 @@
 
 <body>
 
-    <!--Header is here: uncollapse to see code-->
-    <header>
+  <!--Header is here: uncollapse to see code-->
+  <header>
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
-        <a class="navbar-brand" href="../pages/index.html"><img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
+      <a class="navbar-brand" href="../pages/index.html"><img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="../pages/services.html">Services <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link aboutus" href="../pages/about.html">About Us</a>
-            <a class="nav-item nav-link" href="../pages/contact.html">Contact</a>
-            <a class="nav-item nav-link" href="../pages/careers.html">Careers</a>
-            <button id="storeBtn"> <a class="nav-item nav-link" href="#">Store</a></button>
-            <!-- The Modal -->
-            <div id="storeModal" class="storemodal">
-
-              <!-- Modal content -->
-              <div class="storemodal-content">
-                <span class="storeclose">&times;</span>
-                <p class="index-modal-title">Please navigate to your personalized store by choosing one of the two
-                  options. </p>
-                <div class="modal-buttons-index">
-                  <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeClientST.html">Client
-                      / Specimen Technician</a> </button>
-                  <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeRep.html">Sales
-                      Representative</a> </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
-        <!-- The Modal -->
-        <div id="homeModal" class="hmemodal">
-
-          <!-- Modal content -->
-          <div class="home-modal-content">
-            <span class="homeclose">&times;</span>
-            <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two options.</p>
-            <div class="modal-buttons-index">
-              <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
-              </button>
-              <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision
-                  Analytics</a>
-              </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="../pages/services.html">Services <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link aboutus" href="../pages/about.html">About Us</a>
+          <a class="nav-item nav-link" href="../pages/contact.html">Contact</a>
+          <a class="nav-item nav-link" href="../pages/careers.html">Careers</a>
+          <!--Store Drop Down Menu-->
+          <div class="dropdown">
+            <button class="dropbtn">Store</button>
+            <div class="dropdown-content">
+              <a href="../pages/storeClientST.html">Client/Specimen Technician</a>
+              <a href="../pages/storeRep.html">Sales Representative</a>
             </div>
           </div>
 
+
         </div>
+      </div>
 
+      <!-- The Modal - Client Portal -->
 
-      </nav>
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn1">Client Portal</button>
 
-    </header>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
 
-    <!--Main body-->
-    <main>
-      <!--Scroll Button-->
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
-      <!--/Scroll Button-->
-
-      <div class="privacy-container">
-
-          <div class="privacy-image">
-
-
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two
+            options.</p>
+          <div class="modal-buttons-index">
+            <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
+            </button>
+            <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision
+                Analytics</a>
+            </button>
           </div>
+        </div>
+      </div>
+    </nav>
 
-          <div class="accordion-container">
+  </header>
+  <!--/Navbar-->
+
+  </header>
+
+  <!--Main body-->
+  <main>
+    <!--Scroll Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
+    <!--/Scroll Button-->
+
+    <div class="privacy-container">
+
+      <div class="privacy-image">
+
+
+      </div>
+
+      <div class="accordion-container">
 
 
 
@@ -111,30 +109,74 @@
         <button class="collapsible">Non-Discrimination Policy and Access Procedure</button>
         <div class="content">
           <h2> Non-Discrimination Policy and Access Procedure</h2>
-          <h5>A.  Policy: </h5>
-              <p>As a recipient of federal reimbursement for its laboratory testing services, Precision Diagnostics does not exclude, deny benefits to, or otherwise discriminate against any person on the grounds of race, color, or national origin, or on the basis of disability or age from access to, or receipt of, Precision Diagnostics laboratory testing services and the benefits thereof, whether the testing services are carried out by Precision Diagnostics directly or through a contractor or any other entity with whom Precision Diagnostics arranges to carry out those services. Likewise, Precision Diagnostics does not exclude, deny benefits to, or otherwise discriminate against any person on the grounds of race, color, or national origin, or on the basis of disability or age, from opportunities for employment by Precision Diagnostics. </p>
-                <ul><li> This statement is in accordance with the provisions of Title VI of the Civil Rights Act of 1964, Section 504 of the Rehabilitation Act of 1973, the Age Discrimination Act of 1975, and Regulations of the U.S. Department of Health and Human Services issued pursuant to the Acts, Title 45 Code of Federal Regulations Part 80, 84, and 91.</li></ul>
-                <br>
+          <h5>A. Policy: </h5>
+          <p>As a recipient of federal reimbursement for its laboratory testing services, Precision Diagnostics does
+            not exclude, deny benefits to, or otherwise discriminate against any person on the grounds of race, color,
+            or national origin, or on the basis of disability or age from access to, or receipt of, Precision
+            Diagnostics laboratory testing services and the benefits thereof, whether the testing services are carried
+            out by Precision Diagnostics directly or through a contractor or any other entity with whom Precision
+            Diagnostics arranges to carry out those services. Likewise, Precision Diagnostics does not exclude, deny
+            benefits to, or otherwise discriminate against any person on the grounds of race, color, or national
+            origin, or on the basis of disability or age, from opportunities for employment by Precision Diagnostics.
+          </p>
+          <ul>
+            <li> This statement is in accordance with the provisions of Title VI of the Civil Rights Act of 1964,
+              Section 504 of the Rehabilitation Act of 1973, the Age Discrimination Act of 1975, and Regulations of the
+              U.S. Department of Health and Human Services issued pursuant to the Acts, Title 45 Code of Federal
+              Regulations Part 80, 84, and 91.</li>
+          </ul>
+          <br>
           <h5> B. Access Notice:</h5>
-          <p>As a clinical reference laboratory located and operating in San Diego, California, Precision Diagnostics provides laboratory testing on patient samples generally shipped via air carriers as well as local couriers from the unaffiliated offices of its health care practitioner customers. Precision Diagnostics therefore has very limited in-person interaction with patients for whom it performs its laboratory testing services. However, for patients and clients and others throughout the United States who may from their respective locations seek access to, or receipt of, Precision Diagnostics laboratory testing services and the benefits thereof, or otherwise to access or communicate with Precision Diagnostics, Precision Diagnostics also strives to make such communications accessible to and usable by disabled persons, including persons with impaired hearing and vision, through assistive and communication aids provided without additional charge (as described in Sections C and D). In addition, Precision Diagnostics has implemented access features at its San Diego clinical reference laboratory facility, as set forth below. Precision Diagnostics also has posted an Access Notice (in the form attached hereto as Exhibit A) on its website, and at its main laboratory facility. </p>
+          <p>As a clinical reference laboratory located and operating in San Diego, California, Precision Diagnostics
+            provides laboratory testing on patient samples generally shipped via air carriers as well as local couriers
+            from the unaffiliated offices of its health care practitioner customers. Precision Diagnostics therefore
+            has very limited in-person interaction with patients for whom it performs its laboratory testing services.
+            However, for patients and clients and others throughout the United States who may from their respective
+            locations seek access to, or receipt of, Precision Diagnostics laboratory testing services and the benefits
+            thereof, or otherwise to access or communicate with Precision Diagnostics, Precision Diagnostics also
+            strives to make such communications accessible to and usable by disabled persons, including persons with
+            impaired hearing and vision, through assistive and communication aids provided without additional charge
+            (as described in Sections C and D). In addition, Precision Diagnostics has implemented access features at
+            its San Diego clinical reference laboratory facility, as set forth below. Precision Diagnostics also has
+            posted an Access Notice (in the form attached hereto as Exhibit A) on its website, and at its main
+            laboratory facility. </p>
 
           <h5>Access features at the Precision Diagnostics laboratory facility include: </h5>
           <ul>
-          <li>Convenient off-street parking designated specifically for disabled persons. </li>
-          <li>Curb cuts and ramps between parking areas and buildings. </li>
-          <li> Level access into first floor level with elevator access to all other floors.</li>
-          <li> Fully accessible offices, meeting rooms, bathrooms, and public waiting areas.</li>
-          <li> A full range of assistive and communication aids provided to persons with impaired hearing, vision, speech, or manual skills, without additional charge for such aids (described in Sections C and D).</li>
-        </ul>
+            <li>Convenient off-street parking designated specifically for disabled persons. </li>
+            <li>Curb cuts and ramps between parking areas and buildings. </li>
+            <li> Level access into first floor level with elevator access to all other floors.</li>
+            <li> Fully accessible offices, meeting rooms, bathrooms, and public waiting areas.</li>
+            <li> A full range of assistive and communication aids provided to persons with impaired hearing, vision,
+              speech, or manual skills, without additional charge for such aids (described in Sections C and D).</li>
+          </ul>
           <h5> C. Procedures for Communicating Information to Persons with Sensory Impairments:</h5>
           <ol>
-            <li>Generally: Precision Diagnostics will take such steps as are necessary to ensure that qualified persons with disabilities, including those with impaired sensory or speaking skills, receive effective notice concerning benefits or services or written material concerning waivers of rights or consent to treatment. All aids needed to provide this notice are provided without cost to the person being served.</li>
-            <br><li>For Persons With Hearing Impairments: Qualified sign-language interpreter for persons who are deaf/hearing impaired and who use sign- language as their primary means of communication, the following procedure has been developed and resources identified for obtaining the services of a qualified sign-language interpreter to communicate both verbal and written information:</li>
-              <br>  <ul> <li> Precision Diagnostics will utilize a local Sign Language Interpreting Service  </li>
-                        <li> Teletypewriter (TTY): A TTY is an electronic device for text communication over a telephone line, which transmits texts live, via a telephone line, to a compatible device. Precision Diagnostics provides TTY services if necessary to assist persons with hearing impediments.     </li>
-                    </ul>
-            <br> <li>  For Persons With Visual Impairments: Upon request, Precision Diagnostics staff will communicate the content of written materials concerning benefits, services, waivers of rights, and consent to treatment forms by reading them out loud to visually impaired persons. Alternatively, Precision Diagnostics staff will also, upon request and where possible, enlarge printed materials for visually impaired persons.</li>
-          <br>  <li> For Persons With Speech Impairments: TTY support and computers are available to facilitate communication concerning program services and benefits, waivers of rights, and consent to treatment forms.</li>
+            <li>Generally: Precision Diagnostics will take such steps as are necessary to ensure that qualified persons
+              with disabilities, including those with impaired sensory or speaking skills, receive effective notice
+              concerning benefits or services or written material concerning waivers of rights or consent to treatment.
+              All aids needed to provide this notice are provided without cost to the person being served.</li>
+            <br>
+            <li>For Persons With Hearing Impairments: Qualified sign-language interpreter for persons who are
+              deaf/hearing impaired and who use sign- language as their primary means of communication, the following
+              procedure has been developed and resources identified for obtaining the services of a qualified
+              sign-language interpreter to communicate both verbal and written information:</li>
+            <br>
+            <ul>
+              <li> Precision Diagnostics will utilize a local Sign Language Interpreting Service </li>
+              <li> Teletypewriter (TTY): A TTY is an electronic device for text communication over a telephone line,
+                which transmits texts live, via a telephone line, to a compatible device. Precision Diagnostics
+                provides TTY services if necessary to assist persons with hearing impediments. </li>
+            </ul>
+            <br>
+            <li> For Persons With Visual Impairments: Upon request, Precision Diagnostics staff will communicate the
+              content of written materials concerning benefits, services, waivers of rights, and consent to treatment
+              forms by reading them out loud to visually impaired persons. Alternatively, Precision Diagnostics staff
+              will also, upon request and where possible, enlarge printed materials for visually impaired persons.</li>
+            <br>
+            <li> For Persons With Speech Impairments: TTY support and computers are available to facilitate
+              communication concerning program services and benefits, waivers of rights, and consent to treatment
+              forms.</li>
           </ol>
           <h5> </h5>
           <p> </p>
@@ -144,11 +186,15 @@
         </div>
         <button class="collapsible">Open Section 2</button>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
         <button class="collapsible">Open Section 3</button>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
 
 
@@ -159,7 +205,7 @@
 
 
 
-    </main>
+  </main>
 
 
   <!--Footer-->
@@ -215,7 +261,8 @@
               <div class="col1"><a href="../pages/privacy.html" class="card-link">Privacy & Notice</a></div>
               <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived Reports</a></div>
               <div class="col1"><a href="../pages/careers.html" class="card-link">Careers</a></div>
-              <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Customer Satisfaction Survey</a></div>
+              <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Customer
+                  Satisfaction Survey</a></div>
             </div>
           </div>
           <!--End Section 2-->

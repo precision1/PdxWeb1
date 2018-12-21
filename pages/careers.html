@@ -11,7 +11,7 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/careers.css">
@@ -34,6 +34,7 @@
         <header>
 
             <!-- Navbar -->
+            <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
                 <a class="navbar-brand" href="../pages/index.html"><img id="main-logo" src="../assets/images/Logo.svg"
                         alt="Kiwi standing on oval"></a>
@@ -48,34 +49,30 @@
                         <a class="nav-item nav-link aboutus" href="../pages/about.html">About Us</a>
                         <a class="nav-item nav-link" href="../pages/contact.html">Contact</a>
                         <a class="nav-item nav-link" href="../pages/careers.html">Careers</a>
-                        <button id="storeBtn"> <a class="nav-item nav-link" href="#">Store</a></button>
-                        <!-- The Modal -->
-                        <div id="storeModal" class="storemodal">
-
-                            <!-- Modal content -->
-                            <div class="storemodal-content">
-                                <span class="storeclose">&times;</span>
-                                <p class="index-modal-title">Please navigate to your personalized store by choosing one
-                                    of the two
-                                    options. </p>
-                                <div class="modal-buttons-index">
-                                    <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeClientST.html">Client
-                                            / Specimen Technician</a> </button>
-                                    <button class="index-modal-btn-store"> <a class="client-portal-modal" href="../pages/storeRep.html">Sales
-                                            Representative</a> </button>
-                                </div>
+                        <!--Store Drop Down Menu-->
+                        <div class="dropdown">
+                            <button class="dropbtn">Store</button>
+                            <div class="dropdown-content">
+                                <a href="../pages/storeClientST.html">Client/Specimen Technician</a>
+                                <a href="../pages/storeRep.html">Sales Representative</a>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
 
-                <button id="homeBtn"> <a class="client-portal" href="#">Client Portal</a> </button>
+                <!-- The Modal - Client Portal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn1">Client Portal</button>
+
                 <!-- The Modal -->
-                <div id="homeModal" class="hmemodal">
+                <div id="myModal" class="modal">
 
                     <!-- Modal content -->
-                    <div class="home-modal-content">
-                        <span class="homeclose">&times;</span>
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
                         <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two
                             options.</p>
                         <div class="modal-buttons-index">
@@ -86,112 +83,109 @@
                             </button>
                         </div>
                     </div>
-
                 </div>
-
-
             </nav>
 
         </header>
-        <main>
+        <!--/Navbar-->
 
-            <!--Jumbotron-->
-            <!-- <div class="jumbotron" >  -->
-            <image src="../assets/images/home/group.jpg" class="contact-image" style="width:100%; height:100%;"></image>
-            <!-- <div class="sp-container">
+        <!--Jumbotron-->
+        <!-- <div class="jumbotron" >  -->
+        <image src="../assets/images/home/group.jpg" class="contact-image" style="width:100%; height:100%;"></image>
+        <!-- <div class="sp-container">
                 <div class="sp-content">
                     <div class="sp-globe"></div>
                     <h2 class="frame-1">Careers</h2>
                 </div> 
             </div>  -->
-            <!-- </div> 
+        <!-- </div> 
             <!--/Jumbotron-->
 
-            <!--Scroll Button-->
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
-            <!--/Scroll Button-->
+        <!--Scroll Button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
+        <!--/Scroll Button-->
 
-            <!--Company Benefits-->
-            <div class="pagecontainer">
-                <div class="headerimagecontainer">
-                    <div class="headercontent">
-                        <h1>Do what you love everyday.</h1>
-                        <p style="color:#2e6da4">Want to join the PrecisionDxLabs team? Check out the listings below </span>.</p>
-                        <a href="https://precisiondx.zhire-zuman.com/">View job openings</a>
-                    </div>
+        <!--Company Benefits-->
+        <div class="pagecontainer">
+            <div class="headerimagecontainer">
+                <div class="headercontent">
+                    <h1>Do what you love everyday.</h1>
+                    <p style="color:#2e6da4">Want to join the PrecisionDxLabs team? Check out the listings below </span>.</p>
+                    <a href="https://precisiondx.zhire-zuman.com/">View job openings</a>
                 </div>
-                <div class="benefitscontainer">
-                    <h2>Benefits</h2>
-                    <ul>
-                        <li>
-                            <i class="fas fa-briefcase-medical"></i>
-                            <h3>competitive Insurance</h3>
-                            <p>We provide health, dental and vision insurance options.</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-plane"></i>
-                            <h3>paid time off</h3>
-                            <p>We believe that if you work hard, you get to play hard too.</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-piggy-bank"></i>
-                            <h3>retirement options</h3>
-                            <p>We care about your retirement and give you the freedom to customize your 401(k) options.</p>
-                        </li>
-                    </ul>
-                    <ul id="ul2">
-                        <li>
-                            <i class="fas fa-coffee"></i>
-                            <h3 id="bottom-adjustment">coffee & tea bar</h3>
-                            <p>Get the juices flowing every morning with complimentary coffee and tea.</p>
-                        </li>
-                        <li>
-                                <i class="fas fa-users"></i>
-                                <h3 id="bottom-adjustment">company culture</h3>
-                                <p>We foster a culture that promotes employee development and internal movement. </p>
-                            </li>
-                        <li>
-                            <i class="fas fa-home"></i>
-                            <h3 id="bottom-adjustment">community</h3>
-                            <p>We host employee appreciation events, and an awesome wellness program.</p>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="benefitscontainer">
+                <h2>Benefits</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h3>competitive Insurance</h3>
+                        <p>We provide health, dental and vision insurance options.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-plane"></i>
+                        <h3>paid time off</h3>
+                        <p>We believe that if you work hard, you get to play hard too.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-piggy-bank"></i>
+                        <h3>retirement options</h3>
+                        <p>We care about your retirement and give you the freedom to customize your 401(k) options.</p>
+                    </li>
+                </ul>
+                <ul id="ul2">
+                    <li>
+                        <i class="fas fa-coffee"></i>
+                        <h3 id="bottom-adjustment">coffee & tea bar</h3>
+                        <p>Get the juices flowing every morning with complimentary coffee and tea.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-users"></i>
+                        <h3 id="bottom-adjustment">company culture</h3>
+                        <p>We foster a culture that promotes employee development and internal movement. </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <h3 id="bottom-adjustment">community</h3>
+                        <p>We host employee appreciation events, and an awesome wellness program.</p>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="ribbons-total">
-                    <aside class="ribbons"><a>VIEW SD OFFICE</a></aside>
-                </div>
+            <div class="ribbons-total">
+                <aside class="ribbons"><a>VIEW SD OFFICE</a></aside>
+            </div>
 
-             <!--Carousel-->
-             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
+            <!--Carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
                         <img class="d-block w-100" src="../assets/images/lab-images/IMG_2281.jpg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../assets/images/lab-images/office.jpg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../assets/images/lab-images/IMG_2393.jpg" alt="Third slide">
-                      </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-             <!--/Carousel-->
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../assets/images/lab-images/office.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../assets/images/lab-images/IMG_2393.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--/Carousel-->
 
-                <!-- <div class="current-openings" id="joblistings">
+            <!-- <div class="current-openings" id="joblistings">
                     <h2>CURRENT OPENINGS</h2>
                 </div>
                 <div class="job-labels">
@@ -214,123 +208,126 @@
             <!--/Company Benefits-->
 
 
-        </main>
+            </main>
 
-        <!--Footer-->
-        <div class="parallax2">
-            <div class="footercard">
-                <!-- <div class="footer-container"> -->
-                <!--Top Footer-->
-                <div class="lookWrap">
-                    <div id="look">
-                        <!--Section 1-->
-                        <div class="section">
-                            <!--Logo-->
-                            <img id="main-logo" src="../assets/images/Logo.svg"></img>
-                            <br>
-                            <!--Get in touch form-->
-                            <div class="container-form">
-                                <h3 style="margin-top:10px;">Get In Touch Today</h3>
-                                <!-- <h4>__________________</h4> -->
-
-                                <form method="post" name="myemailform" action="form-to-email.php">
-
-
-
-                                    Name: <input type="text" name="name">
-
-                                    <br>
-
-                                    Email: <input type="text" name="email">
-
-                                    <br>
-
-                                    Enter your message: <textarea name="message"></textarea>
-
-
-                                    <br>
-                                    <input type="submit" value="Send Form">
-
-                                </form>
-                            </div>
-                        </div>
-
-                        <!--End Section 1-->
-                        <!--Section 2-->
-                        <div class="section">
-                            <!--Menu-->
-                            <div class="container-links" style="margin-left:100px; font-size:9pt;">
-                                <h5>Menu</h5>
-                                <div class="w-100"></div>
-                                <div class="col1"><a href="#" class="card-link">Services</a></div>
-                                <div class="col1"><a href="#" class="card-link">Store</a></div>
-                                <div class="w-100"></div>
-                                <div class="col1"><a href="#" class="card-link">Privacy & Notice</a></div>
-                                <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
-                                        Reports</a></div>
-                                <div class="col1"><a href="#" class="card-link">Careers</a></div>
-                                <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Feedback</a></div>
-                            </div>
-                        </div>
-                        <!--End Section 2-->
-                        <!--Section 3-->
-                        <div class="section">
-                            <!--Find Us-->
-                            <h5>Find Us</h5>
-                            <div class="find-us" style=" font-size:9pt;">
-                                <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
-                                Diego, CA 92121
+            <!--Footer-->
+            <div class="parallax2">
+                <div class="footercard">
+                    <!-- <div class="footer-container"> -->
+                    <!--Top Footer-->
+                    <div class="lookWrap">
+                        <div id="look">
+                            <!--Section 1-->
+                            <div class="section">
+                                <!--Logo-->
+                                <img id="main-logo" src="../assets/images/Logo.svg"></img>
                                 <br>
-                                <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N
-                                103,
-                                Dartmouth, MA 02747
+                                <!--Get in touch form-->
+                                <div class="container-form">
+                                    <h3 style="margin-top:10px;">Get In Touch Today</h3>
+                                    <!-- <h4>__________________</h4> -->
+
+                                    <form method="post" name="myemailform" action="form-to-email.php">
+
+
+
+                                        Name: <input type="text" name="name">
+
+                                        <br>
+
+                                        Email: <input type="text" name="email">
+
+                                        <br>
+
+                                        Enter your message: <textarea name="message"></textarea>
+
+
+                                        <br>
+                                        <input type="submit" value="Send Form">
+
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <!--End Section 3-->
-                        <!--Section 4-->
-                        <div class="section">
-                            <!---Lets Talk-->
-                            <div class="lets-talk">
-                                <h5>Lets Talk</h5>
-                                <div class="lets-talk" style=" font-size:9pt;">
-                                    <i class="fas fa-phone"></i> 800.635.6901
+
+                            <!--End Section 1-->
+                            <!--Section 2-->
+                            <div class="section">
+                                <!--Menu-->
+                                <div class="container-links" style="margin-left:100px; font-size:9pt;">
+                                    <h5>Menu</h5>
+                                    <div class="w-100"></div>
+                                    <div class="col1"><a href="#" class="card-link">Services</a></div>
+                                    <div class="col1"><a href="#" class="card-link">Store</a></div>
+                                    <div class="w-100"></div>
+                                    <div class="col1"><a href="#" class="card-link">Privacy & Notice</a></div>
+                                    <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
+                                            Reports</a></div>
+                                    <div class="col1"><a href="#" class="card-link">Careers</a></div>
+                                    <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Feedback</a></div>
+                                </div>
+                            </div>
+                            <!--End Section 2-->
+                            <!--Section 3-->
+                            <div class="section">
+                                <!--Find Us-->
+                                <h5>Find Us</h5>
+                                <div class="find-us" style=" font-size:9pt;">
+                                    <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd.,
+                                    San
+                                    Diego, CA 92121
                                     <br>
-                                    <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
+                                    <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite
+                                    N
+                                    103,
+                                    Dartmouth, MA 02747
                                 </div>
                             </div>
+                            <!--End Section 3-->
+                            <!--Section 4-->
+                            <div class="section">
+                                <!---Lets Talk-->
+                                <div class="lets-talk">
+                                    <h5>Lets Talk</h5>
+                                    <div class="lets-talk" style=" font-size:9pt;">
+                                        <i class="fas fa-phone"></i> 800.635.6901
+                                        <br>
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Section 4-->
+
+                            <!--Bottom of Footer-->
+
+
+                            <div class="bottom-footer">
+                                <!---Copyright-->
+                                <div class="section2">
+                                    <div class="copyright-container">
+                                        <div class="" style="width:100%; margin-left:350px;">©2018 Precision
+                                            Diagnostics.
+                                            All
+                                            rights
+                                            reserved.</div>
+                                    </div>
+                                </div>
+                                <!--Social Media-->
+                                <div class="section3">
+                                    <div class="media-container">
+                                        <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f"
+                                            id="icon"></a>
+                                        <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin"
+                                            id="icon"></a>
+                                        <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End bottom footer-->
                         </div>
-                        <!--End Section 4-->
-
-                        <!--Bottom of Footer-->
-
-
-                        <div class="bottom-footer">
-                            <!---Copyright-->
-                            <div class="section2">
-                                <div class="copyright-container">
-                                    <div class="" style="width:100%; margin-left:350px;">©2018 Precision Diagnostics.
-                                        All
-                                        rights
-                                        reserved.</div>
-                                </div>
-                            </div>
-                            <!--Social Media-->
-                            <div class="section3">
-                                <div class="media-container">
-                                    <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f"
-                                        id="icon"></a>
-                                    <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin"
-                                        id="icon"></a>
-                                    <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End bottom footer-->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!--/Footer-->
@@ -344,19 +341,23 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    
+
     <!-- JavaScript -->
     <script src="../js/careers.js"></script>
     <script src="../js/topScroll.js"></script>
+    <script src="../js/index.js"></script>
 
 </body>
 
