@@ -81,63 +81,57 @@ window.onclick = function (event) {
 
 }
 
-    //////////////////////////////// END Modal//////////////////////////////////
+//////////////////////////////// END Modal//////////////////////////////////
+
+////////////////////Shrinking Navbar////////////
+jQuery(document).ready(function ($) {
+
+    // call resizeHeader() onload if not home page
+    if (window.location.pathname !== '/') {
+        window.onload = resizeHeader()
+    }
+
+    //resize header func
+    function resizeHeader() {
+        window.addEventListener('scroll', function () {
+
+            var distanceY = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+
+            nav = document.querySelector(".navcustom")
+
+            if (distanceY) {
+
+                console.log('scrolled')
+
+                nav.classList.add("smallerNav")
+            } else {
+                if (nav.classList.contains("smallerNav")) {
+
+                    console.log('back to top')
+
+                    nav.classList.remove("smallerNav")
+                }
+            }
+        })
+    }
+
+})
+
+//////////////////End Shrinking Navbar/////////////
 
 
+////////////////////////////Precision Analytics Charts and Graphs/////////////////////
+var mySwiper = new Swiper(".swiper-container", {
+    direction: "vertical",
+    loop: true,
+    pagination: ".swiper-pagination",
+    grabCursor: true,
+    speed: 1000,
+    paginationClickable: true,
+    parallax: true,
+    autoplay: false,
+    effect: "slide",
+    mousewheelControl: 1
+});
 
-
-
-    // ////////////// Animated textRotate ///////////////
-    // const title = document.querySelector(".title");
-    // let index = 0;
-
-    // const rotatingAdjectives = [
-    //   { word: "clinically actionable data", link: "" },
-    //   { word: "insightful analytics", link: "" },
-
-    // ];
-
-    // const newMarkup = word => {
-    //   const newMarkup = document.createElement("a");
-
-    //   newMarkup.setAttribute("href", word.link);
-    //   newMarkup.classList.add("emphasized");
-    //   newMarkup.innerHTML = word.word;
-
-    //   return newMarkup;
-    // };
-
-    // const hideShowWord = () => {
-    //   title.classList.toggle('fade-in');
-    // }
-
-    // const iterateWords = () => {
-    //   const emphasizedWord = document.querySelector(".emphasized");
-
-    //   index = index === rotatingAdjectives.length - 1 ? 0 : ++index;
-
-    //   title.replaceChild(newMarkup(rotatingAdjectives[index]), emphasizedWord);
-    //   title.classList.add('fade-in');
-
-    //   setTimeout(hideShowWord, 3500);
-    //   setTimeout(iterateWords, 4000);
-    // };
-
-    // iterateWords();
-
-
-    ////////////////////////////Precision Analytics Charts and Graphs/////////////////////
-    var mySwiper = new Swiper(".swiper-container", {
-        direction: "vertical",
-        loop: true,
-        pagination: ".swiper-pagination",
-        grabCursor: true,
-        speed: 1000,
-        paginationClickable: true,
-        parallax: true,
-        autoplay: false,
-        effect: "slide",
-        mousewheelControl: 1
-      });
-      
    ////////////////////////End Precision Analytics Charts and Graphs//////////////////

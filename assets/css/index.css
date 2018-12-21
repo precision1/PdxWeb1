@@ -129,7 +129,7 @@ a.client-portal-modal{
 /* nav bar css*/
 .navcustom{
   background-color:black !important;
-  padding:0;
+ 
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -1690,3 +1690,19 @@ button.swiper-pagination-bullet {
   }
 }
 /*/////////////////////////////////////End Precision Analytics Charts and Graphs///////*/
+/*//////////////////////////////////Shrinking Navbar/////////////////////*/
+
+/* nav bar css*/
+.navcustom {
+  background-color:black !important;
+  width: 100%;
+  padding:10px;
+  position: fixed;
+}
+
+/* on scroll */
+.smallerNav  *{
+  padding: 5px !important;
+ 
+}
+/*/////////////////////////////End Shrinking Navbar
