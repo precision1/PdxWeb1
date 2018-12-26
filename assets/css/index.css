@@ -303,36 +303,70 @@ main{
 
 .carousel-container-home{
   width:100%;
-  height:500px;
-  background-color: #0D1B2B;
+  height:auto;
+
   display: flex;
 }
 
 .card-left{
   width:50%;
   height:auto;
-  background-color:yellow;
   float: left;
+}
+
+.jumbotron-fluid-home{
+  padding-bottom: -25px;
+  margin-bottom: 0;
+}
+
+.jumbotron-data-home{
+  padding:5rem;
+  width:100%;
+  height:100%;
+  margin-bottom: 0;
+  background-color: white;
+  margin-top:5%;
+
 }
 
 .card-right{
   width:50%;
-  height:auto;
-  background-color:blue;
+  height:100%;
   float: right;
-   background-image: url('../assets/images/home/analytics-data.jpg');
-
-
-
 }
 
-.card-right-img{
+
+
+.carousel-home-container{
+  width:50%;
+  height:100%;
+  float: right;
+
+  display:flex;
+  position:relative;
+}
+
+.slide{
+margin: 0 auto;
+}
+
+/*  .carousel-inner{
   background: black;
   margin: 0 auto;
   object-fit: cover;
   width:100%;
   height:100%;
+} */
+
+.carousel-item-home{
+  background: black;
+  margin: 0 auto;
+  object-fit: fill;
+  width:100%;
+  height:100%;
+
 }
+
 
 
 
@@ -1029,16 +1063,3 @@ Home Slider
 
 } */
 /*/////////////////////////////End Shrinking Navbar//////////*/
-
-.jumbotron-fluid-home{
-  padding-bottom: -25px;
-  margin-bottom: 0;
-}
-
-.jumbotron-data-home{
-  padding:5rem;
-  width:100%;
-  height:100%;
-  margin-bottom: 0;
-  background-color: white;
-}
