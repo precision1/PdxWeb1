@@ -21,7 +21,7 @@ body{
 }
 
 .card{
-    box-shadow: 12px 12px 2px 1px darkgray;
+  /*  box-shadow: 12px 12px 2px 1px darkgray;  */
 }
 
 .card-last1{
