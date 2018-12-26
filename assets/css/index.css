@@ -220,7 +220,7 @@ a.client-portal-modal{
 /* nav bar css*/
 .navcustom{
   background-color:black !important;
- 
+
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -304,22 +304,30 @@ main{
 }
 
 /*///////////////Splash Page //////////////*/
-.jumbotron{
+/* .jumbotron{
   position: relative;
-  z-index:-101;
-  background:	#181818;
+  /* z-index:-101; */
+/*  background:	#181818;
   margin:0;
+} */
+
+video{
+  display:block;
+  width:100vw;
+  height:100vh;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 #video-background {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-    width:100%;
-    height:600px;
+  /* width:100%;
+  object-fit: cover;
+  height:100%;
+  margin:0 auto;
+  overflow: hidden; */
+object-fit: fill;
+overflow: hidden;
+
 }
 
 
@@ -947,7 +955,6 @@ body {
 .page-wrap {
   width: 100%;
   height: 100vh;
-  display: flex;
   z-index:0;
   justify-content: center;
   align-items: center;
@@ -1808,8 +1815,6 @@ button.swiper-pagination-bullet {
 /* on scroll */
 /* .smallerNav  *{
   padding: 5px !important;
- 
+
 } */
 /*/////////////////////////////End Shrinking Navbar//////////*/
-
-

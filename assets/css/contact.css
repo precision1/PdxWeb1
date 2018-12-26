@@ -1,7 +1,6 @@
 /*/////////////Splash Page//////////////*/
 
 .contact-image{
-
     background: black;
     margin: 0 auto;
     object-fit: cover;
@@ -676,7 +675,7 @@ a.client-portal-modal{
 /* nav bar css*/
 .navcustom{
   background-color:black !important;
- 
+
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -759,5 +758,3 @@ h2.title-home{
 main{
   padding-top:80px;
 }
-
-
