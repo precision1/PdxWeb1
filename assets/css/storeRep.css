@@ -471,7 +471,7 @@ main{
       background: black;
       -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
       clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
-
+     
     }
 
     .section{
