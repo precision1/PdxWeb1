@@ -323,7 +323,7 @@ a.client-portal-modal{
 /* nav bar css*/
 .navcustom{
   background-color:black !important;
-
+  padding:0 !important;
 }
 
 .navbar-light .navbar-nav .nav-link{
