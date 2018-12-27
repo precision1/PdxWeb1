@@ -325,7 +325,7 @@ main{
   height:100%;
   margin-bottom: 0;
   background-color: white;
-  margin-top:5%;
+  margin-top:10%;
 
 }
 
@@ -372,6 +372,17 @@ margin: 0 auto;
 
 /*   END OF CAROUSEL   */
 
+.card-body.card-body-principles{
+  padding:2rem;
+}
+
+.card-body{
+  width:100%;
+  height:auto;
+  padding:0;
+
+}
+
 
 /*///////////////Splash Page //////////////*/
 /* .jumbotron{
@@ -399,7 +410,23 @@ object-fit: fill;
 overflow: hidden;
 }
 
+.card1-image{
+  float:right;
+  width:50%;
+  height:100%;
 
+
+}
+
+.card1-principles{
+  float:left;
+  width:50%;
+  height:auto;
+}
+
+.h2.principles-index{
+  text-align: center;
+}
 
 
 
@@ -409,7 +436,9 @@ overflow: hidden;
 
 .card-group{
   width:100%;
-  height:480px;
+  height:auto;
+
+  display: flex;
 }
 
 .col{
@@ -422,9 +451,9 @@ overflow: hidden;
 }
 
 .card-img-top{
-  width:90%;
-  height:300px;
-  margin-left:50px;
+  width:100%;
+  height:100%;
+  padding:0;
   margin-top:0;
 
 }
