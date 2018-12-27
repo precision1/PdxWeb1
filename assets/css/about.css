@@ -545,14 +545,7 @@ overflow: hidden;
 
 /*////////////////////Counter/////////////////////////////*/
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
-/* body {
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial,   sans-serif;
-  font-size: 13px;
-  color: #666;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  margin: 0;
-} */
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -560,15 +553,7 @@ overflow: hidden;
   box-sizing: border-box;
 }
 
-/* body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  direction: ltr;
-} */
-
 .sectionClass {
-  /* padding: 20px 0px 50px 0px; */
   position: relative;
   display: block;
 }
