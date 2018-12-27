@@ -333,6 +333,89 @@ main{
   text-align:left;
 }
 
+.home-btn{
+  margin:auto;
+  display:block;
+  width: 150px;
+  margin-top:20px;
+  border-radius: 15px;
+}
+
+.core-principles{
+  max-width:100%;
+  max-height:100%;
+}
+
+
+.card-deck{
+    margin:auto;
+
+    width: 50%;
+    height:auto;
+}
+
+a{
+     text-shadow: 2px 2px 4px #000000; 
+    color:white;
+}
+
+.services-main-paragraph{
+  text-align:center;
+}
+
+.services-images{
+
+  width:50%;
+  height:auto;
+  background-color:blue;
+
+}
+
+
+
+.services-card-container{
+  display:flex;
+}
+.services-container-card{
+  display:flex;
+}
+
+
+.card{
+
+  margin-top:25px;
+
+}
+.services-images{
+  max-width:100%;
+  max-height:100%;
+
+
+}
+
+.card-body{
+  float:left;
+}
+
+.services-sub-title{
+  text-align:center;
+}
+
+.subtitle-services{
+  text-align:left;
+
+}
+
+.no-button{
+  background-color:black;
+  border-color: transparent;
+  position: absolute;
+  width: 100%;
+  border-radius: 0;
+
+}
+
+
 
 
 /*Footer*/
