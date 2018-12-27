@@ -333,139 +333,150 @@ main{
   text-align:left;
 }
 
-.home-btn{
-  margin:auto;
-  display:block;
-  width: 150px;
-  margin-top:20px;
-  border-radius: 15px;
-}
-
-.core-principles{
-  max-width:100%;
-  max-height:100%;
-}
-
-.row1{
-    margin-top: 75px;
-    margin-bottom:25px;
-}
-
-.col{
-    margin-top: 15px;
-}
-
-.col1{
-    margin-top: 20px;
-
-}
 
 
-.col2{
-    margin-right: 10px;
-    padding: 10px;;
-}
+/*Footer*/
+.footercard{
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
+   height:100%;
 
-.media-container{
-    width: 30%;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
+  }
 
-.copyright-container{
+  .footer-container{
+  margin-left: 100px;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  /*Footer Contact form*/
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+
+  .container-form{
+    width:300px !important;
+    /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+    /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
+    background:transparent;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1; /* Firefox */
+  }
+
+
+  input[type=submit] {
+    /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
+    color: white;
+    padding: 3px 100px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+    background:transparent;
+
+  }
+
+  /* input[type=submit1]:hover {
+    background-color: #45a049;
+  } */
+
+  .core-principles{
+    max-width:100%;
+    max-height:100%;
+  }
+
+
+  .copyright-container{
+      width: 100%;
+      text-align: center;
+  }
+
+
+  a {
+      /* text-shadow: 2px 2px 4px #000000; */
+      color:white;
+
+  }
+
+  .lookWrap{
+    overflow:hidden;
+    float: left;
+    width: 100%;
+    height:auto;
+    background: black;
+    -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
+    clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
+
+  }
+
+  .section{
+    /* overflow: hidden; */
+    float: left;
+    display: inline;
+    width: 160px;
+    margin: 15px 25px 15px 25px;
+    font: 5pt;
+    line-height: 1.6em;
+    margin-top:230px;
+    margin-left: 75px;
+    margin-right:0;
+  }
+
+  .card-link .find-us .lets-talk {
+    font-size: 5pt;
+  }
+  .section a{
+    display: block;
+  }
+
+  .bottom-footer {
+    margin:0;
     width: 100%;
     text-align: center;
-}
-
-.col3{
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.container-links{
-    float: right;
-    margin-top:0;
-    margin-right:250px;
-}
-
-.card-deck{
-    margin:auto;
-
-    width: 50%;
-    height:auto;
-}
-
-a{
-    /* text-shadow: 2px 2px 4px #000000; */
-    color:white;
-}
-
-.services-main-paragraph{
-  text-align:center;
-}
-
-.services-images{
-
-  width:50%;
-  height:auto;
-  background-color:blue;
-
-}
+    clear: both;
+    font: 10pt;
+    line-height: 2em;
+    margin-right:0;
+    margin-bottom:0;
+    font-size: 10pt;
+  }
 
 
+  .section2 *{
+    float: left;
+    width: 300px;
+    font: 5pt;
+    line-height: 1.6em;
+    margin-left:200px;
+    margin-right:100px;
+    display: inline;
 
-.services-card-container{
-  display:flex;
-}
-.services-container-card{
-  display:flex;
-}
+  }
 
+  .section3 *{
+    margin-left: 15px;
 
-.card{
+  }
 
-  margin-top:25px;
+  .find-us .lets-talk{
+    margin-top:80px !important;
+  }
 
-}
-.services-images{
-  max-width:100%;
-  max-height:100%;
+  h4{
+    text-align: left;
+  }
 
-
-}
-
-.card-body{
-  float:left;
-}
-
-.services-sub-title{
-  text-align:center;
-}
-
-.subtitle-services{
-  text-align:left;
-
-}
-
-.no-button{
-  background-color:black;
-  border-color: transparent;
-  position: absolute;
-  width: 100%;
-  border-radius: 0;
-
-}
-
-
-
-.lookWrap{
-  overflow:hidden;
-  float: left;
-  width: 100%;
-  height:auto;
-  /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%); */
-  -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
-  clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
-  background:black;
-}
