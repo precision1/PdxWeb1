@@ -1,11 +1,11 @@
 .jumbotron {
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     width:100%;
-  
-  
-  
-    
+
+
+
+
   }
 
   .footercard{
@@ -25,58 +25,58 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-  
-  
+
+
   .row1{
       margin-top: 75px;
       margin-bottom:25px;
   }
-  
+
   .col{
       margin-top: 15px;
   }
-  
+
   .col1{
       margin-top: 20px;
-    
+
   }
-  
-  
+
+
   .col2{
       margin-right: 10px;
       padding: 10px;;
   }
-  
+
   .copyright-container{
       width: 100%;
       text-align: center;
       margin:0;
   }
-  
-  
+
+
   .container-links{
       float: right;
       margin-top:0;
       /* margin-right:250px; */
       width:100%;
-  } 
-  
+  }
+
   .card-deck{
       margin-left: 50px;
       margin-right: 50px;
       margin-top: 100px;
       margin-bottom: 100px;
   }
-  
+
   a{
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
   }
-  
+
   body{
       background-color:lightgray;
   }
-  
+
   .card{
       box-shadow: 12px 12px 2px 1px darkgray;
   }
@@ -96,7 +96,7 @@
     padding: 5px;
     border-radius: 4px;
   }
-  
+
   #myBtn:hover {
     background-color: lightgray;
   }
@@ -176,7 +176,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
 }
 
 /* The Close Button */
@@ -323,7 +323,7 @@ a.client-portal-modal{
 /* nav bar css*/
 .navcustom{
   background-color:black !important;
- 
+
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -425,11 +425,11 @@ main{
     padding: 5px;
     border-radius: 4px;
   }
-  
+
   #myBtn:hover {
     background-color: lightgray;
   }
-  
+
   /*//////////////////Footer////////////////////////*/
 .footercard{
   width: 100%;
@@ -438,21 +438,21 @@ main{
   font-size: 15px;
   background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
    height:100%;
-  
-  
+
+
   }
-  
+
   .footer-container{
   margin-left: 100px;
   color:white;
   font-family: Arial, Helvetica, sans-serif;
-  
+
   }
-  
+
   /*Footer Contact form*/
   body {font-family: Arial, Helvetica, sans-serif;}
   * {box-sizing: border-box;}
-  
+
   .container-form{
     width:300px !important;
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
@@ -470,8 +470,8 @@ main{
     color: #ccc;
     opacity: 1; /* Firefox */
   }
-  
-  
+
+
   input[type=submit] {
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     color: white;
@@ -483,31 +483,31 @@ main{
     border: 1px solid #ccc;
     margin-left: 15px;
     background:transparent;
-  
+
   }
-  
+
   /* input[type=submit1]:hover {
     background-color: #45a049;
   } */
-  
+
   .core-principles{
     max-width:100%;
     max-height:100%;
   }
-  
-  
+
+
   .copyright-container{
       width: 100%;
       text-align: center;
   }
-  
-  
+
+
   a {
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
-  
+
   }
-  
+
   .lookWrap{
     overflow:hidden;
     float: left;
@@ -517,9 +517,9 @@ main{
     -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
     clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
     background:black;
-  
+
   }
-  
+
   .section{
     /* overflow: hidden; */
     float: left;
@@ -532,10 +532,10 @@ main{
     margin-left: 140px;
     margin-right:0;
   }
-  
+
   .container-links{
     width:100%;
-  
+
   }
   .card-link .find-us .lets-talk {
     font-size: 5pt;
@@ -543,7 +543,7 @@ main{
   .section a{
     display: block;
   }
-  
+
   .bottom-footer {
     margin:0;
     width: 100%;
@@ -555,8 +555,8 @@ main{
     margin-bottom:0;
     font-size: 10pt;
   }
-  
-  
+
+
   .section2 *{
     float: left;
     width: 300px;
@@ -565,22 +565,22 @@ main{
     margin-left:200px;
     margin-right:100px;
     display: inline;
-  
+
   }
-  
+
   .section3 *{
     margin-left: 15px;
-  
+
   }
-  
+
   .find-us .lets-talk{
     margin-top:80px !important;
   }
-  
+
   h4{
     text-align: left;
   }
-  
+
 /*//////Store Drop Down Menu/////*/
 /* Dropdown Button */
 .dropbtn {
@@ -887,12 +887,12 @@ main{
   padding-top:80px;
 }
 
-  
+
 /*///////////////////Main Body//////////////////////*/
 .pagecontainer {
     width: 1200px;
     margin: 0 auto;
-  
+
 
   }
   .pagecontainer ul {
@@ -921,7 +921,7 @@ main{
     letter-spacing: 0.075em;
     line-height: 1.25;
     margin-bottom: 50px
-    
+
   }
   .headercontent img {
     margin-top: -15px;
@@ -1204,7 +1204,7 @@ main{
   /*//////////////////////Carousel//////////////*/
   .carousel-item {
       width: 100%;
-      height:400px; 
+      height:400px;
       align-content: center;
   }
 

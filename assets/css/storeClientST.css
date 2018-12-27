@@ -73,7 +73,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
 }
 
 /* The Close Button */
@@ -220,7 +220,7 @@ a.client-portal-modal{
 /* nav bar css*/
 .navcustom{
   background-color:black !important;
- 
+
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -310,42 +310,42 @@ main{
 .jumbotron1 * {
     /* background-image: url("https://i.postimg.cc/jSXdShzn/cart.jpg"); */
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-color:lightgray !important;
-   
+
   }
-  
+
   .card-deck{
       margin-left: 50px;
       margin-right: 50px;
       margin-top: 100px;
       margin-bottom: 100px;
   }
-  
+
   a{
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
   }
-  
+
   body{
       background-color:lightgray;
   }
-  
+
   .card{
       box-shadow: 12px 12px 2px 1px darkgray;
   }
-  
+
   button{
       background-color:rgb(238, 5, 5);
       color:white;
   }
-  
-  
+
+
   button:hover {
       background-color:white;
       color:red;
     }
-  
+
     #myBtn {
       display: none;
       position: fixed;
@@ -361,11 +361,11 @@ main{
       padding: 5px;
       border-radius: 4px;
     }
-    
+
     #myBtn:hover {
       background-color: lightgray;
     }
-  
+
     /*//////////////////Footer////////////////////////*/
   .footercard{
     width: 100%;
@@ -374,20 +374,20 @@ main{
     font-size: 15px;
     background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
      height:100%;
-    
+
     }
-    
+
     .footer-container{
     margin-left: 100px;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
-    
+
     }
-    
+
     /*Footer Contact form*/
     body {font-family: Arial, Helvetica, sans-serif;}
     * {box-sizing: border-box;}
-    
+
     .container-form{
       width:300px !important;
       /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
@@ -405,8 +405,8 @@ main{
       color: #ccc;
       opacity: 1; /* Firefox */
     }
-    
-    
+
+
     input[type=submit] {
       /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
       color: white;
@@ -418,31 +418,31 @@ main{
       border: 1px solid #ccc;
       /* margin-left: 10px; */
       background:transparent;
-    
+
     }
-    
+
     /* input[type=submit1]:hover {
       background-color: #45a049;
     } */
-    
+
     .core-principles{
       max-width:100%;
       max-height:100%;
     }
-    
-    
+
+
     .copyright-container{
         width: 100%;
         text-align: center;
     }
-    
-    
+
+
     a {
         /* text-shadow: 2px 2px 4px #000000; */
         color:white;
-    
+
     }
-    
+
     .lookWrap{
       overflow:hidden;
       float: left;
@@ -452,9 +452,9 @@ main{
       -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
       clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
       background:black;
-    
+
     }
-    
+
     .section{
       /* overflow: hidden; */
       float: left;
@@ -467,14 +467,14 @@ main{
       margin-left: 75px;
       margin-right:0;
     }
-    
+
     .card-link .find-us .lets-talk {
       font-size: 5pt;
     }
     .section a{
       display: block;
     }
-    
+
     .bottom-footer {
       margin:0;
       width: 100%;
@@ -486,8 +486,8 @@ main{
       margin-bottom:0;
       font-size: 10pt;
     }
-    
-    
+
+
     .section2 *{
       float: left;
       width: 300px;
@@ -496,163 +496,163 @@ main{
       margin-left:200px;
       margin-right:100px;
       display: inline;
-    
+
     }
-    
+
     .section3 *{
       margin-left: 15px;
-    
+
     }
-    
+
     .find-us .lets-talk{
       margin-top:80px !important;
     }
-    
+
     h4{
       text-align: left;
     }
-  
+
   .card-deck{
       margin-left: 50px;
       margin-right: 50px;
       margin-top: 100px;
       margin-bottom: 100px;
-     
+
   }
-  
+
   a{
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
   }
-  
-  
+
+
   body{
       background-color:lightgray;
   }
-  
+
   .card{
   /*    box-shadow: 12px 12px 2px 1px darkgray;  */
-         
+
   }
-  
+
   h2,h3,h4,h5,{
       font-size: 15px;
       font-family: Arial, Helvetica, sans-serif;
-  
-  
-  
+
+
+
   }
-  
+
   h6{
       font-size: 35px;
       font-family: Arial, Helvetica, sans-serif;
   }
-  
+
   .contact{
       justify-content: space-between;
-      
-  
-  
+
+
+
   }
-  
+
   .card-body{
       background-color: whitesmoke;
       width:100%;
-  
+
   }
-  
+
   #contact{
       float:right;
       margin-top:50px;
   }
-  
+
   /* .card-body1{
       width:540px;
       height:450px;
   } */
-  
-  
+
+
     @media only screen
   and (min-device-width: 320px) {
     body{
         background-color:lightgray;
     }
-  
+
     iframe {
         width:100%;
         height:100%;
     }
-  
+
   }
-  
-  
+
+
       /*////////Media Queries/////*/
-      
+
       /*
         ##Device = Desktops
         ##Screen = 1281px to higher resolution desktops
       */
-      
+
       @media (min-width: 1281px) {
-        
-        
-        
+
+
+
       }
-      
+
       /*
         ##Device = Laptops, Desktops
         ##Screen = B/w 1025px to 1280px
       */
-      
+
       @media (min-width: 1025px) and (max-width: 1280px) {
-        
-        
-        
+
+
+
       }
-      
+
       /*
         ##Device = Tablets, Ipads (portrait)
         ##Screen = B/w 768px to 1024px
       */
-      
+
       @media (min-width: 768px) and (max-width: 1024px) {
-      
+
         .storemodal-content {
           width: 100%;
           margin:0;
           padding:0;
       }
-      
+
       .navbar-nav .navbar-brand  .nav-item *{
         width: 100%;
         height:100%;
         margin:0;
         padding:0;
-      
-      
+
+
       }
-      
+
       #main-logo #homeBtn *{
       width: 50px;
       height:20px;
       margin:0;
       padding:0;
       }
-      
-      
+
+
       .home-modal-content{
         width:100%;
         margin:0;
         padding:0;
       }
-      
+
       .jumbotron .jumbotron.jumbotron-fluid{
         width:100%;
         height:50%;
         margin:0;
         padding:0;
       }
-      
+
       .card-img-top2 *{
         height:100%;
         width:100%;
@@ -664,14 +664,14 @@ main{
         padding:0;
         margin-top:50px;
       }
-      
+
       .footercard .lookWrap .container-form .section2 .section3 *{
         width:100%;
         height:100%;
         padding:0;
-      
+
       }
-      
+
       #look{
         margin-top:10%;
       }
@@ -681,69 +681,69 @@ main{
         flex-direction: column;
         font-size: 9px;
       }
-      
+
       .media-container{
         display: block;
         flex-direction: row;
-      
+
       }
       form{
         width:100%;
         height:50%;
       }
-      
+
       /* .lets-talk h7 .find-us {
         padding:0;
         margin:0;
         margin-top:-300px;
         margin-bottom:-200px;
       } */
-      
+
       }
-      
+
       /*
         ##Device = Tablets, Ipads (landscape)
         ##Screen = B/w 768px to 1024px
       */
-      
+
       @media (min-width: 768px) and (max-width: 1024px) {
-      
+
         .storemodal-content {
           width: 100%;
           margin:0;
           padding:0;
       }
-      
+
       .navbar-nav .navbar-brand  .nav-item *{
         width: 100%;
         height:100%;
         margin:0;
         padding:0;
-      
-      
+
+
       }
-      
+
       #main-logo #homeBtn *{
       width: 50px;
       height:20px;
       margin:0;
       padding:0;
       }
-      
-      
+
+
       .home-modal-content{
         width:100%;
         margin:0;
         padding:0;
       }
-      
+
       .jumbotron .jumbotron.jumbotron-fluid{
         width:100%;
         height:50%;
         margin:0;
         padding:0;
       }
-      
+
       .card-img-top2 *{
         height:100%;
         width:100%;
@@ -755,14 +755,14 @@ main{
         padding:0;
         margin-top:50px;
       }
-      
+
       .footercard .lookWrap .container-form .section2 .section3 *{
         width:100%;
         height:100%;
         padding:0;
-      
+
       }
-      
+
       /* #look{
         margin-top:10%;
       } */
@@ -772,69 +772,69 @@ main{
         flex-direction: column;
         font-size: 9px;
       }
-      
+
       .media-container{
         display: block;
         flex-direction: row;
-      
+
       }
       form{
         width:100%;
         height:50%;
       }
-      
+
       /* .lets-talk h7 .find-us {
         padding:0;
         margin:0;
         margin-top:-300px;
         margin-bottom:-200px;
       } */
-      
+
       }
       /*
         ##Device = Low Resolution Tablets, Mobiles (Landscape)
         ##Screen = B/w 481px to 767px
       */
-      
+
       @media (min-width: 481px) and (max-width: 767px) {
-      
+
         .storemodal-content {
           width: 100%;
           margin:0;
           padding:0;
       }
-      
+
       .navbar-nav .navbar-brand  .nav-item *{
         width: 100%;
         height:100%;
         margin:0;
         padding:0;
-      
-      
+
+
       }
-      
+
       #main-logo #homeBtn *{
       width: 50px;
       height:20px;
       margin:0;
       padding:0;
       }
-      
-      
+
+
       .home-modal-content{
         width:100%;
         margin:0;
         padding:0;
       }
-      
+
       .jumbotron .jumbotron.jumbotron-fluid{
         width:100%;
         margin:0;
         padding:0;
       }
-      
-      
-      
+
+
+
       .card-img-top2 .card-img-top{
         height:200px;
       }
@@ -844,90 +844,90 @@ main{
         margin:0;
         padding:0;
       }
-      
+
       .footercard .lookWrap .container-form .section2 .section3 *{
         width:100%;
         height:100%;
         margin: -100%;
         padding:0;
-      
+
       }
-      
+
       .copyright-container{
         margin-left:-200px;
         display: block;
         flex-direction: column;
         font-size: 9px;
       }
-      
+
       .media-container{
         display: block;
         flex-direction: row;
-      
+
       }
       form{
         margin-top: 100%;
         width:100%;
         height:50%;
       }
-      
+
       .lets-talk h7 .find-us *{
         padding:0;
         margin:0;
         margin-top:-300px;
         margin-bottom:-200px;
       }
-      
+
       }
-      
+
       /*
         ##Device = Most of the Smartphones Mobiles (Portrait)
         ##Screen = B/w 320px to 479px
       */
-      
+
       @media (min-width: 320px) and (max-width: 480px) {
-      
+
         .storemodal-content {
           width: 100%;
           margin:0;
           padding:0;
       }
-      
+
       .navbar-nav .navbar-brand  .nav-item *{
         width: 100%;
         height:100%;
         margin:0;
         padding:0;
-      
-      
+
+
       }
-      
+
       #main-logo #homeBtn *{
       width: 50px;
       height:20px;
       margin:0;
       padding:0;
       }
-      
-      
+
+
       .home-modal-content{
         width:100%;
         margin:0;
         padding:0;
       }
-      
+
       .jumbotron .jumbotron.jumbotron-fluid{
         width:100%;
         margin:0;
         padding:0;
       }
-      
-      
+
+
       .card-group .card1{
         width:100%;
         height:100%;
       }
-      
+
       .card-img-top{
         margin-top:100px;
       }
@@ -936,9 +936,9 @@ main{
         height:100%;
         margin: -100%;
         padding:0;
-      
+
       }
-      
+
       .copyright-container{
         margin-left:-200px;
         display: block;
@@ -946,13 +946,13 @@ main{
         font-size: 6px;
         margin-bottom: 50px;
       }
-      
+
       .media-container{
         display: block;
         flex-direction: row;
         size: 9px;
         margin-bottom: 50px;
-      
+
       }
       form {
         margin-top: 100%;
@@ -960,8 +960,8 @@ main{
         width:100%;
         height:100%;
       }
-      
-      
+
+
       .lets-talk h7 .find-us *{
         padding:0;
         margin:0;
@@ -969,4 +969,3 @@ main{
         margin-bottom:-200px;
       }
       }
-      
