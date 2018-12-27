@@ -22,7 +22,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body background="../assets/images/lab-images/molecule.jpg">
 
   <!-- Header-->
   <header>
@@ -91,7 +91,7 @@
   <!--Jumbotron-->
   <div class="jumbotron jumbotron-contact">
       <div class="sp-container">
-          <image src="../assets/images/lab-images/Lobby01.jpg" class="contact-image"></image>
+          <image src="../assets/images/about/precisionbuilding.jpg" class="contact-image"></image>
 
           <div class="sp-content">
               <div class="sp-globe"></div>
@@ -101,8 +101,8 @@
   </div>
   <!--/Jumbotron-->
 
-  <!--/Jumbotron-->
-  <div class="jumbotron jumbotron-fluid-about">
+  <!--About-->
+  <div class="jumbotron jumbotron-fluid-about" style="margin:0;">
     <div class="container">
       <h2 class="title-home">Our Purpose Is Simple</h2>
       <p class="lead-hello">_____</p>
@@ -118,29 +118,72 @@
 
   </div>
 
-
+<!----Video------->
   <div class="video-container-about">
     <div class="about-video">
-      <video class="video-about" src="../assets/videos/about/infinitetesttubes.mp4" preload muted autoplay loop>
+      <video class="video-about" src="../assets/videos/about/infinitetesttubes.mp4" preload muted autoplay loop style="width:100%; height:400px;margin:0;">
       </video>
 
     </div>
 
   </div>
 
-  <div class="about-widgets">
-    <div class="container">
-      <h2 class="title-home company-title">Company by the Numbers: Today</h2>
-      <p class="lead-hello">_____</p>
-
+  <!-----Counter----->
+  <div class="sectiontitle">
+    <h3>Company by the Numbers: Today</h3>
+    <span class="headerLine"></span>
+</div>
+<div id="counter">
+<div id="projectFacts" class="sectionClass" style="margin:0;">
+    <div class="fullWidth eight columns" style="margin:0;padding:0;">
+        <div id="counter">
+        <div class="projectFactsWrap" style="margin:0;padding:0;">
+            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                <i class="fa fa-briefcase"></i>
+                <p id="number1" class="number">345</p>
+                <span></span>
+                <p>Employees</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+              <i class="fa fa-flask" aria-hidden="true"></i>
+                <p id="number2" class="number">27,456</p>
+                <span></span>
+                <p>Major/Minor DDI</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                <i class="fa fa-coffee"></i>
+                <p id="number3" class="number">2,810</p>
+                <span></span>
+                <p>Cups of coffee</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <p id="number4" class="number">559,705</p>
+                <span></span>
+                <p>Data Points per Day</p>
+            </div>
+        </div>
     </div>
+    </div>
+</div>
+</div>
 
+
+<!---Images Side by Side-->
+
+<div class="row" style="margin-top:0; margin-bottom:0;">
+    <div class="column">
+      <img src="../assets/images/lab-images/IMG_2583.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../assets/images/lab-images/IMG_2510.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../assets/images/lab-images/IMG_2499.jpg" alt="Mountains" style="width:100%">
+    </div>
   </div>
 
-
-
-
-  <!--About-->
+  <!--/About-->
 
   <!--Scroll Button-->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
@@ -304,6 +347,7 @@
   <!-- JavaScript -->
   <script src="../js/index.js"></script>
   <script src="../js/topScroll.js"></script>
+  <script src="../js/about.js"></script>
 </body>
 
 
