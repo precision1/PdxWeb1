@@ -333,7 +333,7 @@ main{
   }
 
   .card{
-      box-shadow: 12px 12px 2px 1px darkgray;
+    /*  box-shadow: 12px 12px 2px 1px darkgray; */
   }
 
   button{
@@ -969,4 +969,14 @@ main{
         margin-top:-300px;
         margin-bottom:-200px;
       }
+      }
+
+      .button-cart{
+        background-color:#2e6da4;
+        border-radius: 5px;
+        border-style: none;
+        padding-left:25px;
+        padding-right:25px;
+        padding-top:6px;
+        padding-bottom:6px;
       }

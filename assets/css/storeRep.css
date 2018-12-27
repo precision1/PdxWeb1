@@ -27,7 +27,7 @@ body{
 .card-last1{
     width:400px;
     height:520px;
-    box-shadow: 12px 12px 2px 1px darkgray;
+  /*  box-shadow: 12px 12px 2px 1px darkgray; */
     background-color:white;
     margin-top:-100px;
     margin-left:100px ;
@@ -38,7 +38,7 @@ body{
 .card-last2{
     width:400px;
     height:520px;
-    box-shadow: 12px 12px 2px 1px darkgray;
+  /*  box-shadow: 12px 12px 2px 1px darkgray;  */
     background-color:white;
     margin-top: -0px;
     margin-left:100px;
@@ -916,3 +916,11 @@ main{
       margin-bottom:-200px;
     }
     }
+
+.button-cart{
+  background-color:#2e6da4;
+  border-radius: 5px;
+  border-style: none;
+  padding-top:6px;
+  padding-bottom:6px;
+}
