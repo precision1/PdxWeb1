@@ -562,3 +562,8 @@ a{
   h4{
     text-align: left;
   }
+
+
+a.btn.btn-primary{
+  text-shadow: none;
+}
