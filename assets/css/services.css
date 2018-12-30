@@ -572,3 +572,256 @@ a{
 a.btn.btn-primary{
   text-shadow: none;
 }
+
+
+/*/////////////Media Queries////////////
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .storemodal-content {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.navbar-nav .navbar-brand  .nav-item *{
+  width: 100%;
+  height:100%;
+  margin:0;
+  padding:0;
+
+
+}
+
+#main-logo #homeBtn *{
+width: 50px;
+height:20px;
+margin:0;
+padding:0;
+}
+
+
+.home-modal-content{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.jumbotron .jumbotron.jumbotron-fluid{
+  width:100%;
+  height:50%;
+  margin:0;
+  padding:0;
+}
+
+.card-img-top2 *{
+  height:100%;
+  width:100%;
+}
+/* .card-group .card1{
+  width:50%;
+  height:50%;
+  margin:0;
+  padding:0;
+  margin-top:50px;
+} */
+
+.footercard .lookWrap .container-form .section2 .section3 *{
+  width:100%;
+  height:100%;
+  padding:0;
+
+}
+
+/* #look{
+  margin-top:10%;
+} */
+.copyright-container{
+  margin-left:-200px;
+  display: block;
+  flex-direction: column;
+  font-size: 9px;
+}
+
+.media-container{
+  display: block;
+  flex-direction: row;
+
+}
+form{
+  width:100%;
+  height:50%;
+}
+
+/* .lets-talk h7 .find-us {
+  padding:0;
+  margin:0;
+  margin-top:-300px;
+  margin-bottom:-200px;
+} */
+
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .storemodal-content {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.navbar-nav .navbar-brand  .nav-item *{
+  width: 100%;
+  height:100%;
+  margin:0;
+  padding:0;
+
+
+}
+
+#main-logo #homeBtn *{
+width: 50px;
+height:20px;
+margin:0;
+padding:0;
+}
+
+
+.home-modal-content{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.jumbotron .jumbotron.jumbotron-fluid{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+
+
+.card-img-top2 .card-img-top{
+  height:200px;
+}
+
+/* .card-group .card1{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+} */
+
+.footercard .lookWrap .container-form .section2 .section3 *{
+  width:100%;
+  height:100%;
+  margin: -100%;
+  padding:0;
+
+}
+
+.copyright-container{
+  margin-left:-200px;
+  display: block;
+  flex-direction: column;
+  font-size: 9px;
+}
+
+.media-container{
+  display: block;
+  flex-direction: row;
+
+}
+form{
+  margin-top: 100%;
+  width:100%;
+  height:50%;
+}
+
+.lets-talk h7 .find-us *{
+  padding:0;
+  margin:0;
+  margin-top:-300px;
+  margin-bottom:-200px;
+}
+
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .storemodal-content {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.navbar-nav .navbar-brand  .nav-item *{
+  width: 100%;
+  height:100%;
+  margin:0;
+  padding:0;
+
+
+}
+
+#main-logo #homeBtn *{
+width: 50px;
+height:20px;
+margin:0;
+padding:0;
+}
+
+
+.home-modal-content{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.jumbotron .jumbotron.jumbotron-fluid{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+
+.footercard .lookWrap .container-form .section2 .section3 *{
+  width:100%;
+  height:100%;
+  margin: -100%;
+  padding:0;
+
+}
+
+
+
+
+
+form {
+  margin-top:500px;
+  margin-right:100px;
+}
+
+input{
+  width:10px;
+ 
+}
+
+
+
+
+
+/*//////////////End Media Queries///////////*/
+
