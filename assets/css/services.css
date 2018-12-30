@@ -143,7 +143,7 @@ p.index-modal-subtitle{
   border-style: none;
   color: white;
   margin:0 auto;
-  width: 300px;
+  width: 200px;
   height:60px;
 }
 
@@ -355,7 +355,7 @@ main{
 }
 
 a{
-     text-shadow: 2px 2px 4px #000000; 
+     text-shadow: 2px 2px 4px #000000;
     color:white;
 }
 
@@ -562,4 +562,3 @@ a{
   h4{
     text-align: left;
   }
-

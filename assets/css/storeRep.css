@@ -223,7 +223,7 @@ p.index-modal-subtitle{
   border-style: none;
   color: white;
   margin:0 auto;
-  width: 300px;
+  width: 200px;
   height:60px;
 }
 
@@ -471,7 +471,7 @@ main{
       background: black;
       -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
       clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
-     
+
     }
 
     .section{

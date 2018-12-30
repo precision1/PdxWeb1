@@ -246,7 +246,7 @@ p.index-modal-subtitle{
   border-style: none;
   color: white;
   margin:0 auto;
-  width: 300px;
+  width: 200px;
   height:60px;
 }
 
@@ -515,7 +515,7 @@ main{
     background: black;
     -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
     clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
-   
+
   }
 
   .section{
@@ -718,21 +718,7 @@ p.index-modal-subtitle{
   display: block;
 }
 
-.index-modal-btn-store{
-  background-color: #337ab7;
-  border-radius: 5px;
-  padding: 20px 20px 20px 20px;
-  border-style: none;
-  color: white;
-  margin:0 auto;
-  width: 300px;
-  height:60px;
-}
 
-.index-modal-btn-store:hover{
-  background-color: #2e6da4;
-
-}
 
 a.client-portal-modal{
   color: white;
