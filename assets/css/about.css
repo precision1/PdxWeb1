@@ -958,17 +958,13 @@ margin-right:-300px;
 
 }
 
-form  {
-  margin-top:500px;
+.container-form {
+  margin-top:100px;
   margin-right:-500px;
   font-size:20px;
 }
 
-input{
-  width:2px;
-  text-align: center;
- 
-}
+
 .lets-talk h7 .find-us *{
   padding:0;
   margin:0;
