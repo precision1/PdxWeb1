@@ -157,6 +157,7 @@ a.client-portal-modal{
   color: white;
   line-height: none;
   text-decoration: none;
+  text-shadow: none;
 }
 
 .modal-buttons-index{
@@ -816,7 +817,7 @@ form {
 
 input{
   width:10px;
- 
+
 }
 
 
@@ -824,4 +825,3 @@ input{
 
 
 /*//////////////End Media Queries///////////*/
-
