@@ -960,11 +960,13 @@ margin-right:-300px;
 
 form  {
   margin-top:500px;
-  margin-right:100px;
+  margin-right:-500px;
+  font-size:20px;
 }
 
 input{
-  width:5px;
+  width:2px;
+  text-align: center;
  
 }
 .lets-talk h7 .find-us *{
@@ -972,6 +974,15 @@ input{
   margin:0;
   margin-top:-300px;
   margin-bottom:-200px;
+}
+
+h2.title-home {
+  margin-left:130px;
+}
+
+p.services-main-paragraph{
+  margin-left:80px;
+
 }
 }
 
