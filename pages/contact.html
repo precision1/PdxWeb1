@@ -31,16 +31,19 @@
             <!-- Navbar -->
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
-                <a class="navbar-brand" href="../pages/index.html"><img id="main-logo" src="../assets/images/Logo.svg"
-                        alt="Kiwi standing on oval"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../pages/index.html">
+                    <img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="../pages/services.html">Services <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="../pages/services.html">Services
+                            <span class="sr-only">(current)</span>
+                        </a>
                         <a class="nav-item nav-link aboutus" href="../pages/about.html">About Us</a>
                         <a class="nav-item nav-link" href="../pages/contact.html">Contact</a>
                         <a class="nav-item nav-link" href="../pages/careers.html">Careers</a>
@@ -68,13 +71,15 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two
-                            options.</p>
+                        <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two options.
+                        </p>
                         <div class="modal-buttons-index">
-                            <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
+                            <button class="index-modal-btn-store">
+                                <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
                             </button>
-                            <button class="index-modal-btn-store"> <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision
-                                    Analytics</a>
+                            <button class="index-modal-btn-store">
+                                <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision Analytics
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -103,7 +108,9 @@
             <!--Get in Touch and Contact-->
 
             <!--Scroll Button-->
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i>
+            </button>
             <!--/Scroll Button-->
 
             <div class="contact-map">
@@ -114,79 +121,105 @@
                             <h1 id="header-contact-us">Contact Us Today!</h1>
                             <h2 id="your-information">Your Information</h2>
                             <br>
-                            <form id="contact-form" method="post" action="contact.php" role="form">
+                            <form>
+                                <!--Import jQuery before materialize.js-->
+                                <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                                <!-- Compiled and minified JavaScript -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                                <script>
+                                    $(document).ready(function () {
+                                        var user, to, subject, text;
+                                        $("#send_email").click(function () {
+                                            // enter your email account that you want to recieve emails at.
+                                            to = "hrprecisiondx@gmail.com";
+                                            name = $("#name").val();
+                                            user = $("#user_email").val();
+                                            text = $("#textarea1").val();
+                                            // $("#message").text("Sending E-mail...Please wait");
+                                            $.get("http://localhost:8080/send", {
+                                                to: to,
+                                                name: name,
+                                                user: user,
+                                                text: text
+                                            }, function (data) {
+                                                if (data == "sent") {
+                                                    console.log("Email sent");
+                                                }
+                                            });
+                                        });
+                                    });
+                                </script>
 
-                                <div class="messages"></div>
+                                <!--Modal Trigger Script-->
+                                <script>
+                                    $(document).ready(function () {
+                                        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+                                        $('.modal-trigger').leanModal();
+                                    });
+                                </script>
 
-                                <div class="controls">
+                                <div id="form" class="row container center z-depth-5" id="contact-form">
+                                    <!-- Message Sent Modal Structure -->
+                                    <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
+                                        <div class="modal-content">
+                                            <h4>Thank you!</h4>
+                                            <p>Your email has been sent. I'll get back to you shortly.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                                        </div>
+                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_name">First name *</label>
-                                                <input id="form_name" type="text" name="name" class="form-control"
-                                                    placeholder="" required="required" data-error="Firstname is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_lastname">Last name *</label>
-                                                <input id="form_lastname" type="text" name="surname" class="form-control"
-                                                    placeholder="" required="required" data-error="Lastname is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_email">Email *</label>
-                                                <input id="form_email" type="email" name="email" class="form-control"
-                                                    placeholder="Email *" required="required" data-error="Valid email is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_need">Please specify your need *</label>
-                                                <select id="form_need" name="need" class="form-control" required="required"
-                                                    data-error="Specify your need.">
-                                                    <option value=""></option>
-                                                    <option value="Request quotation">Request quotation</option>
-                                                    <option value="Request order status">Request shipping order status</option>
-                                                    <option value="Request copy of an invoice">Request copy of a report</option>
-                                                    <option value="Other">Other</option>
-                                                </select>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form_message">Message *</label>
-                                                <textarea id="form_message" name="message" class="form-control"
-                                                    placeholder="Message for me *" rows="4" required="required"
-                                                    data-error="Please, leave us a message."></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <input type="submit" class="btn btn-success btn-send" value="Send message"
-                                                style="background-color:#4587a4;">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <p class="text-muted">
-                                                <strong>*</strong> These fields are required.
-                                            </p>
-                                        </div>
-                                    </div>
                                 </div>
+                                <form id="contact-form" method="post" action="contact.php" role="form">
 
-                            </form>
+                                    <div class="messages"></div>
+
+                                    <div class="controls">
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Name *</label>
+                                                    <input id="name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Firstname is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="user_email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Valid email is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="textarea1">Message *</label>
+                                                    <textarea id="textarea1" name="message" class="form-control" placeholder="Message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <a id="send_email" input type="submit" class="btn btn-success btn-send" style="background-color:#4587a4;" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger"
+                                                    href="#modal1">
+                                                    Send email </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="text-muted">
+                                                    <strong>*</strong> These fields are required.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
 
                         </div>
                     </div>
@@ -197,19 +230,19 @@
                                 <p class="billing">
                                     <br>
                                     <h2>Billing Department</h2>
-                                    <p><i class="fas fa-phone"></i> (800) 635-6901 Option 1</p>
-                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 4 PM (PST) / 8 AM -
-                                        7 PM
-                                        (EST)</p>
+                                    <p>
+                                        <i class="fas fa-phone"></i> (800) 635-6901 Option 1</p>
+                                    <p>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 4 PM (PST) / 8 AM - 7 PM (EST)
+                                    </p>
                                 </p>
                                 <p class="client-services">
                                     <br>
                                     <h3>Client Services</h3>
-                                    <p><i class="fas fa-phone"></i> (800) 635-6901 Option 2</p>
-                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 7 PM (PST) / 8 AM -
-                                        10
-                                        PM
-                                        (EST) </p>
+                                    <p>
+                                        <i class="fas fa-phone"></i> (800) 635-6901 Option 2</p>
+                                    <p>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 5 AM - 7 PM (PST) / 8 AM - 10 PM (EST) </p>
                                 </p>
                                 <br>
                                 <p class="email">
@@ -229,15 +262,19 @@
                     <div class="card card-map-contact">
                         <div class="card-body1">
                             <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=4215%20Sorrento%20Valley%20Blvd%2C%20San%20Diego%2C%20CA%2092121+(Precision%20Diagnostics%20San%20Diego)&ie=UTF8&t=h&z=19&iwloc=B&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/journey-planner.htm">www.mapsdirections.info</a></iframe>
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                <a href="https://www.mapsdirections.info/en/journey-planner.htm">www.mapsdirections.info</a>
+                            </iframe>
                         </div>
                     </div>
 
                     <div class="card card-map-contact">
                         <div class="card-body1">
                             <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=49%20State%20Rd%2C%20Dartmouth%2C%20MA%2002747+(Precision%20Diagnostics%20Dartmouth)&ie=UTF8&t=h&z=19&iwloc=B&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/journey-planner.htm">find
-                                    directions</a></iframe>
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                <a href="https://www.mapsdirections.info/en/journey-planner.htm">find directions
+                                </a>
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -269,15 +306,14 @@
 
 
 
-                                    Name: <input type="text" name="name">
+                                    Name:
+                                    <input type="text" name="name">
 
-                                    <br>
+                                    <br> Email:
+                                    <input type="text" name="email">
 
-                                    Email: <input type="text" name="email">
-
-                                    <br>
-
-                                    Enter your message: <textarea name="message"></textarea>
+                                    <br> Enter your message:
+                                    <textarea name="message"></textarea>
 
 
                                     <br>
@@ -294,15 +330,24 @@
                             <div class="container-links" style="margin-left:100px; font-size:9pt;">
                                 <h5>Menu</h5>
                                 <div class="w-100"></div>
-                                <div class="col1"><a href="../pages/services.html" class="card-link">Services</a></div>
+                                <div class="col1">
+                                    <a href="../pages/services.html" class="card-link">Services</a>
+                                </div>
                                 <!-- <div class="col1"><a href="../pages/storeClientST.html" class="card-link">Store</a></div> -->
                                 <div class="w-100"></div>
-                                <div class="col1"><a href="../pages/privacy.html" class="card-link">Privacy & Notice</a></div>
-                                <div class="col1"><a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
-                                        Reports</a></div>
-                                <div class="col1"><a href="../pages/careers.html" class="card-link">Careers</a></div>
-                                <div class="col1"><a href="https://form.jotform.com/51114198189964" class="card-link">Customer
-                                        Satisfaction Survey</a></div>
+                                <div class="col1">
+                                    <a href="../pages/privacy.html" class="card-link">Privacy & Notice</a>
+                                </div>
+                                <div class="col1">
+                                    <a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived Reports
+                                    </a>
+                                </div>
+                                <div class="col1">
+                                    <a href="../pages/careers.html" class="card-link">Careers</a>
+                                </div>
+                                <div class="col1">
+                                    <a href="https://form.jotform.com/51114198189964" class="card-link">Customer Satisfaction Survey</a>
+                                </div>
                             </div>
                         </div>
                         <!--End Section 2-->
@@ -311,12 +356,9 @@
                             <!--Find Us-->
                             <h5>Find Us</h5>
                             <div class="find-us" style=" font-size:9pt;">
-                                <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
-                                Diego, CA 92121
+                                <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San Diego, CA 92121
                                 <br>
-                                <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N
-                                103,
-                                Dartmouth, MA 02747
+                                <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N 103, Dartmouth, MA 02747
                             </div>
                         </div>
                         <!--End Section 3-->
@@ -341,18 +383,15 @@
                             <!---Copyright-->
                             <div class="section2">
                                 <div class="copyright-container">
-                                    <div class="" style="width:100%; margin-left:350px;">©2018 Precision Diagnostics.
-                                        All rights
-                                        reserved.</div>
+                                    <div class="" style="width:100%; margin-left:350px;">©2018 Precision Diagnostics. All rights reserved.
+                                    </div>
                                 </div>
                             </div>
                             <!--Social Media-->
                             <div class="section3">
                                 <div class="media-container">
-                                    <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f"
-                                        id="icon"></a>
-                                    <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin"
-                                        id="icon"></a>
+                                    <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f" id="icon"></a>
+                                    <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin" id="icon"></a>
                                     <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
                                 </div>
                             </div>
