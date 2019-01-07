@@ -298,26 +298,53 @@
                             <img id="main-logo" src="../assets/images/Logo.svg"></img>
                             <br>
                             <!--Get in touch form-->
+                            <!--Import jQuery before materialize.js-->
+                            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                            <!-- Compiled and minified JavaScript -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                            <script>
+                                $(document).ready(function () {
+                                    var user, to, subject, text;
+                                    $("#send_email").click(function () {
+                                        // enter your email account that you want to recieve emails at.
+                                        to = "hrprecisiondx@gmail.com";
+                                        name = $("#name").val();
+                                        user = $("#user_email").val();
+                                        text = $("#textarea1").val();
+                                        // $("#message").text("Sending E-mail...Please wait");
+                                        $.get("http://localhost:8080/send", {
+                                            to: to,
+                                            name: name,
+                                            user: user,
+                                            text: text
+                                        }, function (data) {
+                                            if (data == "sent") {
+                                                console.log("Email sent");
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
                             <div class="container-form">
                                 <h3 style="margin-top:10px;">Get In Touch Today</h3>
                                 <!-- <h4>__________________</h4> -->
 
-                                <form method="post" name="myemailform" action="form-to-email.php">
+                                <form method="post" name="myemailform">
 
 
 
                                     Name:
-                                    <input type="text" name="name">
+                                    <input type="text" name="name" id="name">
 
                                     <br> Email:
-                                    <input type="text" name="email">
+                                    <input type="text" name="email" id="user_email">
 
                                     <br> Enter your message:
-                                    <textarea name="message"></textarea>
+                                    <textarea name="message" id="textarea1"></textarea>
 
 
                                     <br>
-                                    <input type="submit" value="Send Form">
+                                    <input type="submit" value="Send Form" id="send_email">
 
                                 </form>
                             </div>
