@@ -45,10 +45,16 @@ app.get('/send', function (req, res) {
 
 });
 
-app.listen(8080, function (err) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Listening on port on 8080");
-    }
-});
+
+// app.listen(8080, function (err) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("Listening on port on 8080");
+//     }
+// });
+
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
+  
