@@ -23,7 +23,7 @@ app.get('../', function (req, res) {
 });
 
 app.get('/send', function (req, res) {
-
+git 
     var mailOptions = {
         to: req.query.to,
         subject: 'Contact Form Message',
@@ -44,6 +44,10 @@ app.get('/send', function (req, res) {
     });
 
 });
+
+
+// Static directory to be served
+app.use(express.static("/pages"));
 
 // ================================================================================
 // ROUTER
