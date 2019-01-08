@@ -19,6 +19,7 @@
   "homepage": "https://github.com/precision1/PdxWeb1#readme",
   "dependencies": {
     "all": "0.0.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "nodemailer": "^5.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
