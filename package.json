@@ -28,6 +28,8 @@
     "nodemailer": "^5.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^1.18.9",
+    "npm-preinstall": "^1.0.4",
+    "postinstall": "^0.4.2",
     "request": "^2.88.0",
     "xoauth2": "^1.2.0"
   },
