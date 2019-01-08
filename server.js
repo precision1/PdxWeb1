@@ -1,6 +1,7 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
 var bodyParser = require("body-parser");
+var manifest = require('build-assets')('./assets/manifest.json');
 var http = require("http");
 var fs = require("fs");
 var app = express();

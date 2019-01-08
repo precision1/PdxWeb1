@@ -33,5 +33,7 @@
     "request": "^2.88.0",
     "xoauth2": "^1.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "build-assets": "^0.1.0"
+  }
 }
