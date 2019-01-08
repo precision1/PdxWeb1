@@ -36,10 +36,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../pages/about.html"));
   });
 //   If no matching route is found default to home
-  // app.get("*", function(req, res) {
-  //   res.sendFile(path.join(__dirname, "../pages/index.html"));
-  // });
-  app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, '/pages', 'index.html'));
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../pages/index.html"));
   });
+  // app.get('*', (request, response) => {
+  //   response.sendFile(path.join(__dirname, '/pages', 'index.html'));
+  // });
 };
