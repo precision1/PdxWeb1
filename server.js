@@ -1,25 +1,11 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
-//var config = require('./config.js');
-// var smtpTransport = require('nodemailer-smtp-transport');
 var app = express();
+// Sets an initial port. We"ll use this later in our listener
+var PORT = process.env.PORT || 8080;
 
 
-// var transporter = nodemailer.createTransport({
-//     service: 'Gmail',
-//     auth: {
-//         user: 'hrprecisiondx@gmail.com',
-//         pass: 'Pdxlab123!'
-//     }
-// });
 
-// console.log('created');
-// transporter.sendMail({
-// from: 'hrprecisiondx@gmail.com',
-//   to: 'hrprecisiondx@gmail.com',
-//   subject: '',
-//   text: ''
-// });
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -28,22 +14,6 @@ var transporter = nodemailer.createTransport({
            pass: 'Pdxlab123!'
        }
    });
-
-//    const mailOptions = {
-//     from: '#user_email', // sender address
-//     to: 'hrprecisiondx@gmail.com', // list of receivers
-//     subject: 'Contact Form Submission - Precision Website', // Subject line
-//     html: '#textarea1'// plain text body
-//   };
-
-//   transporter.sendMail(mailOptions, function (err, info) {
-//     if(err)
-//       console.log(err)
-//     else
-//       console.log(info);
-//  });
-
-
 
 
 app.use(express.static(__dirname + '../pages'));
