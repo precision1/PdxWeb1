@@ -40,3 +40,4 @@ module.exports = function(app) {
 //     res.sendFile(path.join(__dirname, "/../pages/index.html"));
 //   });
 // };
+};
