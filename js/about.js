@@ -24,13 +24,15 @@ $(window).scroll(function() {
             },
             complete: settings.complete
         });
+
+        a=1;
     };
     
     
     $('#number1').jQuerySimpleCounter({end: 345, duration: 3000});
-    $('#number2').jQuerySimpleCounter({end: 27456,duration: 3000});
-    $('#number3').jQuerySimpleCounter({end: 2810,duration: 2000});
-    $('#number4').jQuerySimpleCounter({end: 563430,duration: 5000});
+    $('#number2').jQuerySimpleCounter({end: 27456,duration: 300});
+    $('#number3').jQuerySimpleCounter({end: 2810,duration: 800});
+    $('#number4').jQuerySimpleCounter({end: 563430,duration: 300});
     
     
     
@@ -42,9 +44,8 @@ $(window).scroll(function() {
         });
     
     
-      }
+      };
     
     });
-
 
 
