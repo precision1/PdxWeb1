@@ -73,9 +73,7 @@
       color:white;
   }
 
-  body{
-      background-color:lightgray;
-  }
+
 
   .card{
       box-shadow: 12px 12px 2px 1px darkgray;
@@ -879,7 +877,7 @@ main{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background-color: white;
+    background-color: white !important;
 
   }
   .pagecontainer ul {
@@ -1055,7 +1053,7 @@ main{
     border-style: solid;
   }
   aside.grey-ribbon {
-    background-color: grey;
+    background-color: white;
     width: 18em;
     margin: 0 auto;
     text-align: center;
@@ -1069,11 +1067,11 @@ main{
   }
   .grey-ribbon:after{
     border-width: 20px 10px 20px 0;
-    border-color: grey transparent;
+    /* border-color: grey transparent; */
     right: -10px;
   }
   .grey-ribbon:before {
-    border-color: grey transparent;
+    /* border-color: grey transparent; */
   }
   .current-openings {
     margin: 3.5em 0;
