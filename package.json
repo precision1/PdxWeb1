@@ -21,14 +21,10 @@
     "all": "0.0.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-
-
     "nodemailer": "^5.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^1.18.9",
-
     "request": "^2.88.0",
     "xoauth2": "^1.2.0"
   }
-
 }

@@ -243,6 +243,7 @@ h1.main, p.demos {
     resize: vertical;
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     background:transparent;
+    color: white !important;
   }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ccc;
