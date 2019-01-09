@@ -1,7 +1,7 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
 var bodyParser = require("body-parser");
-var http = require("http");
+
 var app = express();
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
