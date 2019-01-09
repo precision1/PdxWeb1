@@ -15,7 +15,7 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  app.get("/index", function(req, res) {
+  app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../pages/index.html"));
   });
 
@@ -37,6 +37,9 @@ module.exports = function(app) {
   });
 //   If no matching route is found default to home
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "/../pages/index.html"));
+    res.sendFile(path.join(__dirname, "../pages/index.html"));
   });
+  // app.get('*', (request, response) => {
+  //   response.sendFile(path.join(__dirname, '/pages', 'index.html'));
+  // });
 };
