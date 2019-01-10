@@ -1,4 +1,5 @@
 ///////Counter///////////
+
 var a = 0;
 $(window).scroll(function() {
 
@@ -6,7 +7,7 @@ $(window).scroll(function() {
   if (a == 0 && $(window).scrollTop() > oTop) {
     $.fn.jQuerySimpleCounter = function( options ) {
         var settings = $.extend({
-            start:  50,
+            start:  0,
             end:    100,
             easing: 'swing',
             duration: 43200000,
@@ -30,8 +31,8 @@ $(window).scroll(function() {
     
     
     $('#number1').jQuerySimpleCounter({end: 345, duration: 100});
-    $('#number2').jQuerySimpleCounter({end: 27456,duration: 1000000});
-    $('#number3').jQuerySimpleCounter({end: 2810,duration: 1000000});
+    $('#number2').jQuerySimpleCounter({end: 27456,duration: 43200000});
+    $('#number3').jQuerySimpleCounter({end: 2810,duration: 43200000});
     $('#number4').jQuerySimpleCounter({end: 563430,duration: 43200000});
     
     
