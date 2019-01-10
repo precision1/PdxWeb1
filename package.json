@@ -29,5 +29,8 @@
     "request": "^2.88.0",
     "xoauth2": "^1.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "10.x"
+  }
 }
