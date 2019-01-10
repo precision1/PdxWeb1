@@ -442,6 +442,9 @@ height:100%;
   text-align: center;
 }
 
+.integrity-outcomes *{
+  margin-top:10px !important;
+}
 
 
 /* //////Middle of Body/////*/
@@ -1162,3 +1165,4 @@ Home Slider
 
 } */
 /*/////////////////////////////End Shrinking Navbar//////////*/
+}
