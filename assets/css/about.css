@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: HelveticaNeueLTStd-Lt;
+  src: url("../assets/fonts/HelveticaNeueLTStd-Lt.otf") format("opentype");
+}
 
 /*//////Store Drop Down Menu/////*/
 /* Dropdown Button */
