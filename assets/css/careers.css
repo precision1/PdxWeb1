@@ -2,11 +2,13 @@
     background-size: cover;
     background-position: center;
     width:100%;
+  }
 
-
-
+  .span{
+margin-top:-100px !important;
 
   }
+
 
   .footercard{
     width: 100%;

@@ -1,5 +1,11 @@
 const cron = require("node-cron");
 const express = require("express");
+var $ = require('jquery');
+const Window = require('window');
+const window = new Window();
+var scroll = require('scroll');
+
+
 app = express();
 
 //execute every 2:30am morning
@@ -9,15 +15,18 @@ app = express();
 
 
 //execute every 1 min
-// cron.schedule('*/1 * * * *', function () {
-//     console.log('running a task every minute for 12 hours');
-// });
+ cron.schedule('*/1 * * * *', function () {
+
+  
+      
+
+   console.log('running a task every minute for 12 hours');
 
 
 //execute everyday at 6am
-cron.schedule('0  6 * * *', function () {
+// cron.schedule('0  6 * * *', function () {
     var a = 0;
-    $(window).scroll(function () {
+  $(window).scroll(function () {
 
         var oTop = $('#counter').offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
@@ -56,8 +65,7 @@ cron.schedule('0  6 * * *', function () {
 
 
 
-    // ## stop the job (11.30pm)
-    //  30 23 * * * /usr/bin/stop-my-job
 
 
     app.listen(3128)});
+
