@@ -442,6 +442,9 @@ height:100%;
   text-align: center;
 }
 
+.integrity-outcomes *{
+  margin-top:10px !important;
+}
 
 
 /* //////Middle of Body/////*/
@@ -548,10 +551,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .container-form{
   width:300px !important;
+  height:200px;
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
 }
+
+
+
 input[type=text], select, textarea {
-  width: 100%;
+  width: 300px;
+  height:20px;
   background: transparent;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -608,8 +616,8 @@ a {
   width: 100%;
   height:auto;
   /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%); */
-  -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
-  clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
+  /* -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
+  clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%); */
   background:black;
 
 }
@@ -622,7 +630,7 @@ a {
   margin: 15px 25px 15px 25px;
   font: 5pt;
   line-height: 1.6em;
-  margin-top:230px;
+  /* margin-top:230px; */
   margin-left: 140px;
   margin-right:0;
 }
@@ -630,9 +638,11 @@ a {
 .container-links{
   width:100%;
 
+
 }
-.card-link .find-us .lets-talk {
+.card-link .find-us .lets-talk * {
   font-size: 5pt;
+  margin-left:100px;
 }
 .section a{
   display: block;
@@ -1155,3 +1165,4 @@ Home Slider
 
 } */
 /*/////////////////////////////End Shrinking Navbar//////////*/
+}

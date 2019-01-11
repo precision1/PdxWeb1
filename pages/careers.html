@@ -11,24 +11,24 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"> -->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/careers.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!--Custom Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-    <div class="body-container">
+<body style="background-color: white;">
+    <div class="body-container" style="background-color: white;">
 
         <!--Header is here: uncollapse to see code-->
         <header>
@@ -39,8 +39,8 @@
                 <a class="navbar-brand" href="../pages/index.html">
                     <img id="main-logo" src="../assets/images/Logo.svg" alt="Kiwi standing on oval">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -76,14 +76,16 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two options.
+                        <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two
+                            options.
                         </p>
                         <div class="modal-buttons-index">
                             <button class="index-modal-btn-store">
                                 <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
                             </button>
                             <button class="index-modal-btn-store">
-                                <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision Analytics
+                                <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision
+                                    Analytics
                                 </a>
                             </button>
                         </div>
@@ -227,7 +229,7 @@
     </div>
 
     <!--Footer-->
-    <div class="parallax2" style="width:100%;">
+    <div class="parallax2" style="margin-top:80px;">
         <div class="footercard">
             <!-- <div class="footer-container"> -->
             <!--Top Footer-->
@@ -239,7 +241,7 @@
                         <img id="main-logo" src="../assets/images/Logo.svg"></img>
                         <br>
                         <!--Get in touch form-->
-
+                        <!--Get in touch form-->
                         <!--Import jQuery before materialize.js-->
                         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
                         <!-- Compiled and minified JavaScript -->
@@ -268,10 +270,10 @@
                             });
                         </script>
                         <div class="container-form">
-                            <h3 style="margin-top:10px;">Get In Touch Today</h3>
+                            <h3 style="margin-top:0px;">Get In Touch Today</h3>
                             <!-- <h4>__________________</h4> -->
 
-                            <form method="post" name="myemailform">
+                            <form method="post" name="myemailform" form action="http://localhost:8080" method="POST">
 
 
 
@@ -289,20 +291,6 @@
                                 <input type="submit" value="Send Form" id="send_email">
 
                             </form>
-
-
-                            <!-- <form action="../pages/contact.php">
-                      <label for="fname"></label>
-                      <input type="text1" id="name" name="name" placeholder="Name" style="height:50px; width:250px;">
-
-                      <label for="lname"></label>
-                      <input type="text1" id="email" name="email" placeholder="Email" style="height:50px; width:250px;">
-
-                      <label for="comment"></label>
-                      <textarea id="subject1" name="comment" placeholder="Enter your message" style="height:50px; width:250px;"></textarea>
-
-                      <input type="submit1" value="Submit">
-                    </form> -->
                         </div>
                     </div>
 
@@ -310,28 +298,31 @@
                     <!--Section 2-->
                     <div class="section">
                         <!--Menu-->
-                        <div class="container-links" style="margin-left:100px; font-size:9pt;">
-                            <h5>Menu</h5>
-                            <div class="menu-services" style="margin-left: -100px; line-height: 1.6em;">
-                                <div class="w-100"></div>
-                                <div class="col1">
-                                    <a href="../pages/services.html" class="card-link">Services</a>
-                                </div>
-                                <!-- <div class="col1"><a href="../pages/storeClientST.html" class="card-link">Store</a></div> -->
-                                <div class="w-100"></div>
-                                <div class="col1">
-                                    <a href="../pages/privacy.html" class="card-link">Privacy & Notice</a>
-                                </div>
-                                <div class="col1">
-                                    <a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived Reports
-                                    </a>
-                                </div>
-                                <div class="col1">
-                                    <a href="../pages/careers.html" class="card-link">Careers</a>
-                                </div>
-                                <div class="col1">
-                                    <a href="https://form.jotform.com/51114198189964" class="card-link">Feedback</a>
-                                </div>
+                        <div class="container-links" style="margin-left:100px; font-size:9pt;margin-top:80px; margin-bottom:30px; width:100%;  line-height: 0.3;">
+                            <h5 style="margin-left:100px; width:100%;">Menu</h5>
+                            <div class="w-100"></div>
+                            <div class="col1">
+                                <a href="../pages/services.html" class="card-link">Services</a>
+                            </div>
+                            <!-- <div class="col1"><a href="../pages/storeClientST.html" class="card-link">Store</a></div> -->
+                            <div class="w-100"></div>
+                            <div class="col1">
+                                <a href="../pages/privacy.html" class="card-link">Privacy & Notice</a>
+                            </div>
+                            <div class="col1">
+                                <a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived Reports
+                                </a>
+                            </div>
+                            <div class="col1">
+                                <a href="../pages/careers.html" class="card-link">Careers</a>
+                            </div>
+                            <div class="col1">
+                                <a href="https://form.jotform.com/51114198189964" class="card-link">Customer
+                                    Satisfaction Survey</a>
+                            </div>
+                            <div class="col1">
+                                <a href="https://www.dxlink.com/patientportal/signin.html?cn=%20precistox#/login" class="card-link">Patient
+                                    Portal</a>
                             </div>
                         </div>
                     </div>
@@ -339,11 +330,14 @@
                     <!--Section 3-->
                     <div class="section">
                         <!--Find Us-->
-                        <h5>Find Us</h5>
-                        <div class="find-us" style=" font-size:9pt;">
-                            <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San Diego, CA 92121
+                        <h5 style="margin-left: 50px; width:100%; margin-top:80px;">Find Us</h5>
+                        <div class="find-us" style=" font-size:9pt; margin-left: 50px; width:100%;">
+                            <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
+                            Diego, CA 92121
                             <br>
-                            <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N 103, Dartmouth, MA 02747
+                            <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N 103,
+                            Dartmouth, MA
+                            02747
                         </div>
                     </div>
                     <!--End Section 3-->
@@ -351,8 +345,8 @@
                     <div class="section">
                         <!---Lets Talk-->
                         <div class="lets-talk">
-                            <h5>Lets Talk</h5>
-                            <div class="lets-talk" style=" font-size:9pt;">
+                            <h5 style="margin-left:10px; width:100%; margin-top:80px;">Lets Talk</h5>
+                            <div class="lets-talk" style=" font-size:9pt;margin-left: 10px; width:100%;">
                                 <i class="fas fa-phone"></i> 800.635.6901
                                 <br>
                                 <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
@@ -368,12 +362,15 @@
                         <!---Copyright-->
                         <div class="section2">
                             <div class="copyright-container">
-                                <div class="" style="width:100%; margin-left:350px;">©2018 Precision Diagnostics. All rights reserved.</div>
+                                <div class="" style="width:100%; margin-left:350px;">©2019 Precision Diagnostics. All
+                                    rights
+                                    reserved.
+                                </div>
                             </div>
                         </div>
                         <!--Social Media-->
                         <div class="section3">
-                            <div class="media-container">
+                            <div class="media-container" style="margin-left:220px; width:100%;">
                                 <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f" id="icon"></a>
                                 <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin" id="icon"></a>
                                 <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
@@ -386,6 +383,8 @@
         </div>
     </div>
     </div>
+    </div>
+
     <!--/Footer-->
 
     </main>
@@ -399,7 +398,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -408,8 +407,8 @@
         crossorigin="anonymous"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 
