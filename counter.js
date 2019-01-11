@@ -9,13 +9,16 @@ app = express();
 
 
 //execute every 1 min
-// cron.schedule('*/1 * * * *', function () {
-//     console.log('running a task every minute for 12 hours');
-// });
+cron.schedule('*/1 * * * *', function () {
+    console.log('running a task every minute');
+});
 
 
 //execute everyday at 6am
 cron.schedule('0  6 * * *', function () {
+
+    console.log('running a task at 6am');
+
     var a = 0;
     $(window).scroll(function () {
 
