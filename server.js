@@ -35,7 +35,7 @@ app.get('../', function (req, res) {
 });
 
 app.get('/send', function (req, res) {
-    git
+    // git
     var mailOptions = {
         to: req.query.to,
         subject: 'Contact Form Message',
@@ -62,7 +62,7 @@ app.get('/send', function (req, res) {
 
 // Routes
 // =============================================================
-require("./routes/htmlRoutes.js")(app);
+
 
 
 // LISTENER
@@ -73,5 +73,4 @@ require("./routes/htmlRoutes.js")(app);
 app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
 });
-
 
