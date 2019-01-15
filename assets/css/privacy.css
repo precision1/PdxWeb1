@@ -313,40 +313,6 @@ main{
 
 
 
-.accordion-container{
-  width:60%;
-  height:auto;
-  margin:0 auto;
-  padding-top:50px;
-}
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.links-privacy{
-  color:black;
-  font-size:inherint;
-}
 
 .contact-image{
 
@@ -518,18 +484,94 @@ main{
 
 
 /* TABS */
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .tab-pane{
 background-color: #f9f9f9;
 padding:3%;
 }
 
 .nav-tabs{
-  height:1.75%;
-  background-color: #f9f9f9;
+  border-bottom: border-bottom: 1px solid #ddd;
+}
 
+.nav{
+  padding-left:0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-tabs>li{
+  float: left;
+  margin-bottom: -1px;
+}
+
+.nav>li{
+  position:relative;
+  display: block;
 }
 
 .tab-content{
-  padding:3%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.tab-content>.active{
+  display: block;
+}
+
+
+
+.nav-tabs>li>a{
+  margin-right: 2px;
+  line-height:1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.nav>li>a{
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.tabs-link{
+  color: #337ab7;
+  text-decoration: none;
+  background-color:transparent;
+}
+
+.tabs-link:hover{
+  text-decoration: none;
+
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #555;
+  cursor:default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+
+.nav-tabs>li>a:hover{
+  background-color:#f9f9f9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+a.privacy-links{
+  color: #337ab7;
+  font-size:1rem;
+
 }
