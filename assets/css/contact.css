@@ -262,13 +262,13 @@ h1.main, p.demos {
   input[type=submit] {
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     color: white;
-    /* padding: 3px 100px; */
+    padding: 3px 100px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     text-align: center;
     border: 1px solid #ccc;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     background:transparent;
     height:30px;
     width:300px;
