@@ -29,10 +29,8 @@ const testHTML = `
  <head>
  </head>
 <body>
-
 <!-- Header-->
 <header>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
     <a class="navbar-brand" href="../pages/index.html">
@@ -42,7 +40,6 @@ const testHTML = `
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="../pages/services.html">Services
@@ -59,19 +56,13 @@ const testHTML = `
             <a href="../pages/storeRep.html">Sales Representative</a>
           </div>
         </div> -->
-
-
       </div>
     </div>
-
     <!-- The Modal - Client Portal -->
-
     <!-- Trigger/Open The Modal -->
     <button id="myBtn1">Client Portal</button>
-
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -89,22 +80,16 @@ const testHTML = `
       </div>
     </div>
   </nav>
-
 </header>
 <!--/Navbar-->
-
 <main>
   <!--Jumbotron-->
   <div class="aboutContainer">
-
-
   </div>
-
   <!--Jumbotron-->
   <div class="jumbotron jumbotron-contact" style="margin:0; padding:0; overflow:hidden;">
     <div class="sp-container">
       <image src="../assets/images/Building and Laboratory/indexImage.jpg" class="contact-image"></image>
-
       <!-- <div class="sp-content">
         <div class="sp-globe"></div>
         <h2 class="frame-1">About Us</h2>
@@ -112,7 +97,6 @@ const testHTML = `
     </div>
   </div>
   <!--/Jumbotron-->
-
   <!--About-->
   <div class="jumbotron jumbotron-fluid-about" style="margin:0;">
     <div class="container">
@@ -130,31 +114,21 @@ const testHTML = `
         approach
         to provide important diagnostic information to our partners.</p>
     </div>
-
-
   </div>
-
   <!--Video-->
   <div class="video-container-about" style="margin:0;">
     <div class="about-video">
       <video class="video-about" src="../assets/videos/about/infinitetesttubes.mp4" preload muted autoplay loop style="width:100%; height:60vh;margin:0;">
       </video>
-
     </div>
-
   </div>
-
-
   <div class="jumbotron jumbotron-fluid-about" style="margin:0; background-color: rgb(16, 31, 46); ">
     <div class="container">
       <h2 class="title-home" style="color:white; padding-top:25px;">Company by the Numbers: Today</h2>
       <p class="lead-hello" style="font-weight:bold; color:#2e6da4;  padding-bottom:25px;">_____</p>
     </div>
-
-
   </div>
   <!---Counter-->
-
   <div id="counter" style="margin-top:-30px;">
     <div id="projectFacts" class="sectionClass" style="margin:0;">
       <div class="fullWidth eight columns" style="margin:0;padding:0;">
@@ -189,21 +163,13 @@ const testHTML = `
       </div>
     </div>
   </div>
-
-
-
   <!--Scroll Button-->
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="fa fa-angle-double-up" style="font-size:20px;color: #4587a4;">Top</i>
   </button>
   <!--/Scroll Button-->
-
 </main>
-
-
 <!--/About-->
-
-
 <!--Footer-->
 <div class="parallax2" style="margin-top: 80px;">
   <div class="footercard">
@@ -244,33 +210,22 @@ const testHTML = `
                 });
               });
             });
-
           </script>
           <div class="container-form">
             <h3 style="margin-top:0px;">Get In Touch Today</h3>
             <!-- <h4>__________________</h4> -->
-
             <form method="post" name="myemailform" form action="http://localhost:8080" method="POST">
-
-
-
               Name:
               <input type="text" name="name" id="name">
-
               <br> Email:
               <input type="text" name="email" id="user_email">
-
               <br> Enter your message:
               <textarea name="message" id="textarea1"></textarea>
-
-
               <br>
               <input type="submit" value="Send Form" id="send_email">
-
             </form>
           </div>
         </div>
-
         <!--End Section 1-->
         <!--Section 2-->
         <div class="section">
@@ -329,10 +284,7 @@ const testHTML = `
           </div>
         </div>
         <!--End Section 4-->
-
         <!--Bottom of Footer-->
-
-
         <div class="bottom-footer">
           <!---Copyright-->
           <div class="section2">
@@ -358,34 +310,24 @@ const testHTML = `
 </div>
 </div>
 </div>
-
 <!--/Footer-->
-
 <!-- jQuery -->
-
-
 <!-- Bootstrap Core JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
   crossorigin="anonymous"></script>
-
-
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
   crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-
 <!-- JavaScript -->
 <script src="../js/index.js"></script>
 <script src="../js/topScroll.js"></script>
 <script src="../js/about.js"></script>
 <script src="../counter.js"></script>
-
-
 </body>
 </html>
 `;

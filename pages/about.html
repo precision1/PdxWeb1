@@ -24,6 +24,10 @@
   <!--jQuery-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+  <!--Cron Job-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="cron/jquery-cron.js"></script>
+  <link type="text/css" href="cron/jquery-cron.css" rel="stylesheet" />
 
 </head>
 
@@ -153,6 +157,19 @@
 
     </div>
     <!---Counter-->
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#selector').cron({
+
+          }); // apply cron with default options
+      });
+      </script>
+      <!--- somewhere within <body> -->
+          <div id='selector'></div>
+
+
+ 
 
     <div id="counter" style="margin-top:-30px;">
       <div id="projectFacts" class="sectionClass" style="margin:0;">
