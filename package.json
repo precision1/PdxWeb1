@@ -20,10 +20,12 @@
   "dependencies": {
     "all": "0.0.0",
     "body-parser": "^1.18.3",
+    "cron": "^1.6.0",
     "express": "^4.16.4",
     "fs": "0.0.1-security",
     "iconv-lite": "^0.4.24",
     "jquery": "^3.3.1",
+    "later": "^1.2.0",
     "node-cron": "^2.0.3",
     "nodemailer": "^5.0.0",
     "nodemailer-smtp-transport": "^2.7.4",

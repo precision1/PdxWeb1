@@ -1,7 +1,74 @@
-const cron = require("node-cron");
+
+// const cron = require("node-cron");
 var express = require('express');
 var http = require("http");
 var fs = require("fs");
+
+var cron = require('cron');
+var cronJob = cron.job(" 0  6 * * *", function(){
+    // perform operation e.g. GET request http.get() etc.
+    console.log('running a task every minute');
+    var a = 0;
+    $(window).scroll(function () {
+  
+          var oTop = $('#counter').offset().top - window.innerHeight;
+          if (a == 0 && $(window).scrollTop() > oTop) {
+              $.fn.jQuerySimpleCounter = function (options) {
+                  var settings = $.extend({
+                      start: 0,
+                      end: 100,
+                      // easing: 'swing',
+                      duration: 43200000,
+                      complete: ''
+                  }, options);
+  
+                  var thisElement = $(this);
+  
+                  $({ count: settings.start }).animate({ count: settings.end }, {
+                      duration: settings.duration,
+                      easing: settings.easing,
+                      step: function () {
+                          var mathCount = Math.ceil(this.count);
+                          thisElement.text(mathCount);
+                      },
+                      complete: settings.complete
+                  });
+  
+                  a = 1;
+              };
+  
+  
+              $('#number1').jQuerySimpleCounter({ end: 345, duration: 100 });
+              $('#number2').jQuerySimpleCounter({ end: 27456, duration: 1000 });
+              $('#number3').jQuerySimpleCounter({ end: 2810, duration: 1000 });
+              $('#number4').jQuerySimpleCounter({ end: 563430, duration: 43200000 });
+  
+  
+    }});
+  
+    console.log('Counter ran');
+  
+    console.info('cron job completed');
+}); 
+cronJob.start();
+  
+
+
+// cron.schedule('*/1 * * * *', function () {
+//   console.log('running a task every minute');
+//    // set later to use local time
+//    later.date.localTime();
+// });
+
+//  cron.schedule('0  6 * * *', function () {
+
+// console.log('running a task at 6am');
+//  // set later to use local time
+//  later.date.localTime();
+//  });
+
+
+
 
 //Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
@@ -356,23 +423,48 @@ app = express();
 // }); */}
 
 
-//execute every 1 min
-cron.schedule('*/1 * * * *', function () {
-  console.log('running a task every minute');
+// //execute every 1 min
+// cron.schedule('*/1 * * * *', function () {
+//   console.log('running a task every minute');
+//   var a = 0;
+//   $(window).scroll(function () {
 
-  $('.count').each(function () {
-    $(this).prop('Counter', 0).animate({
-      Counter: $(this).text()
-    }, {
-        duration: 43200000,
-        easing: 'swing',
-        step: function (now) {
-          $(this).text(Math.ceil(now));
-        }
-      });
-  });
+//         var oTop = $('#counter').offset().top - window.innerHeight;
+//         if (a == 0 && $(window).scrollTop() > oTop) {
+//             $.fn.jQuerySimpleCounter = function (options) {
+//                 var settings = $.extend({
+//                     start: 0,
+//                     end: 100,
+//                     // easing: 'swing',
+//                     duration: 43200000,
+//                     complete: ''
+//                 }, options);
 
-  console.log('Counter ran');
+//                 var thisElement = $(this);
+
+//                 $({ count: settings.start }).animate({ count: settings.end }, {
+//                     duration: settings.duration,
+//                     easing: settings.easing,
+//                     step: function () {
+//                         var mathCount = Math.ceil(this.count);
+//                         thisElement.text(mathCount);
+//                     },
+//                     complete: settings.complete
+//                 });
+
+//                 a = 1;
+//             };
+
+
+//             $('#number1').jQuerySimpleCounter({ end: 345, duration: 100 });
+//             $('#number2').jQuerySimpleCounter({ end: 27456, duration: 4320 });
+//             $('#number3').jQuerySimpleCounter({ end: 2810, duration: 4320 });
+//             $('#number4').jQuerySimpleCounter({ end: 563430, duration: 43200000 });
+
+
+//   }});
+
+//   console.log('Counter ran');
 
 
   // var a = 0;
@@ -491,4 +583,3 @@ cron.schedule('*/1 * * * *', function () {
   server.listen(PORT, function () {
     console.log("Server is listening on PORT: " + PORT);
   })
-})
