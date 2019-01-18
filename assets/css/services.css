@@ -835,7 +835,11 @@ input{
 }
 
 
-
+}
 
 
 /*//////////////End Media Queries///////////*/
+
+/*/////// Zoom on images and videos/////////////*/
+.grow { transition: all .2s ease-in-out; }
+.grow :hover { transform: scale(1.1); }
