@@ -1210,7 +1210,7 @@ margin-right:30px;
     }
   }
 
-  /*//////////////////////Carousel//////////////*/
+  /*//////////////////////Carousel #1//////////////*/
   .carousel-item {
       width: 100%;
       height:400px;
@@ -1220,6 +1220,80 @@ margin-right:30px;
 .col-md{
     width:1000px;
 }
+
+/*/////////////////Carousel #2//////////*/
+
+.container{
+  /* background-color: #292B2C; */
+  position: relative;
+  height: 100%;
+}
+
+.carousel{
+  background-color: #505456;
+  width: 100%;
+  min-width: 550px;
+  height: 300px;
+  margin: auto;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 4px 10px #000;
+  font-size: 0;
+  box-sizing: content-box;
+
+}
+.image-wrapper{
+  border-radius: 5px;
+  overflow: hidden;
+  height: 300px;
+}
+.image-wrapper ul{
+  list-style-type: none;
+  white-space: nowrap;
+  height: 300px;
+}
+.image-wrapper li{
+  display: inline-block;
+  height: 100%;
+}
+.image-wrapper li>img{
+  height: 100%;
+}
+
+/*//////Glowing View Button////*/
+a:hover {
+  box-shadow: 0px 0px 10px #2e6da4;
+}
+
+/*///Typing Text for Benefits/////*/
+#reg_ai{
+	display:table;
+	width:100%;
+height: 100%;}
+h1{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #2e6da4;
+}
+/* ================================= *
+ * AI Styling
+ ==================================== */
+ .typewriter:after {
+  border-right: 0.15em solid #7561ff;
+  animation: caret_typewriter 1s steps(1) infinite;
+  content: "";
+}
+/* @-webkit-keyframes{
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes caret_typewriter {
+  50% {
+    border-color: transparent;
+  }
+} */
 
 
 /*/////////////Media Queries////////////
