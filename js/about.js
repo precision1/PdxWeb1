@@ -1,56 +1,104 @@
 ///////Counter/////////// 
-var a = 0;
-$(window).scroll(function() {
+// var a = 0;
+// $(window).scroll(function() {
 
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $.fn.jQuerySimpleCounter = function( options ) {
-        var settings = $.extend({
-            start:  0,
-            end:    100,
-            // easing: 'swing',
-            duration: 43200000,
-            complete: ''
-        }, options );
-    
-        var thisElement = $(this);
-    
-        $({count: settings.start}).animate({count: settings.end}, {
-            duration: settings.duration,
-            easing: settings.easing,
-            step: function() {
-                var mathCount = Math.ceil(this.count);
-                thisElement.text(mathCount);
-            },
-            complete: settings.complete
-        });
+//   var oTop = $('#counter').offset().top - window.innerHeight;
+//   if (a == 0 && $(window).scrollTop() > oTop) {
+//     $.fn.jQuerySimpleCounter = function( options ) {
+//         var settings = $.extend({
+//             start:  0,
+//             end:    100,
+//             // easing: 'swing',
+//             duration: 43200000,
+//             complete: ''
+//         }, options );
 
-        a=1;
-    };
-    
-    
-    $('#number1').jQuerySimpleCounter({end: 345, duration: 4320});
-    $('#number2').jQuerySimpleCounter({end: 27456,duration: 4320});
-    $('#number3').jQuerySimpleCounter({end: 2810,duration: 4320});
-    $('#number4').jQuerySimpleCounter({end: 563430,duration: 4320});
-    
-    ///$('#number4').jQuerySimpleCounter({end: 563430,duration: 43200000});
-    
-    
+//         var thisElement = $(this);
 
-  }});
+//         $({count: settings.start}).animate({count: settings.end}, {
+//             duration: settings.duration,
+//             easing: settings.easing,
+//             step: function() {
+//                 var mathCount = Math.ceil(this.count);
+//                 thisElement.text(mathCount);
+//             },
+//             complete: settings.complete
+//         });
+
+//         a=1;
+//     };
+
+
+//     $('#number1').jQuerySimpleCounter({end: 345, duration: 4320});
+//     $('#number2').jQuerySimpleCounter({end: 27456,duration: 4320});
+//     $('#number3').jQuerySimpleCounter({end: 2810,duration: 4320});
+//     $('#number4').jQuerySimpleCounter({end: 563430,duration: 4320});
+
+//     ///$('#number4').jQuerySimpleCounter({end: 563430,duration: 43200000});
 
 
 
-//   //Counter
-// var counter=22000000000;
-// if(typeof(localStorage.getItem('counts'))!='object')
-// {
-//    counter=parseInt(localStorage.getItem('counts'));
-// }
-// setInterval(function () {
-//     $(".count").html(counter);
-//     ++counter;
-//     localStorage.setItem('counts',counter);
-// }, 43200000);
+// //   }});
 
+//////Plan B Counter/////
+function isLocalStorage() {
+    try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+    } catch(e) {
+        return false;
+    }
+}
+
+function setCounter(key, val) {
+    localStorage.setItem(key, val);
+}
+
+function getCounter(key) {
+    return localStorage.getItem(key);
+}
+
+///Major/Minor DDI
+(function() {
+    
+    var key = "myCounter";
+    var counter = isLocalStorage() && getCounter(key) || 1;
+    var $placeholder = $(".count1");
+    $placeholder.html(counter);
+
+    setInterval(function () {
+        counter++;
+        $placeholder.html(counter);
+        isLocalStorage() && setCounter(key, counter);
+        
+    }, 400);
+}());
+
+///Cups of Coffee
+(function() {
+    
+    var key = "myCounter";
+    var counter = isLocalStorage() && getCounter(key) || 280;
+    var $placeholder = $(".count2");
+    $placeholder.html(counter);
+    setInterval(function () {
+        counter++;
+        $placeholder.html(counter);
+        isLocalStorage() && setCounter(key, counter);
+    }, 3000);
+}());
+
+
+///Data Points per Day
+(function() {
+    
+    var key = "myCounter";
+    var counter = isLocalStorage() && getCounter(key) || 1;
+    var $placeholder = $(".count3");
+    $placeholder.html(counter);
+
+    setInterval(function () {
+        counter++;
+        $placeholder.html(counter);
+        isLocalStorage() && setCounter(key, counter);
+    }, 30);
+}());
