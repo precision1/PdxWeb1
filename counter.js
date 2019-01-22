@@ -5,7 +5,7 @@ var http = require("http");
 var fs = require("fs");
 
 var cron = require('cron');
-var cronJob = cron.job(" 0  6 * * *", function(){
+var cronJob = cron.job( '*/1 * * * *', function(){
     // perform operation e.g. GET request http.get() etc.
     console.log('running a task every minute');
     var a = 0;

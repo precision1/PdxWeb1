@@ -39,3 +39,18 @@ $(window).scroll(function() {
     
 
   }});
+
+
+
+//   //Counter
+// var counter=22000000000;
+// if(typeof(localStorage.getItem('counts'))!='object')
+// {
+//    counter=parseInt(localStorage.getItem('counts'));
+// }
+// setInterval(function () {
+//     $(".count").html(counter);
+//     ++counter;
+//     localStorage.setItem('counts',counter);
+// }, 43200000);
+
