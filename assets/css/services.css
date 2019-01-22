@@ -761,7 +761,7 @@ padding:0;
 
 
 
-.card-img-top2 .card-img-top{
+.card-img-top2 .card-img-top1{
   height:200px;
 }
 
@@ -880,3 +880,4 @@ input{
 /*/////// Zoom on images and videos/////////////*/
 .grow { transition: all .2s ease-in-out; }
 .grow :hover { transform: scale(1.1); }
+
