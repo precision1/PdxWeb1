@@ -4,6 +4,7 @@ body, a,button, p, h2, nav, h1, .footercard {
 }
 
 
+
 /*/////////////Splash Page//////////////*/
 
 .contact-image{
@@ -249,7 +250,7 @@ h1.main, p.demos {
   
   
   input[type=text], select, textarea {
-    width: 300px;
+    width: 350px !important;
     height:30px;
     background: transparent;
     border:1px solid #ccc;
