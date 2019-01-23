@@ -1,4 +1,4 @@
-///////Counter/////////// 
+/////Counter/////////// 
 // var a = 0;
 // $(window).scroll(function() {
 
@@ -60,8 +60,8 @@ function getCounter(key) {
 ///Major/Minor DDI
 (function() {
     
-    var key = "myCounter";
-    var counter = isLocalStorage() && getCounter(key) || 1;
+    var key = ".count1";
+    var counter = isLocalStorage() && getCounter(key) || 2250;
     var $placeholder = $(".count1");
     $placeholder.html(counter);
 
@@ -70,14 +70,13 @@ function getCounter(key) {
         $placeholder.html(counter);
         isLocalStorage() && setCounter(key, counter);
         
-    }, 400);
+    }, 4000);
 }());
-
 ///Cups of Coffee
 (function() {
     
-    var key = "myCounter";
-    var counter = isLocalStorage() && getCounter(key) || 280;
+    var key = ".count2";
+    var counter = isLocalStorage() && getCounter(key) || 123;
     var $placeholder = $(".count2");
     $placeholder.html(counter);
     setInterval(function () {
@@ -88,11 +87,14 @@ function getCounter(key) {
 }());
 
 
+
+
+
 ///Data Points per Day
 (function() {
     
-    var key = "myCounter";
-    var counter = isLocalStorage() && getCounter(key) || 1;
+    var key = ".count3";
+    var counter = isLocalStorage() && getCounter(key) || 416666;
     var $placeholder = $(".count3");
     $placeholder.html(counter);
 
@@ -100,5 +102,8 @@ function getCounter(key) {
         counter++;
         $placeholder.html(counter);
         isLocalStorage() && setCounter(key, counter);
-    }, 30);
+    }, 3000);
 }());
+
+
+
