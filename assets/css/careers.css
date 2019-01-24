@@ -1291,7 +1291,7 @@ margin-right:30px;
 }
 
 /*//////Glowing View Button////*/
-a:hover {
+.grow1:hover {
   box-shadow: 0px 0px 10px #2e6da4;
 }
 
