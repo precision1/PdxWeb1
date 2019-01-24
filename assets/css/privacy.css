@@ -350,8 +350,8 @@ main{
 }
 
 .jumbotron-contact{
-  width:100vw;
-  height:60vh;
+  width:100%;
+
 }
 
 
@@ -519,7 +519,7 @@ main{
 }
 .tab-pane{
 background-color: #f9f9f9;
-padding:3%;
+padding:7%;
 }
 
 .nav-tabs{
