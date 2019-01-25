@@ -1688,3 +1688,9 @@ body {
 .img-grid{
   background-image: url("../images/culture/careers-background.svg");
 }
+
+.quote{
+  background-image: url("../images/culture/careers-background.svg");
+  height: 430px;
+  width:650px;
+}
