@@ -966,6 +966,21 @@ main{
     text-align: left;
   }
   
+.btn-success {
+
+  background-color: #337ab7;
+    border-radius: 15px !important;
+    padding: 20px 20px;
+    border-style: none;
+    color: white;
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    
+
+}
+
+  
 
 
 
