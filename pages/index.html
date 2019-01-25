@@ -117,7 +117,7 @@
       <img class="gif" src="../assets/images/home/gif20193.gif" alt="power bi data">
     </div>
 
-  <!-- Hide out for graphs <div class="carousel-container-home">
+    <!-- Hide out for graphs <div class="carousel-container-home">
 
       <div class="card-left">
         <div class="jumbotron jumbotron-data-home">
@@ -307,57 +307,57 @@
               <img id="main-logo" src="../assets/images/Logo.svg"></img>
               <br>
               <!--Get in touch form-->
-              <!--Get in touch form-->
-              <!--Import jQuery before materialize.js-->
-              <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-              <!-- Compiled and minified JavaScript -->
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-              <script>
-                $(document).ready(function () {
-                  var user, to, subject, text;
-                  $("#send_email").click(function () {
-                    // enter your email account that you want to recieve emails at.
-                    to = "hrprecisiondx@gmail.com";
-                    name = $("#name").val();
-                    user = $("#user_email").val();
-                    text = $("#textarea1").val();
-                    // $("#message").text("Sending E-mail...Please wait");
-                    $.get("http://localhost:8080/send", {
-                      to: to,
-                      name: name,
-                      user: user,
-                      text: text
-                    }, function (data) {
-                      if (data == "sent") {
-                        console.log("Email sent");
-                      }
+              <form>
+                <!--Import jQuery before materialize.js-->
+                <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                <!-- Compiled and minified JavaScript -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                <script>
+                  $(document).ready(function () {
+                    var user, to, subject, text;
+                    $("#send_email").click(function () {
+                      // enter your email account that you want to recieve emails at.
+                      to = "hrprecisiondx@gmail.com";
+                      name = $("#name").val();
+                      user = $("#user_email").val();
+                      text = $("#textarea1").val();
+                      // $("#message").text("Sending E-mail...Please wait");
+                      $.get("http://localhost:8080/send", {
+                        to: to,
+                        name: name,
+                        user: user,
+                        text: text
+                      }, function (data) {
+                        if (data == "sent") {
+                          console.log("Email sent");
+
+                        }
+                      });
                     });
                   });
-                });
-              </script>
-              <div class="container-form">
-                <h3 style="margin-top:0px;">Get In Touch Today</h3>
-                <!-- <h4>__________________</h4> -->
 
-                <form method="post" name="myemailform" form action="http://localhost:8080" method="POST">
+                </script>
+                <div class="container-form">
+                  <h3 style="margin-top:0px;">Get In Touch Today</h3>
+                  <!-- <h4>__________________</h4> -->
 
+                  <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
 
+                    Name:
+                    <input type="text" name="name" id="name">
 
-                  Name:
-                  <input type="text" name="name" id="name">
+                    <br> Email:
+                    <input type="text" name="email" id="user_email">
 
-                  <br> Email:
-                  <input type="text" name="email" id="user_email">
-
-                  <br> Enter your message:
-                  <textarea name="message" id="textarea1"></textarea>
+                    <br> Enter your message:
+                    <textarea name="message" id="textarea1"></textarea>
 
 
-                  <br>
-                  <input type="submit" value="Send Form" id="send_email">
+                    <br>
+                    <input type="submit" value="Send Form" id="send_email">
 
-                </form>
-              </div>
+                  </form>
+                </div>
             </div>
 
             <!--End Section 1-->
