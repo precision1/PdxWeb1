@@ -121,7 +121,8 @@
     <!--About-->
     <div class="jumbotron jumbotron-fluid-about" style="margin:0;">
       <div class="container">
-        <h2 class="title-home">We instill integrity and innovation to provide insightful health information to improve patient outcomes.</h2>
+        <h2 class="title-home" style="color:black;">We instill integrity and innovation to provide insightful health
+          information to improve patient outcomes.</h2>
         <p class="lead-hello" style="font-weight:bold; color:#2e6da4;">_____</p>
         <!-- <p class="services-main-paragraph" style="color:gray;"> At Precision Diagnostics, we’re committed to
           understanding and meeting the needs of today’s healthcare community
@@ -173,19 +174,19 @@
               </div>
               <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
                 <i class="fa fa-flask" aria-hidden="true"></i>
-                <p id="number2"  style="font-size: 40px; font-weight: bold;">27,456</p>
+                <p id="number2" style="font-size: 40px; font-weight: bold;">27,456</p>
                 <span></span>
                 <p>Major/Minor DDI</p>
               </div>
               <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
                 <i class="fa fa-coffee"></i>
-                <p id="number3"  style="font-size: 40px; font-weight: bold;">280</p>
+                <p id="number3" style="font-size: 40px; font-weight: bold;">280</p>
                 <span></span>
                 <p>Cups of coffee</p>
               </div>
               <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                <p id="number4"  style="font-size: 40px; font-weight: bold;">559,705</p>
+                <p id="number4" style="font-size: 40px; font-weight: bold;">559,705</p>
                 <span></span>
                 <p>Data Points per Day</p>
               </div>
@@ -232,58 +233,57 @@
             <img id="main-logo" src="../assets/images/Logo.svg"></img>
             <br>
             <!--Get in touch form-->
-            <!--Get in touch form-->
-            <!--Import jQuery before materialize.js-->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <!-- Compiled and minified JavaScript -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-            <script>
-              $(document).ready(function () {
-                var user, to, subject, text;
-                $("#send_email").click(function () {
-                  // enter your email account that you want to recieve emails at.
-                  to = "hrprecisiondx@gmail.com";
-                  name = $("#name").val();
-                  user = $("#user_email").val();
-                  text = $("#textarea1").val();
-                  // $("#message").text("Sending E-mail...Please wait");
-                  $.get("http://localhost:8080/send", {
-                    to: to,
-                    name: name,
-                    user: user,
-                    text: text
-                  }, function (data) {
-                    if (data == "sent") {
-                      console.log("Email sent");
-                    }
+            <form>
+              <!--Import jQuery before materialize.js-->
+              <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+              <!-- Compiled and minified JavaScript -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+              <script>
+                $(document).ready(function () {
+                  var user, to, subject, text;
+                  $("#send_email").click(function () {
+                    // enter your email account that you want to recieve emails at.
+                    to = "hrprecisiondx@gmail.com";
+                    name = $("#name").val();
+                    user = $("#user_email").val();
+                    text = $("#textarea1").val();
+                    // $("#message").text("Sending E-mail...Please wait");
+                    $.get("http://localhost:8080/send", {
+                      to: to,
+                      name: name,
+                      user: user,
+                      text: text
+                    }, function (data) {
+                      if (data == "sent") {
+                        console.log("Email sent");
+
+                      }
+                    });
                   });
                 });
-              });
 
-            </script>
-            <div class="container-form">
-              <h3 style="margin-top:0px;">Get In Touch Today</h3>
-              <!-- <h4>__________________</h4> -->
+              </script>
+              <div class="container-form">
+                <h3 style="margin-top:0px;">Get In Touch Today</h3>
+                <!-- <h4>__________________</h4> -->
 
-              <form method="post" name="myemailform" form action="http://localhost:8080" method="POST">
+                <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
 
+                  Name:
+                  <input type="text" name="name" id="name">
 
+                  <br> Email:
+                  <input type="text" name="email" id="user_email">
 
-                Name:
-                <input type="text" name="name" id="name">
-
-                <br> Email:
-                <input type="text" name="email" id="user_email">
-
-                <br> Enter your message:
-                <textarea name="message" id="textarea1"></textarea>
+                  <br> Enter your message:
+                  <textarea name="message" id="textarea1"></textarea>
 
 
-                <br>
-                <input type="submit" value="Send Form" id="send_email">
+                  <br>
+                  <input type="submit" value="Send Form" id="send_email">
 
-              </form>
-            </div>
+                </form>
+              </div>
           </div>
 
           <!--End Section 1-->

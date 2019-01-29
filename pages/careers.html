@@ -109,13 +109,14 @@
         <div class="pagecontainer">
 
             <h2 style="margin-top:100px; text-align: center;"> Join a fast growing company.</h2>
-            <span class="span" style="font-weight:bold; color:#2e6da4; margin-bottom:200px; margin-left:658px;">_____</span>
+            <span class="span" style="font-weight:bold; color:#2e6da4; margin-bottom:200px; margin-inline-start: 48.5%;">_____</span>
             <br>
             <br>
             <p style="color:gray; margin-bottom:20px; text-align: center;">View our current job openings.</p>
             <br>
             <div class="grow">
                 <a href="https://precisiondx.zhire-zuman.com/" class="grow1" style="margin-left:620px; margin-bottom: 100px;">Apply
+                <a href="https://precisiondx.zhire-zuman.com/" class="grow1" style="margin-bottom: 100px;margin-inline-start: 46%;">Apply
                     Now</a>
             </div>
 
@@ -141,7 +142,9 @@
                     <p style="font-size: 30px; text-align: center; margin-top: 20px;color:white;">- I.T. Employee</p>
                 </div>
                 <div class="col-lg-6">
+                    <div class="quote">
                         <image src="../assets/images/lab-images/office.jpg" class="contact-image" style="height: 400px;;"></image>
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,7 +159,7 @@
 
         <!--Company Benefits-->
 
-        <h2 class="title-home">Benefits & Perks</h2>
+        <h2 class="title-home" style="color:black;">Benefits & Perks</h2>
         <p class="lead-hello" style="font-weight:bold; color:#2e6da4;">_____</p>
         <div class="benefitscontainer" style="background-color: white; margin-top:0px; height:100%;">
             <ul>
@@ -233,19 +236,25 @@
         <!--/Carousel-->
 
         <!-- Image Grid-->
-    
-            <h2 class="title-home" style="margin-top:-40px;">Make some new friends & memories.</h2>
             <p class="lead-hello" style="font-weight:bold; color:#2e6da4;">_____</p>
             <div class="img-grid">
+
+        <h2 class="title-home" style="margin-top:-40px; color:black;">Make some new friends & memories.</h2>
+        <p class="lead-hello" style="font-weight:bold; color:#2e6da4;">_____</p>
+        <div class="img-grid">
             <!-- Photo Grid -->
             <div class="row" style="margin-bottom: 50px;">
                 <div class="column" style="margin-left:100px;">
+                <div class="column" style="margin-left:100px; margin-right: 20px;">
                     <!-- <img src="../assets/images/culture/IMG_1737.jpg" alt="" style="width:200px; height:170px;"> -->
                     <img src="../assets/images/culture/IMG_3012.jpg" alt="" style="width:100%;">
                     <img src="../assets/images/culture/IMG_1728.jpg" alt="" style="width:100%;">
+                    <img src="../assets/images/culture/IMG_3012.jpg" alt="" style="width:100%; height:250px; margin-bottom:10px;margin-right:50px; ">
+                    <img src="../assets/images/culture/IMG_1728.jpg" alt="" style="width:100%;height:250px; margin-right:50px;">
                 </div>
                 <div class="column">
                     <img src="../assets/images/culture/NSM-2018-102.jpg" alt="" style="height:500px;">
+                    <img src="../assets/images/culture/NSM-2018-102.jpg" alt="" style="height:520px;">
                 </div>
             </div>
 
@@ -289,57 +298,57 @@
                         <img id="main-logo" src="../assets/images/Logo.svg"></img>
                         <br>
                         <!--Get in touch form-->
-                        <!--Get in touch form-->
-                        <!--Import jQuery before materialize.js-->
-                        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-                        <!-- Compiled and minified JavaScript -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-                        <script>
-                            $(document).ready(function () {
-                                var user, to, subject, text;
-                                $("#send_email").click(function () {
-                                    // enter your email account that you want to recieve emails at.
-                                    to = "hrprecisiondx@gmail.com";
-                                    name = $("#name").val();
-                                    user = $("#user_email").val();
-                                    text = $("#textarea1").val();
-                                    // $("#message").text("Sending E-mail...Please wait");
-                                    $.get("http://localhost:8080/send", {
-                                        to: to,
-                                        name: name,
-                                        user: user,
-                                        text: text
-                                    }, function (data) {
-                                        if (data == "sent") {
-                                            console.log("Email sent");
-                                        }
+                        <form>
+                            <!--Import jQuery before materialize.js-->
+                            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                            <!-- Compiled and minified JavaScript -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                            <script>
+                                $(document).ready(function () {
+                                    var user, to, subject, text;
+                                    $("#send_email").click(function () {
+                                        // enter your email account that you want to recieve emails at.
+                                        to = "hrprecisiondx@gmail.com";
+                                        name = $("#name").val();
+                                        user = $("#user_email").val();
+                                        text = $("#textarea1").val();
+                                        // $("#message").text("Sending E-mail...Please wait");
+                                        $.get("http://localhost:8080/send", {
+                                            to: to,
+                                            name: name,
+                                            user: user,
+                                            text: text
+                                        }, function (data) {
+                                            if (data == "sent") {
+                                                console.log("Email sent");
+
+                                            }
+                                        });
                                     });
                                 });
-                            });
-                        </script>
-                        <div class="container-form">
-                            <h3 style="margin-top:0px;">Get In Touch Today</h3>
-                            <!-- <h4>__________________</h4> -->
 
-                            <form method="post" name="myemailform" form action="http://localhost:8080" method="POST">
+                            </script>
+                            <div class="container-form">
+                                <h3 style="margin-top:0px;">Get In Touch Today</h3>
+                                <!-- <h4>__________________</h4> -->
 
+                                <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
 
+                                    Name:
+                                    <input type="text" name="name" id="name">
 
-                                Name:
-                                <input type="text" name="name" id="name">
+                                    <br> Email:
+                                    <input type="text" name="email" id="user_email">
 
-                                <br> Email:
-                                <input type="text" name="email" id="user_email">
-
-                                <br> Enter your message:
-                                <textarea name="message" id="textarea1"></textarea>
+                                    <br> Enter your message:
+                                    <textarea name="message" id="textarea1"></textarea>
 
 
-                                <br>
-                                <input type="submit" value="Send Form" id="send_email">
+                                    <br>
+                                    <input type="submit" value="Send Form" id="send_email">
 
-                            </form>
-                        </div>
+                                </form>
+                            </div>
                     </div>
 
                     <!--End Section 1-->
