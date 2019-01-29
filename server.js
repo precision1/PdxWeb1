@@ -22,7 +22,7 @@ app.use(express.static("/pages"));
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'hrprecisiondx@gmail.com',
+        user: 'hrprecisiondx1@gmail.com',
         pass: 'Pdxlab123!'
     }
 });

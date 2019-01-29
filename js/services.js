@@ -21,7 +21,7 @@
 //1: NextGen Precision™ Testing
 var p = $(".popup__overlay");
 
-$("#popup__toggle").click(function() {
+$("#popup__toggle2").click(function() {
   p.css("display", "block");
 });
 p.click(function(event) {
@@ -47,7 +47,7 @@ function toggleVideo(state) {
   );
 }
 
-$("#popup__toggle").click(function() {
+$("#popup__toggle2").click(function() {
   p.css("visibility", "visible").css("opacity", "1");
 });
 
