@@ -217,7 +217,7 @@ h1.main, p.demos {
     background-color: lightgray;
   }
 
-  
+
 /*//////////////////Footer////////////////////////*/
 .footercard{
   width: 100%;
@@ -226,36 +226,36 @@ h1.main, p.demos {
   font-size: 15px;
   background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
    height:100%;
-  
-  
+
+
   }
-  
+
   .footer-container{
   margin-left: 100px;
   color:white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+
   }
-  
+
   /*Footer Contact form*/
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
   * {box-sizing: border-box;}
-  
+
   .container-form{
     width:300px !important;
     height:200px;
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   }
-  
-  
-  
+
+
+
   input[type=text], select, textarea {
     width: 350px !important;
     height:30px;
     background: transparent;
     border:1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    
+
     resize: vertical;
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     background:transparent;
@@ -265,8 +265,8 @@ h1.main, p.demos {
     color: #ccc;
     opacity: 1; /* Firefox */
   }
-  
-  
+
+
   input[type=submit] {
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     color: white;
@@ -280,32 +280,32 @@ h1.main, p.demos {
     background:transparent;
     height:30px;
     width:300px;
-  
+
   }
-  
+
   /* input[type=submit1]:hover {
     background-color: #45a049;
   } */
-  
+
   .core-principles{
     max-width:100%;
     max-height:100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  
-  
+
+
   .copyright-container{
       width: 100%;
       text-align: center;
   }
-  
-  
+
+
   a {
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
-  
+
   }
-  
+
   .lookWrap{
     overflow:hidden;
     float: left;
@@ -315,9 +315,9 @@ h1.main, p.demos {
     /* -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
     clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%); */
     background:black;
-  
+
   }
-  
+
   .section{
     /* overflow: hidden; */
     float: left;
@@ -330,11 +330,11 @@ h1.main, p.demos {
     margin-left: 140px;
     margin-right:0;
   }
-  
+
   .container-links{
     width:100%;
-  
-  
+
+
   }
   .card-link .find-us .lets-talk * {
     font-size: 5pt;
@@ -343,7 +343,7 @@ h1.main, p.demos {
   .section a{
     display: block;
   }
-  
+
   .bottom-footer {
     margin:0;
     width: 100%;
@@ -355,8 +355,8 @@ h1.main, p.demos {
     margin-bottom:0;
     font-size: 10pt;
   }
-  
-  
+
+
   .section2 *{
     float: left;
     width: 300px;
@@ -366,19 +366,19 @@ h1.main, p.demos {
     margin-right:100px;
     display: inline;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+
   }
-  
+
   .section3 *{
     margin-left: 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+
   }
-  
+
   .find-us .lets-talk{
     margin-top:80px !important;
   }
-  
+
   h4{
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -387,7 +387,7 @@ h1.main, p.demos {
 
 
 
-  
+
 
 /* .card-deck{
     margin-left: 50px;
@@ -815,29 +815,29 @@ main{
   font-size: 15px;
   background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
    height:100%;
-  
-  
+
+
   }
-  
+
   .footer-container{
   margin-left: 100px;
   color:white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+
   }
-  
+
   /*Footer Contact form*/
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
   * {box-sizing: border-box;}
-  
+
   .container-form{
     width:300px !important;
     height:200px;
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   }
-  
-  
-  
+
+
+
   input[type=text], select, textarea {
     width: 300px;
     height:20px;
@@ -853,8 +853,8 @@ main{
     color: #ccc;
     opacity: 1; /* Firefox */
   }
-  
-  
+
+
   input[type=submit] {
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     color: white;
@@ -866,31 +866,31 @@ main{
     border: 1px solid #ccc;
     margin-left: 15px;
     background:transparent;
-  
+
   }
-  
+
   /* input[type=submit1]:hover {
     background-color: #45a049;
   } */
-  
+
   .core-principles{
     max-width:100%;
     max-height:100%;
   }
-  
-  
+
+
   .copyright-container{
       width: 100%;
       text-align: center;
   }
-  
-  
+
+
   a {
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
-  
+
   }
-  
+
   .lookWrap{
     overflow:hidden;
     float: left;
@@ -900,9 +900,9 @@ main{
     /* -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
     clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%); */
     background:black;
-  
+
   }
-  
+
   .section{
     /* overflow: hidden; */
     float: left;
@@ -915,11 +915,11 @@ main{
     margin-left: 140px;
     margin-right:0;
   }
-  
+
   .container-links{
     width:100%;
-  
-  
+
+
   }
   .card-link .find-us .lets-talk * {
     font-size: 5pt;
@@ -928,7 +928,7 @@ main{
   .section a{
     display: block;
   }
-  
+
   .bottom-footer {
     margin:0;
     width: 100%;
@@ -940,8 +940,8 @@ main{
     margin-bottom:0;
     font-size: 10pt;
   }
-  
-  
+
+
   .section2 *{
     float: left;
     width: 300px;
@@ -950,25 +950,25 @@ main{
     margin-left:200px;
     margin-right:100px;
     display: inline;
-  
+
   }
-  
+
   .section3 *{
     margin-left: 15px;
-  
+
   }
-  
+
   .find-us .lets-talk{
     margin-top:80px !important;
   }
-  
+
   h4{
     text-align: left;
   }
-  
 
 
-  
+
+
 
 
 
@@ -1232,7 +1232,7 @@ margin-right:-300px;
   margin-top:500px;
   margin-right:-500px;
   font-size:20px;
-} 
+}
 
 
 .lets-talk h7 .find-us *{
@@ -1252,3 +1252,7 @@ p.services-main-paragraph{
 }
 }
 
+
+.card-contact, .card{
+  border:1px solid rgba(0,0,0,.125) !important;
+}
