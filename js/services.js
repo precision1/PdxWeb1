@@ -19,9 +19,9 @@
 /////////////////////////Bootstrap Video Pop Out////////////////////////
 
 //1: NextGen Precision™ Testing
-var p = $(".popup__overlay");
+var p = $(".popup__overlay1");
 
-$("#popup__toggle").click(function() {
+$("#popup__toggle1").click(function() {
   p.css("display", "block");
 });
 p.click(function(event) {
@@ -30,14 +30,14 @@ p.click(function(event) {
     $(p).css("display", "none");
   }
 });
-$(".popup__close").click(function() {
+$(".popup__close1").click(function() {
   p.css("display", "none");
 });
 
 //video popup
 function toggleVideo(state) {
   // if state == 'hide', hide. Else: show video
-  var div = document.getElementById("popupVid");
+  var div = document.getElementById("popupVid1");
   var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
   //div.style.display = state == 'hide' ? 'none' : '';
   func = state == "hide" ? "pauseVideo" : "playVideo";
@@ -47,7 +47,7 @@ function toggleVideo(state) {
   );
 }
 
-$("#popup__toggle").click(function() {
+$("#popup__toggle1").click(function() {
   p.css("visibility", "visible").css("opacity", "1");
 });
 
@@ -61,7 +61,7 @@ p.click(function(event) {
   }
 });
 
-$(".popup__close").click(function() {
+$(".popup__close1").click(function() {
   p.css("visibility", "hidden").css("opacity", "0");
   toggleVideo("hide");
 });
