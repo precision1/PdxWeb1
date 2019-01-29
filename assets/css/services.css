@@ -900,7 +900,7 @@ input{
   
 }
 
-.popup__overlay1 {
+.youtube {
   display: none;
   position: fixed;
   left: 0;
@@ -934,6 +934,22 @@ input{
   background: black;
   color: white;
   vertical-align: middle;
+}
+
+.youtube-youtube{
+   
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 480px;
+    padding: 20px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    vertical-align: middle;
+  
 }
 
 .popup-form__row {
@@ -979,3 +995,7 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: #2e6da4;
 }
+
+/*/////multiple grid///*/
+
+

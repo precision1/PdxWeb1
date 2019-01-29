@@ -19,9 +19,9 @@
 /////////////////////////Bootstrap Video Pop Out////////////////////////
 
 //1: NextGen Precision™ Testing
-var p = $(".popup__overlay");
+var p = $(".youtube");
 
-$("#popup__toggle2").click(function() {
+$(".youtube__toggle2").click(function() {
   p.css("display", "block");
 });
 p.click(function(event) {
@@ -47,7 +47,7 @@ function toggleVideo(state) {
   );
 }
 
-$("#popup__toggle2").click(function() {
+$(".youtube__toggle2").click(function() {
   p.css("visibility", "visible").css("opacity", "1");
 });
 
@@ -69,7 +69,7 @@ $(".popup__close").click(function() {
 
 
 
-//3. Precision TBM
+//2. Precision TBM
 var p = $(".popup__overlay");
 
 $("#popup__toggle3").click(function() {
@@ -116,3 +116,5 @@ $(".popup__close").click(function() {
   p.css("visibility", "hidden").css("opacity", "0");
   toggleVideo("hide");
 });
+
+
