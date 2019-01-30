@@ -1156,10 +1156,6 @@ text-align: center;
 /*////Precision Analytics Charts and Graphs///////////////////*/
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,500i,600,600i,700,700i |Cormorant+SC:400,500,600,700');
 
-/* ====================================
-General Styles
-==================================== */
-
 body {
   background-color: #fff;
 }
@@ -1186,24 +1182,6 @@ Home Slider
 }
 
 /*/////////////////////////////////////End Precision Analytics Charts and Graphs///////*/
-/*//////////////////////////////////Shrinking Navbar/////////////////////*/
-
-/* nav bar css*/
-/* .navcustom {
-  background-color:black !important;
-  width: 100%;
-  padding:0px;
-  position: fixed;
-} */
-
-/* on scroll */
-/* .smallerNav  *{
-  padding: 5px !important;
-
-} */
-/*/////////////////////////////End Shrinking Navbar//////////*/
-}
-
 
 
 /*/////////Graphs Container/////*/
@@ -1235,4 +1213,5 @@ margin-top:-70px;
 
 .card-index{
   border:none;
+}
 }
