@@ -452,29 +452,29 @@ main{
   font-size: 15px;
   background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);
    height:100%;
-  
-  
+
+
   }
-  
+
   .footer-container{
   margin-left: 100px;
   color:white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+
   }
-  
+
   /*Footer Contact form*/
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
   * {box-sizing: border-box;}
-  
+
   .container-form{
     width:300px !important;
     height:200px;
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
   }
-  
-  
-  
+
+
+
   input[type=text], select, textarea {
     width: 300px;
     height:20px;
@@ -490,8 +490,8 @@ main{
     color: #ccc;
     opacity: 1; /* Firefox */
   }
-  
-  
+
+
   input[type=submit] {
     /* background: linear-gradient(to bottom right, #013378 0%, #0172bf 100%);  */
     color: white;
@@ -503,31 +503,31 @@ main{
     border: 1px solid #ccc;
     margin-left: 15px;
     background:transparent;
-  
+
   }
-  
+
   /* input[type=submit1]:hover {
     background-color: #45a049;
   } */
-  
+
   .core-principles{
     max-width:100%;
     max-height:100%;
   }
-  
-  
+
+
   .copyright-container{
       width: 100%;
       text-align: center;
   }
-  
-  
+
+
   a {
       /* text-shadow: 2px 2px 4px #000000; */
       color:white;
-  
+
   }
-  
+
   .lookWrap{
     overflow:hidden;
     float: left;
@@ -537,9 +537,9 @@ main{
     /* -webkit-clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%);
     clip-path: polygon(48% 25%, 100% 34%, 100% 100%, 0 100%, 0 34%); */
     background:black;
-  
+
   }
-  
+
   .section {
     /* overflow: hidden; */
     float: left;
@@ -552,13 +552,13 @@ main{
     margin-left: 140px;
     margin-right:0;
   }
-  
+
   .container-links *{
     width:100%;
     margin-left:50px;
- 
- 
-  
+
+
+
   }
 
   .menu *{
@@ -573,7 +573,7 @@ main{
   .section a{
     display: block;
   }
-  
+
   .bottom-footer {
     margin:0;
     width: 100%;
@@ -585,8 +585,8 @@ main{
     margin-bottom:0;
     font-size: 10pt;
   }
-  
-  
+
+
   .section2 *{
     float: left;
     width: 300px;
@@ -595,23 +595,23 @@ main{
     margin-left:200px;
     margin-right:100px;
     display: inline;
-  
+
   }
-  
+
   .section3 *{
     margin-left: 15px;
-  
+
   }
-  
+
   .find-us .lets-talk{
     margin-top:80px !important;
   }
-  
+
   h4{
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  
+
 
 /*//////Store Drop Down Menu/////*/
 /* Dropdown Button */
@@ -920,9 +920,14 @@ main{
     width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-top: 25px;
     background-color: white !important;
-
   }
+
+  .pagecontainer, h2{
+  text-align: center;
+  }
+
   .pagecontainer ul {
     padding: 0;
     margin-bottom: 1px;
@@ -1300,8 +1305,8 @@ margin-right:30px;
   margin:0 auto;
   width: 200px;
   height:60px;
- 
- 
+
+
 }
 .grow1:hover {
   box-shadow: 0px 0px 10px #2e6da4;
@@ -1623,7 +1628,7 @@ p.services-main-paragraph{
 
 .headerimagecontainer {
   width:100%;
-  margin-top:80px;   
+  margin-top:80px;
 }
 
 

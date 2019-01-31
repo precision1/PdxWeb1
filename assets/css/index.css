@@ -809,35 +809,40 @@ margin-top:-70px;
 }
 
 
+
+
+
 /*////////Media Queries//////////////////////*/
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
 
-  
-  
+  .card-index{
+    height:100%;
+  }
+
+
 }
 
-/* 
+/*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
 
-  
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+<<<<<<< HEAD
  /*Core Values*/ 
 .card-group{
   width:100%;
@@ -862,25 +867,25 @@ p.card-text{
   margin-right: 30px;
   margin-left:-50px;
 }
-}
 
-/* 
+
+
+/*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
 
-  
 }
 
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+
 
   /*Jumbotron video*/
   #video-background{
@@ -933,14 +938,18 @@ margin-left:-50px;
   .media-container{
     margin-left: -50px;
   }
+
+
+
 }
 
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
   
  /*Jumbotron video*/
  #video-background *{
@@ -1000,7 +1009,37 @@ margin-left:-50px;
   margin-left: -50px;
 }
   
+
 }
 
 
 /*//////////////End Media Queries///////////*/
+
+
+
+
+
+
+
+
+/*   INTERNET EXPLORER */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+
+     .card-img-top{
+       height: 50px;
+       width: auto;
+
+     }
+}
+
+@supports (-ms-accelerator:true) {
+  /* IE Edge 12+ CSS styles go here */
+
+  .card-img-top{
+    height: 50px;
+    width: auto;
+
+  }
+}
