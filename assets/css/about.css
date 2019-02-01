@@ -3,6 +3,14 @@ body, a,button, p, h2, nav, h1, .footercard {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+p.card-text{
+
+    font-size: .9rem !important;
+    text-align: center;
+    margin:10px;
+    height:100%;
+  
+}
 /*//////Store Drop Down Menu/////*/
 /* Dropdown Button */
 .dropbtn {
@@ -730,187 +738,127 @@ overflow: hidden;
 }
 
 
+/*////////Media Queries//////////////////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-/*/////////////Media Queries////////////
+@media (min-width: 1281px) {
+
+ 
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+/* Services cards*/
+  #card-body1 {
+  margin-bottom:-50px;
+}
+
+#card-body2{
+  margin-bottom: 30px;
+}
+}
+
+/*  
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/*Core Principles*/
+.card-body{
+  width: fit-content !important;
+  height: 500px !important;
+}
+
+p.card-text *{
+  font-size: 0%;
+  text-align: center;
+
+}
+
+.card.card-index{
+  height: fit-content;
+  font-size: 0%;
+}
+/*Footer* --->work on*/
+.copyright-container{
+  margin-left: -900px !important;
+}
+
+.media-container *{
+  width: min-content;
+}
+
+.section2 *{
+
+    width: unset;
+}
+
+.rights-reserved *{
+width: 0px;   
+}
+
+
 /*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  .storemodal-content {
-    width: 100%;
-    margin:0;
-    padding:0;
-}
-
-.navbar-nav .navbar-brand  .nav-item *{
-  width: 100%;
-  height:100%;
-  margin:0;
-  padding:0;
-
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
 }
 
-#main-logo #homeBtn *{
-width: 50px;
-height:20px;
-margin:0;
-padding:0;
-}
-
-
-.home-modal-content{
-  width:100%;
-  margin:0;
-  padding:0;
-}
-
-.jumbotron .jumbotron.jumbotron-fluid{
-  width:100%;
-  height:50%;
-  margin:0;
-  padding:0;
-}
-
-.card-img-top2 *{
-  height:100%;
-  width:100%;
-}
-/* .card-group .card1{
-  width:50%;
-  height:50%;
-  margin:0;
-  padding:0;
-  margin-top:50px;
-} */
-
-.footercard .lookWrap .container-form .section2 .section3 *{
-  width:100%;
-  height:100%;
-  padding:0;
-
-}
-
-/* #look{
-  margin-top:10%;
-} */
-.copyright-container{
-  margin-left:-200px;
-  display: block;
-  flex-direction: column;
-  font-size: 9px;
-}
-
-.media-container{
-  display: block;
-  flex-direction: row;
-
-}
-form{
-  width:100%;
-  height:50%;
-}
-
-/* .lets-talk h7 .find-us {
-  padding:0;
-  margin:0;
-  margin-top:-300px;
-  margin-bottom:-200px;
-} */
-
-}
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+ /*Footer*/
+  .container-form, #main-logo{
+margin-left:-50px;
+  }
 
-  .storemodal-content {
-    width: 100%;
-    margin:0;
-    padding:0;
-}
+  .mu{
+    margin-top: -100px !important;
+  }
+   a.card-link, .mu{
+    margin-left:-100px;
+  }
 
-.navbar-nav .navbar-brand  .nav-item *{
-  width: 100%;
-  height:100%;
-  margin:0;
-  padding:0;
+  .fus{
+    margin-top: -20px;
+  }
+  .fus, .find-us{
+    margin-left: 0px;
+    
+  }
 
+  .find-us{
+    margin-left:-5px !important;
+  }
 
-}
-
-#main-logo #homeBtn *{
-width: 50px;
-height:20px;
-margin:0;
-padding:0;
-}
-
-
-.home-modal-content{
-  width:100%;
-  margin:0;
-  padding:0;
-}
-
-.jumbotron .jumbotron.jumbotron-fluid{
-  width:100%;
-  margin:0;
-  padding:0;
-}
-
+  .lt{
+    margin-top: 10px;
+    margin-left:-2px !important;
+  }
+  .lets-talk{
+    margin-left:-5px !important;
+  }
+  .media-container{
+    margin-left: -50px;
+  }
 
 
-.card-img-top2 .card-img-top{
-  height:200px;
-}
-
-/* .card-group .card1{
-  width:100%;
-  height:100%;
-  margin:0;
-  padding:0;
-} */
-
-.footercard .lookWrap .container-form .section2 .section3 *{
-  width:100%;
-  height:100%;
-  margin: -100%;
-  padding:0;
-
-}
-
-.copyright-container{
-  margin-left:-200px;
-  display: block;
-  flex-direction: column;
-  font-size: 9px;
-}
-
-.media-container{
-  display: block;
-  flex-direction: row;
-
-}
-form{
-  margin-top: 100%;
-  width:100%;
-  height:50%;
-}
-
-.lets-talk h7 .find-us *{
-  padding:0;
-  margin:0;
-  margin-top:-300px;
-  margin-bottom:-200px;
-}
-
-}
 
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -919,97 +867,12 @@ form{
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  .storemodal-content {
-    width: 100%;
-    margin:0;
-    padding:0;
+ /*look into*/
+ 
 }
 
-.navbar-nav .navbar-brand  .nav-item *{
-  width: 100%;
-  height:100%;
-  margin:0;
-  padding:0;
-
-
-}
-
-#main-logo #homeBtn *{
-width: 50px;
-height:20px;
-margin:0;
-padding:0;
-}
-
-
-.home-modal-content{
-  width:100%;
-  margin:0;
-  padding:0;
-}
-
-.jumbotron .jumbotron.jumbotron-fluid{
-  width:100%;
-  margin:0;
-  padding:0;
-}
-
-.title-home{
-  margin-left:100px;
-}
-
-.footercard .lookWrap .container-form .section2 .section3 *{
-  width:100%;
-  height:100%;
-  margin: -100%;
-  padding:0;
-
-}
-
-.copyright-container *{
-margin-right:-300px;
-  display: block;
-  flex-direction: column;
-  font-size: 6px;
-  margin-bottom: 50px;
-}
-
-.container-links *{
-  margin-right:200px;
-}
-.media-container *{
-  display: block;
-  flex-direction: row;
-  size: 9px;
-  margin-bottom: 50px;
-  margin-top:50px;
-
-
-}
-
-.container-form {
-  margin-top:100px;
-  margin-right:-500px;
-  font-size:20px;
-}
-
-
-.lets-talk h7 .find-us *{
-  padding:0;
-  margin:0;
-  margin-top:-300px;
-  margin-bottom:-200px;
-}
-
-h2.title-home {
-  margin-left:130px;
-}
-
-p.services-main-paragraph{
-  margin-left:80px;
-
-}
-}
 
 /*//////////////End Media Queries///////////*/
+
+}}
 
