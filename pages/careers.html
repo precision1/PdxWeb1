@@ -108,7 +108,7 @@
         <!--Job Portal-->
         <div class="pagecontainer">
 
-            <h2 > Join the fastest growing company in the industry.</h2>
+            <h2> Join the fastest growing company in the industry.</h2>
             <span class="span" style="font-weight:bold; color:#2e6da4; margin-bottom:200px;">_____</span>
             <br>
             <br>
@@ -134,11 +134,13 @@
         <div class="jumbotron" style="background: linear-gradient(to bottom right, #000066 0%, #0066ff 100%); margin-top: 50px;">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="display-4" style="font-size: 2rem; text-align: left; color:white; padding-left:10%; padding-right:10%;">"As a member of the
+                    <h1 class="display-4" style="font-size: 2rem; text-align: left; color:white; padding-left:10%; padding-right:10%;">"As
+                        a member of the
                         IT developoment team I get to use new technologies and
                         learn
                         hands-on in our department since Precision consistently keeps up with new tech." </h1>
-                    <p style="font-size: 1.75rem; text-align: left; margin-top: 20px;color:white; padding-left:10%; padding-right:10%;">- I.T. Employee</p>
+                    <p style="font-size: 1.75rem; text-align: left; margin-top: 20px;color:white; padding-left:10%; padding-right:10%;">-
+                        I.T. Employee</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="quote">
@@ -242,8 +244,8 @@
             <div class="row" style="margin-bottom: 50px;">
                 <div class="column" style="margin-left:100px; margin-right: 20px;">
                     <!-- <img src="../assets/images/culture/IMG_1737.jpg" alt="" style="width:200px; height:170px;"> -->
-                    <img src="../assets/images/culture/IMG_3012.jpg" alt="" style="width:100%; height:250px; margin-bottom:10px;margin-right:50px; ">
-                    <img src="../assets/images/culture/IMG_1728.jpg" alt="" style="width:100%;height:250px; margin-right:50px;">
+                    <img class ="baby-pic" src="../assets/images/culture/IMG_3012.jpg" alt="" style="width:100%; height:250px; margin-bottom:10px;margin-right:50px; ">
+                    <img class ="baby-pic" src="../assets/images/culture/IMG_1728.jpg" alt="" style="width:100%;height:250px; margin-right:50px;">
                 </div>
                 <div class="column">
                     <img src="../assets/images/culture/NSM-2018-102.jpg" alt="" style="height:520px;">
@@ -278,165 +280,159 @@
     </div>
 
     <!--Footer-->
-    <div class="parallax2" style="margin-bottom:-100px;">
-        <div class="footercard">
-            <!-- <div class="footer-container"> -->
-            <!--Top Footer-->
-            <div class="lookWrap">
-                <div id="look">
-                    <!--Section 1-->
-                    <div class="section">
-                        <!--Logo-->
-                        <img id="main-logo" src="../assets/images/Logo.svg"></img>
-                        <br>
-                        <!--Get in touch form-->
-                        <form>
-                            <!--Import jQuery before materialize.js-->
-                            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-                            <!-- Compiled and minified JavaScript -->
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-                            <script>
-                                $(document).ready(function () {
-                                    var user, to, subject, text;
-                                    $("#send_email").click(function () {
-                                        // enter your email account that you want to recieve emails at.
-                                        to = "hrprecisiondx1@gmail.com";
-                                        name = $("#name").val();
-                                        user = $("#user_email").val();
-                                        text = $("#textarea1").val();
-                                        // $("#message").text("Sending E-mail...Please wait");
-                                        $.get("http://localhost:8080/send", {
-                                            to: to,
-                                            name: name,
-                                            user: user,
-                                            text: text
-                                        }, function (data) {
-                                            if (data == "sent") {
-                                                console.log("Email sent");
+    <div class="footercard">
+        <!-- <div class="footer-container"> -->
+        <!--Top Footer-->
+        <div class="lookWrap">
+            <div id="look">
+                <!--Section 1-->
+                <div class="section">
+                    <!--Logo-->
+                    <img id="main-logo" src="../assets/images/Logo.svg"></img>
+                    <br>
+                    <!--Get in touch form-->
+                    <form>
+                        <!--Import jQuery before materialize.js-->
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                        <!-- Compiled and minified JavaScript -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                        <script>
+                            $(document).ready(function () {
+                                var user, to, subject, text;
+                                $("#send_email").click(function () {
+                                    // enter your email account that you want to recieve emails at.
+                                    to = "hrprecisiondx1@gmail.com";
+                                    name = $("#name").val();
+                                    user = $("#user_email").val();
+                                    text = $("#textarea1").val();
+                                    // $("#message").text("Sending E-mail...Please wait");
+                                    $.get("http://localhost:8080/send", {
+                                        to: to,
+                                        name: name,
+                                        user: user,
+                                        text: text
+                                    }, function (data) {
+                                        if (data == "sent") {
+                                            console.log("Email sent");
 
-                                            }
-                                        });
+                                        }
                                     });
                                 });
+                            });
 
-                            </script>
-                            <div class="container-form">
-                                <h3 style="margin-top:0px;">Get In Touch Today</h3>
-                                <!-- <h4>__________________</h4> -->
+                        </script>
+                        <div class="container-form">
+                            <h3 style="margin-top:0px;">Get In Touch Today</h3>
+                            <!-- <h4>__________________</h4> -->
 
-                                <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
+                            <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
 
-                                    Name:
-                                    <input type="text" name="name" id="name">
+                                Name:
+                                <input type="text" name="name" id="name">
 
-                                    <br> Email:
-                                    <input type="text" name="email" id="user_email">
+                                <br> Email:
+                                <input type="text" name="email" id="user_email">
 
-                                    <br> Enter your message:
-                                    <textarea name="message" id="textarea1"></textarea>
+                                <br> Enter your message:
+                                <textarea name="message" id="textarea1"></textarea>
 
 
-                                    <br>
-                                    <input type="submit" value="Send Form" id="send_email">
-
-                                </form>
-                            </div>
-                    </div>
-
-                    <!--End Section 1-->
-                    <!--Section 2-->
-                    <div class="section">
-                        <!--Menu-->
-                        <div class="container-links" style="margin-left:100px; font-size:9pt;margin-top:80px; margin-bottom:30px; width:100%;  line-height: 0.3;">
-                            <h5 style="margin-left:100px; width:100%;">Menu</h5>
-                            <div class="w-100"></div>
-                            <div class="col1">
-                                <a href="../pages/services.html" class="card-link">Services</a>
-                            </div>
-                            <!-- <div class="col1"><a href="../pages/storeClientST.html" class="card-link">Store</a></div> -->
-                            <div class="w-100"></div>
-                            <div class="col1">
-                                <a href="../pages/privacy.html" class="card-link">Privacy & Notice</a>
-                            </div>
-                            <div class="col1">
-                                <a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived
-                                    Reports
-                                </a>
-                            </div>
-                            <div class="col1">
-                                <a href="../pages/careers.html" class="card-link">Careers</a>
-                            </div>
-                            <div class="col1">
-                                <a href="https://form.jotform.com/51114198189964" class="card-link">Customer
-                                    Satisfaction Survey</a>
-                            </div>
-                            <div class="col1">
-                                <a href="https://www.dxlink.com/patientportal/signin.html?cn=%20precistox#/login" class="card-link">Patient
-                                    Portal</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Section 2-->
-                    <!--Section 3-->
-                    <div class="section">
-                        <!--Find Us-->
-                        <h5 style="margin-left: 50px; width:100%; margin-top:80px;">Find Us</h5>
-                        <div class="find-us" style=" font-size:9pt; margin-left: 50px; width:100%;">
-                            <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
-                            Diego, CA 92121
-                            <br>
-                            <br>
-                            <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N
-                            103,
-                            Dartmouth, MA
-                            02747
-                        </div>
-                    </div>
-                    <!--End Section 3-->
-                    <!--Section 4-->
-                    <div class="section">
-                        <!---Lets Talk-->
-                        <div class="lets-talk">
-                            <h5 style="margin-left:10px; width:100%; margin-top:80px;">Let's Talk</h5>
-                            <div class="lets-talk" style=" font-size:9pt;margin-left: 10px; width:100%;">
-                                <i class="fas fa-phone"></i> 800.635.6901
                                 <br>
-                                <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Section 4-->
+                                <input type="submit" value="Send Form" id="send_email">
 
-                    <!--Bottom of Footer-->
-
-
-                    <div class="bottom-footer">
-                        <!---Copyright-->
-                        <div class="section2">
-                            <div class="copyright-container">
-                                <div class="" style="width:100%; margin-left:350px;">©2019 Precision Diagnostics.
-                                    All
-                                    rights
-                                    reserved.
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                        <!--Social Media-->
-                        <div class="section3">
-                            <div class="media-container" style="margin-left:220px; width:100%;">
-                                <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f" id="icon"></a>
-                                <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin" id="icon"></a>
-                                <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End bottom footer-->
                 </div>
+
+                <!--End Section 1-->
+                <!--Section 2-->
+                <div class="section">
+                    <!--Menu-->
+                    <div class="container-links" style="margin-left:100px; font-size:9pt;margin-top:80px; margin-bottom:30px;">
+                        <h5 class="mu">Menu</h5>
+                        <div class="w-100"></div>
+                        <div class="col1">
+                            <a href="../pages/services.html" class="card-link">Services</a>
+                        </div>
+                        <!-- <div class="col1"><a href="../pages/storeClientST.html" class="card-link">Store</a></div> -->
+                        <div class="w-100"></div>
+                        <div class="col1">
+                            <a href="../pages/privacy.html" class="card-link">Privacy & Notice</a>
+                        </div>
+                        <div class="col1">
+                            <a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived Reports
+                            </a>
+                        </div>
+                        <div class="col1">
+                            <a href="../pages/careers.html" class="card-link">Careers</a>
+                        </div>
+                        <div class="col1">
+                            <a href="https://form.jotform.com/51114198189964" class="card-link">Customer Satisfaction
+                                Survey</a>
+                        </div>
+                        <div class="col1">
+                            <a href="https://www.dxlink.com/patientportal/signin.html?cn=%20precistox#/login" class="card-link">Patient
+                                Portal</a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Section 2-->
+                <!--Section 3-->
+                <div class="section">
+                    <!--Find Us-->
+                    <h5 class="fus">Find Us</h5>
+                    <div class="find-us" style=" font-size:9pt; margin-left: 50px; width:100%;">
+                        <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San Diego,
+                        CA 92121
+                        <br>
+                        <br>
+                        <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N 103,
+                        Dartmouth, MA
+                        02747
+                    </div>
+                </div>
+                <!--End Section 3-->
+                <!--Section 4-->
+                <div class="section">
+                    <!---Lets Talk-->
+                    <div class="lets-talk">
+                        <h5 class="lt">Let's Talk</h5>
+                        <div class="lets-talk" style=" font-size:9pt;margin-left: 10px; width:100%;">
+                            <i class="fas fa-phone"></i> 800.635.6901
+                            <br>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
+                        </div>
+                    </div>
+                </div>
+                <!--End Section 4-->
+
+                <!--Bottom of Footer-->
+
+
+                <div class="bottom-footer">
+                    <!---Copyright-->
+                    <div class="section2">
+                        <div class="copyright-container">
+                            <div class="rights-reserved">©2019 Precision Diagnostics. All rights
+                                reserved.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Social Media-->
+                    <div class="section3">
+                        <div class="media-container">
+                            <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f" id="icon"></a>
+                            <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin" id="icon"></a>
+                            <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End bottom footer-->
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
+
 
     <!--/Footer-->
 
