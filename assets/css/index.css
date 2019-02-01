@@ -901,7 +901,7 @@ p.card-text{
 
   /*Core Principles*/
   h1{
-    margin-top:-90px;
+    margin-top: 0px;
   }
 
   /*Footer*/
@@ -950,66 +950,8 @@ margin-left:-50px;
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  
- /*Jumbotron video*/
- #video-background *{
-  height:100% !important;
-  width: 100%;
-}
-
-/*Analytics*/
-.gif{
-  width:300px;
-  height:250px;
-  margin-top:-710px;
-  margin-left:0px;
-}
-
-/*Core Principles*/
-h1{
-  margin-top:-90px;
-}
-p.card-text{
-  font-size: .3rem;
-
-}
-
-/*Footer*/
-.container-form, #main-logo{
-margin-left:-50px;
-}
-
-.mu{
-  margin-top: -50px;
-}
- a.card-link, .mu{
-  margin-left:-100px;
-}
-
-.fus{
-  margin-top: -20px;
-}
-.fus, .find-us{
-  margin-left: 0px;
-  
-}
-
-.find-us{
-  margin-left:-5px !important;
-}
-
-.lt{
-  margin-top: 10px;
-  margin-left:-2px !important;
-}
-.lets-talk{
-  margin-left:-5px !important;
-}
-.media-container{
-  margin-left: -50px;
-}
-  
-
+  /*---> Finish */
+ 
 }
 
 
