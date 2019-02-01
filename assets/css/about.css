@@ -3,9 +3,10 @@ body, a,button, p, h2, nav, h1, .footercard {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 p.card-text{
 
-    font-size: .9rem !important;
+    font-size: .9rem ;
     text-align: center;
     margin:10px;
     height:100%;
@@ -642,7 +643,7 @@ overflow: hidden;
 
 .projectFactsWrap .item{
   width: 25%;
-  height: 100%;
+  /* height: 100%; */
   padding: 50px 0px;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -779,16 +780,21 @@ overflow: hidden;
   height: 500px !important;
 }
 
-p.card-text *{
-  font-size: 0%;
-  text-align: center;
+  p.card-text *{
+    font-size: .3rem;
+    
+  }
+
+  .card-body *{
+    width:fit-content;
+    overflow: hidden;
+  }
 
 }
 
-.card.card-index{
-  height: fit-content;
-  font-size: 0%;
-}
+
+
+
 /*Footer* --->work on*/
 .copyright-container{
   margin-left: -900px !important;
@@ -829,19 +835,19 @@ margin-left:-50px;
   }
 
   .mu{
-    margin-top: -100px !important;
+    margin-top: 100px !important;
+    margin-left:50px !important;
   }
    a.card-link, .mu{
     margin-left:-100px;
+    margin-left:50px !important;
   }
 
   .fus{
     margin-top: -20px;
+    margin-left:-5px !important;
   }
-  .fus, .find-us{
-    margin-left: 0px;
-    
-  }
+
 
   .find-us{
     margin-left:-5px !important;
@@ -866,8 +872,41 @@ margin-left:-50px;
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-
- /*look into*/
+ /*Footer*/
+ .container-form, #main-logo{
+  margin-left:-50px;
+    }
+  
+    .mu{
+      margin-top: 100px !important;
+      margin-left:50px !important;
+    }
+     a.card-link, .mu{
+      margin-left:-100px;
+      margin-left:50px !important;
+    }
+  
+    .fus{
+      margin-top: -20px;
+      margin-left:-5px !important;
+    }
+  
+  
+    .find-us{
+      margin-left:-5px !important;
+    }
+  
+    .lt{
+      margin-top: 10px;
+      margin-left:-2px !important;
+    }
+    .lets-talk{
+      margin-left:-5px !important;
+    }
+    .media-container{
+      margin-left: -50px;
+    }
+  
  
 }
 
