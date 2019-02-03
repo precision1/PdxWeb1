@@ -11,6 +11,11 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/contact.css">
@@ -193,7 +198,7 @@
                                             </div>
                                             <div class="col-md-12">
 
-                                                <a id="send_email" type='submit' input type="submit" style="background-color: #337ab7; color: white; padding: 5px;">
+                                                <a id="send_email" type='submit' input type="submit" style="background-color: #337ab7; color: black; padding: 5px;">
                                                     Submit</a>
 
                                             </div>
@@ -247,7 +252,7 @@
 
                 <!--Map Images-->
 
-                <div class="card-deck card-deck-map-contact" style="margin-bottom:-120px;">
+                <div class="card-deck card-deck-map-contact">
                     <div class="card card-map-contact">
                         <div class="card-body1">
                             <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=4215%20Sorrento%20Valley%20Blvd%2C%20San%20Diego%2C%20CA%2092121+(Precision%20Diagnostics%20San%20Diego)&ie=UTF8&t=h&z=19&iwloc=B&output=embed"
@@ -276,167 +281,177 @@
 
 
         <!--Footer-->
-        <div class="footercard">
-            <!-- <div class="footer-container"> -->
-            <!--Top Footer-->
-            <div class="lookWrap">
-                <div id="look">
-                    <!--Section 1-->
-                    <div class="section">
-                        <!--Logo-->
-                        <img id="main-logo" src="../assets/images/Logo.svg"></img>
-                        <br>
-                        <!--Get in touch form-->
-                        <form>
-                            <!--Import jQuery before materialize.js-->
-                            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-                            <!-- Compiled and minified JavaScript -->
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-                            <script>
-                                $(document).ready(function () {
-                                    var user, to, subject, text;
-                                    $("#send_email").click(function () {
-                                        // enter your email account that you want to recieve emails at.
-                                        to = "hrprecisiondx1@gmail.com";
-                                        name = $("#name").val();
-                                        user = $("#user_email").val();
-                                        text = $("#textarea1").val();
-                                        // $("#message").text("Sending E-mail...Please wait");
-                                        $.get("http://localhost:8080/send", {
-                                            to: to,
-                                            name: name,
-                                            user: user,
-                                            text: text
-                                        }, function (data) {
-                                            if (data == "sent") {
-                                                console.log("Email sent");
+        <!--New Footer-->
 
-                                            }
-                                        });
-                                    });
-                                });
-
-                            </script>
-                            <div class="container-form">
-                                <h3 style="margin-top:0px;">Get In Touch Today</h3>
-                                <!-- <h4>__________________</h4> -->
-
-                                <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
-
-                                    Name:
-                                    <input type="text" name="name" id="name">
-
-                                    <br> Email:
-                                    <input type="text" name="email" id="user_email">
-
-                                    <br> Enter your message:
-                                    <textarea name="message" id="textarea1"></textarea>
-
-
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>4215 Sorrento Valley Blvd., San Diego,
+                                        CA 92121</span>
                                     <br>
-                                    <input type="submit" value="Send Form" id="send_email">
-
-                                </form>
-                            </div>
-                    </div>
-
-                    <!--End Section 1-->
-                    <!--Section 2-->
-                    <div class="section">
-                        <!--Menu-->
-                        <div class="container-links" style="margin-left:100px; font-size:9pt;margin-top:80px; margin-bottom:30px;">
-                            <h5 class="mu">Menu</h5>
-                            <div class="w-100"></div>
-                            <div class="col1">
-                                <a href="../pages/services.html" class="card-link">Services</a>
-                            </div>
-                            <!-- <div class="col1"><a href="../pages/storeClientST.html" class="card-link">Store</a></div> -->
-                            <div class="w-100"></div>
-                            <div class="col1">
-                                <a href="../pages/privacy.html" class="card-link">Privacy & Notice</a>
-                            </div>
-                            <div class="col1">
-                                <a href="https://precisiontox.safemedicaldata.com/" class="card-link">Archived Reports
-                                </a>
-                            </div>
-                            <div class="col1">
-                                <a href="../pages/careers.html" class="card-link">Careers</a>
-                            </div>
-                            <div class="col1">
-                                <a href="https://form.jotform.com/51114198189964" class="card-link">Customer
-                                    Satisfaction Survey</a>
-                            </div>
-                            <div class="col1">
-                                <a href="https://www.dxlink.com/patientportal/signin.html?cn=%20precistox#/login" class="card-link">Patient
-                                    Portal</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Section 2-->
-                    <!--Section 3-->
-                    <div class="section">
-                        <!--Find Us-->
-                        <h5 class="fus">Find Us</h5>
-                        <div class="find-us" style=" font-size:9pt; margin-left: 50px; width:100%;">
-                            <i class="fas fa-map-marker-alt" class="card-link"></i> 4215 Sorrento Valley Blvd., San
-                            Diego, CA 92121
-                            <br>
-                            <br>
-                            <i class="fas fa-map-marker-alt" style="font-size: 9pt;"></i> 49 State Road, Suite N 103,
-                            Dartmouth, MA
-                            02747
-                        </div>
-                    </div>
-                    <!--End Section 3-->
-                    <!--Section 4-->
-                    <div class="section">
-                        <!---Lets Talk-->
-                        <div class="lets-talk">
-                            <h5 class="lt">Let's Talk</h5>
-                            <div class="lets-talk" style=" font-size:9pt;margin-left: 10px; width:100%;">
-                                <i class="fas fa-phone"></i> 800.635.6901
-                                <br>
-                                <i class="fa fa-envelope" aria-hidden="true"></i> info@precisiondxlab.com
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Section 4-->
-
-                    <!--Bottom of Footer-->
-
-
-                    <div class="bottom-footer">
-                        <!---Copyright-->
-                        <div class="section2">
-                            <div class="copyright-container">
-                                <div class="rights-reserved">©2019 Precision Diagnostics. All rights
-                                    reserved.
+                                    <br>
+                                    <span>49 State Road, Suite N 103,
+                                        Dartmouth, MA
+                                        02747</span>
                                 </div>
-                               
                             </div>
                         </div>
-                        <!--Social Media-->
-
-                        <div class="section3">
-                            <div class="media-container">
-                                    <div class="rights-reserved">©2019 Precision Diagnostics. All rights
-                                            reserved.
-                                        </div>
-                                <a href="https://www.facebook.com/precisiondiagnostics" class="fab fa-facebook-f" id="icon"></a>
-                                <a href="https://www.linkedin.com/company/precisiondxlab" class="fab fa-linkedin" id="icon"></a>
-                                <a href="https://twitter.com/PrecisionDxLab" class="fab fa-twitter" id="icon"></a>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>800.635.6901</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>info@precisiondxlab.com</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--End bottom footer-->
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="../pages/index.html"><img src="../assets/images/Logo.svg" class="img-fluid"
+                                            alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="https://www.facebook.com/precisiondiagnostics"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="https://twitter.com/PrecisionDxLab"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="https://www.linkedin.com/company/precisiondxlab"><i class="fab fa-linkedin linkedin-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="../pages/index.html">Home</a></li>
+                                    <li><a href="../pages/services.html">Our Services</a></li>
+                                    <li><a href="../pages/about.html">About us</a></li>
+                                    <li><a href="../pages/contact.html">Contact us</a></li>
+                                    <li><a href="../pages/careers.html">Careers</a></li>
+                                    <li><a href="https://www.dxlink.com/patientportal/signin.html?cn=%20precistox#/login">Patient
+                                            Portal</a></li>
+                                    <li><a href="https://precisiontox.safemedicaldata.com/">Archived Reports</a></li>
+                                    <li><a href="https://form.jotform.com/51114198189964">Customer Satisfaction Survey</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Get In Touch Today</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p></p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <!--Import jQuery before materialize.js-->
+                                        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                                        <!-- Compiled and minified JavaScript -->
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                                        <script>
+                                            $(document).ready(function () {
+                                                var user, to, subject, text;
+                                                $("#send_email").click(function () {
+                                                    // enter your email account that you want to recieve emails at.
+                                                    to = "hrprecisiondx1@gmail.com";
+                                                    name = $("#name").val();
+                                                    user = $("#user_email").val();
+                                                    text = $("#textarea1").val();
+                                                    // $("#message").text("Sending E-mail...Please wait");
+                                                    $.get("http://localhost:8080/send", {
+                                                        to: to,
+                                                        name: name,
+                                                        user: user,
+                                                        text: text
+                                                    }, function (data) {
+                                                        if (data == "sent") {
+                                                            console.log("Email sent");
+
+                                                        }
+                                                    });
+                                                });
+                                            });
+
+                                        </script>
+                                        <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
+
+                                            Name:
+                                            <input type="text" name="name" id="name">
+
+                                            <br> Email:
+                                            <input type="text" name="email" id="user_email">
+
+                                            <br> Enter your message:
+                                            <input type="text" textarea name="message" id="textarea1"></textarea>
+
+
+                                            <br>
+                                            <br>
+                                            <input type="submit" value="Send Form" id="send_email" style="width:50%;">
+
+                                        </form>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2019 Precision Diagnostics, All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="../pages/index.html">Home</a></li>
+                            <li><a href="../pages/contact.html">Contact</a></li>
+                            <li><a href="../pages/careers.html">Careers</a></li>
+                            <li><a href="../pages/services.html">Services</a></li>
+                            <li><a href="../pages/privacy.html">Privacy & Notice</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    </footer>
+    <!---/New Footer-->
 
 
 
-        <!--/Footer-->
-        <!--End of last parallax scroll-->
+    <!--/Footer-->
+    <!--End of last parallax scroll-->
     </div>
     </div>
     <!-- Bootstrap Core JavaScript -->
