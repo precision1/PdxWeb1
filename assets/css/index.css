@@ -797,13 +797,16 @@ margin-top:-70px;
 }
 
 .gif{
+
+  min-width: 75%;
   width: 60vw;
   height: auto;
-  margin-left:20%;
+  margin-left:12%;
   z-index: 0;
   position: relative;
   box-shadow:5px 5px 30px rgba(68, 68, 68, 0.4);
   margin-top: -450px;
+
 }
 
 .card-index{

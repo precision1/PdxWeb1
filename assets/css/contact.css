@@ -948,9 +948,16 @@ color: #000066;
 color: #878787;
 text-transform: capitalize;
 }
+
+.subscribe-form1 {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  }
 .subscribe-form {
 position: relative;
 overflow: hidden;
+
 }
 .subscribe-form input {
 width: 50%;
