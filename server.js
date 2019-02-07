@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 app.use(express.static("/pages"));
 
 
+
 //Code to send contact form information to gmail
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -28,7 +29,7 @@ var transporter = nodemailer.createTransport({
 });
 
 
-app.use(express.static(__dirname + '/pages'));
+app.use(express.static(__dirname +'/pages'));
 
 app.get('/', function (req, res) {
     res.sendfile('/pages');
