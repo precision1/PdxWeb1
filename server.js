@@ -28,10 +28,10 @@ var transporter = nodemailer.createTransport({
 });
 
 
-app.use(express.static(__dirname + '../pages'));
+app.use(express.static(__dirname + '/pages'));
 
-app.get('../', function (req, res) {
-    res.sendfile('../pages');
+app.get('/', function (req, res) {
+    res.sendfile('/pages');
 });
 
 app.get('/send', function (req, res) {
