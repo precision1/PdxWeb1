@@ -165,7 +165,7 @@
                                     </script>
 
 
-                                    <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
+                                    <form id="myForm" action="http://localhost:8080/thanks" method="POST">
 
                                         <div class="messages"></div>
 
@@ -225,6 +225,13 @@
                                             </div>
 
                                     </form>
+                                    <script>
+                                        document.getElementById("myForm").addEventListener("submit", myFunction);
+
+                                        function myFunction() {
+                                            alert("The form was submitted");
+                                        }
+                                    </script>
                             </div>
                         </div>
                     </div>
