@@ -8,7 +8,7 @@ body, a,button, p, h2, nav, h1, .footercard {
 }
 
 #billing-contact{
-text-align: left; 
+text-align: left !important; 
 margin-left: 110px;
 }
 .card-body.card-body-contact{
@@ -1132,8 +1132,9 @@ body {
   margin-left:20px !important;
 }
 
-#billing-contact{
+#billing-contact *{
   margin-left:20px;
+  text-align:  left;
 }
 }
 
