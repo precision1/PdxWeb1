@@ -6,7 +6,7 @@ body, a,button, p, h2, nav, h1, .footercard {
 
 .contact-image{
   height:400px;
-  
+
 }
 
 .jumbotron {
@@ -464,7 +464,7 @@ border-bottom: 1px solid #373636;
 color: #2e6da4;
 font-size: 30px;
 float: left;
-margin-top: 8px;
+
 }
 .cta-text {
 padding-left: 15px;
@@ -633,7 +633,7 @@ ul li a i {
 }
 .fa-facebook {
   background:#3b5998
-} 
+}
 .fa-linkedin {
   background:#007bb6
 }
@@ -1457,14 +1457,14 @@ body {
 img{
   margin-left:50px;
 }
-  
+
   }
-  
+
   /*
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
-  
+
   @media (min-width: 1025px) and (max-width: 1280px) {
     /*Quote image*/
     .contact-image{
@@ -1480,12 +1480,12 @@ img{
       margin-left:-200px !important;
     }
   }
-  
-  /*  
+
+  /*
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-  
+
   @media (min-width: 768px) and (max-width: 1024px) {
   /*Img Grid*/
    .baby-pic{
@@ -1497,51 +1497,51 @@ img{
   .copyright-container{
     margin-left: -900px !important;
   }
-  
+
   .media-container *{
     width: min-content;
-    
+
   }
-  
+
   .section2 *{
-  
+
       width: unset;
   }
-  
+
   .rights-reserved *{
-  width: 0px;   
+  width: 0px;
   }
-  
+
   .mu{
     margin-left:100px;
   }
-  
+
   /*
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-  
+
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+
   }
-  
+
   /*
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
-  
+
   @media (min-width: 481px) and (max-width: 767px) {
   /*Img Grid*/
   .baby-pic *{
     margin-right:900px !important;
-  } 
+  }
 
 
     /*Footer*/
     .container-form, #main-logo{
   margin-left:-50px;
     }
-  
+
     .mu{
       margin-top: 100px !important;
       margin-left:-50px !important;
@@ -1550,17 +1550,17 @@ img{
       margin-left:-100px;
       margin-left:50px !important;
     }
-  
+
     .fus{
       margin-top: -20px;
       margin-left:-5px !important;
     }
-  
-  
+
+
     .find-us{
       margin-left:-5px !important;
     }
-  
+
     .lt{
       margin-top: 10px;
       margin-left:-2px !important;
@@ -1571,20 +1571,20 @@ img{
     .media-container{
       margin-left: -50px;
     }
-  
+
   /*Portal*/
 
   /*
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
+
   @media (min-width: 320px) and (max-width: 480px) {
    /*Footer*/
    .container-form, #main-logo{
     margin-right:-10000px;
       }
-    
+
       .mu{
         margin-top: 100px !important;
         margin-left:50px !important;
@@ -1593,17 +1593,17 @@ img{
         margin-left:-100px;
         margin-left:50px !important;
       }
-    
+
       .fus{
         margin-top: -20px;
         margin-left:-5px !important;
       }
-    
-    
+
+
       .find-us{
         margin-left:-5px !important;
       }
-    
+
       .lt{
         margin-top: 10px;
         margin-left:-2px !important;
@@ -1614,17 +1614,17 @@ img{
       .media-container{
         margin-left: -50px;
       }
-    
-   
+
+
   }
-  
-  
+
+
   /*//////////////End Media Queries///////////*/
-  
+
   }
-  
-  
-  
-  
-  
+
+
+
+
+
   }
