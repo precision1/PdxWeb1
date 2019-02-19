@@ -452,7 +452,7 @@
                                         });
 
                                     </script>
-                                    <form id="contact-form" action="http://localhost:8080/thanks" method="POST"
+                                    <form id="myForm" action="http://localhost:8080/thanks" method="POST"
                                         onsubmit="myFunction()">
 
                                         Name:
@@ -470,6 +470,8 @@
                                         <input type="submit" value="Send Form" id="send_email"
                                             style="width:50%;  padding: 13px 20px !important"></input>
                                         <script>
+                                            document.getElementById("myForm").addEventListener("submit", myFunction);
+
                                             function myFunction() {
                                                 alert("The form was submitted");
                                             }
