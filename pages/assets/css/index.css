@@ -937,7 +937,7 @@ width: 100%;
 padding: 14px 28px;
 background: #2E2E2E;
 border: 1px solid #2E2E2E;
-color: #878787;
+color: white;
 }
 .subscribe-form button {
   position: absolute;
@@ -1262,12 +1262,10 @@ margin-left:-100px;
 /*//////////////  Form  ///////////*/
 
 form{
-  color: #878787;
+  color: #878787 !important;
 }
 
-subscribe-form{
-  color:white;
-}
+
 
 
 
