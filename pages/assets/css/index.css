@@ -930,13 +930,14 @@ text-transform: capitalize;
 .subscribe-form {
 position: relative;
 overflow: hidden;
+color: #878787;
 }
 .subscribe-form input {
 width: 100%;
 padding: 14px 28px;
 background: #2E2E2E;
 border: 1px solid #2E2E2E;
-color: #fff;
+color: #878787;
 }
 .subscribe-form button {
   position: absolute;
