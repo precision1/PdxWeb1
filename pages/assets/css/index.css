@@ -12,13 +12,13 @@ h1{
 }
 
 .fus{
-  margin-left: 50px; 
-  width:100%; 
+  margin-left: 50px;
+  width:100%;
   margin-top:80px;
 }
 .lt{
-  margin-left:10px; 
-  width:100%; 
+  margin-left:10px;
+  width:100%;
   margin-top:80px;
 }
 
@@ -582,12 +582,12 @@ h7{
 
 /*//////////////////Footer////////////////////////*/
 .rights-reserved{
-  width:100%; 
+  width:100%;
   margin-left:360px !important;
 }
 
 .media-container{
-  margin-left:220px; 
+  margin-left:220px;
   width:100%;
 }
 .footercard{
@@ -668,7 +668,7 @@ input[type=submit] {
 
 
 a {
-   
+
     color:white;
 
 }
@@ -998,7 +998,7 @@ ul li a i {
 }
 .fa-facebook {
   background:#3b5998
-} 
+}
 .fa-linkedin {
   background:#007bb6
 }
@@ -1088,14 +1088,14 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
- /*Core Values*/ 
+ /*Core Values*/
 .card-group{
   width:100%;
   margin: 0px !important;
- 
+
 }
 p.card-text{
-  font-size: .6rem !important; 
+  font-size: .6rem !important;
 
 }
 
@@ -1140,7 +1140,7 @@ p.card-text{
   /*Analytics*/
   .gif{
     width:100%;
-   
+
   }
 
   /*Core Principles*/
@@ -1165,7 +1165,7 @@ margin-left:-50px;
   }
   .fus, .find-us{
     margin-left: 0px;
-    
+
   }
 
   .find-us{
@@ -1194,7 +1194,7 @@ margin-left:-50px;
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  
+
  /*Jumbotron video*/
  #video-background *{
   height:100% !important;
@@ -1236,7 +1236,7 @@ margin-left:-100px;
 }
 .fus, .find-us{
   margin-left: 50px;
-  
+
 }
 
 .find-us{
@@ -1253,12 +1253,16 @@ margin-left:-100px;
 .media-container{
   margin-left: -50px;
 }
-  
+
 
 }
 
 
-/*//////////////End Media Queries///////////*/
+/*//////////////  Form  ///////////*/
+
+form{
+  color: #878787;
+}
 
 
 
