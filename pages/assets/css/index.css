@@ -814,6 +814,11 @@ margin-top:-70px;
   border:none;
 }
 
+.card-index:hover{
+  transform: scale(1.0);
+}
+
+
 /*New Footer */
 ul {
   margin: 0px;
