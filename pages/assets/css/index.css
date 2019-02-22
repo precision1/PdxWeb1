@@ -814,7 +814,7 @@ margin-top:-70px;
   border:none;
 }
 
-.card-index:hover{
+.card.card-index:hover{
   transform: scale(1.0);
 }
 
