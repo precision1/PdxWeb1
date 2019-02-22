@@ -1,4 +1,4 @@
-///Counter/////////// 
+///Counter///////////
 var a = 0;
 $(window).scroll(function() {
 
@@ -59,7 +59,7 @@ $(window).scroll(function() {
 
 // ///Major/Minor DDI
 // (function() {
-    
+
 //     var key = ".count1";
 //     var counter = isLocalStorage() && getCounter(key) || 2250;
 //     var $placeholder = $(".count1");
@@ -69,12 +69,12 @@ $(window).scroll(function() {
 //         counter++;
 //         $placeholder.html(counter);
 //         isLocalStorage() && setCounter(key, counter);
-        
+
 //     }, 4000);
 // }());
 // ///Cups of Coffee
 // (function() {
-    
+
 //     var key = ".count2";
 //     var counter = isLocalStorage() && getCounter(key) || 123;
 //     var $placeholder = $(".count2");
@@ -92,7 +92,7 @@ $(window).scroll(function() {
 
 // ///Data Points per Day
 // (function() {
-    
+
 //     var key = ".count3";
 //     var counter = isLocalStorage() && getCounter(key) || 416666;
 //     var $placeholder = $(".count3");
@@ -106,4 +106,24 @@ $(window).scroll(function() {
 // }());
 
 
-  
+
+///Timeline///////////
+
+var timelineSwiper = new Swiper ('.timeline .swiper-container', {
+direction: 'vertical',
+loop: false,
+speed: 1600,
+pagination: '.swiper-pagination',
+paginationBulletRender: function (swiper, index, className) {
+  var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+  return '<span class="' + className + '">' + year + '</span>';
+},
+paginationClickable: true,
+nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev',
+breakpoints: {
+  768: {
+    direction: 'horizontal',
+  }
+}
+});

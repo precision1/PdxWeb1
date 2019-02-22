@@ -410,6 +410,7 @@ main{
   width:25%;
   height:auto;
   display: flex;
+  background-color:yellow;
 }
 
 .jumbotron.aboutContainer{
