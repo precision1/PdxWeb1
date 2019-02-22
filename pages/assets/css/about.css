@@ -390,8 +390,9 @@ main{
   justify-content: center;
   align-items: center;
   height: auto;
-  width:100%;
-overflow: hidden;
+  width:75%;
+  overflow: hidden;
+  display: flex;
 }
 
 .about-video{
@@ -403,6 +404,12 @@ overflow: hidden;
   object-fit: cover;
   height:auto;
   overflow: hidden;
+}
+
+.video-explain{
+  width:25%;
+  height:auto;
+  display: flex;
 }
 
 .jumbotron.aboutContainer{
