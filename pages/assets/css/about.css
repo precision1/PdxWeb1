@@ -378,6 +378,14 @@ main{
 
 }
 
+/*    VIDEO CONTAINER     */
+
+.video-container{
+  width: 100%;
+  height: auto;
+  background-color: blue;
+}
+
 .video-container-about{
   justify-content: center;
   align-items: center;
