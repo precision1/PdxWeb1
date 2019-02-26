@@ -521,6 +521,16 @@ and (max-width: 1500px) {
 
 }
 
+@media only screen
+and (max-width: 3000px) {
+
+
+.card-body1{
+  height:650px;
+}
+
+}
+
 
 
 /*//////Store Drop Down Menu/////*/
