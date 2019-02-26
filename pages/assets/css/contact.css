@@ -507,6 +507,10 @@ and (min-device-width: 320px) {
       height:100%;
   }
 
+  .card-body1{
+    height:550px;
+  }
+
 }
 /*//////Store Drop Down Menu/////*/
 /* Dropdown Button */
