@@ -1131,14 +1131,13 @@ body {
 }
 
 
-.card-contact !important{
+.card-contact{
   width:75%;
   border-radius: 0px;
-  height:auto;
   box-shadow:none;
-  height:700px;
-  text-align: left;
-  padding:25px;
+  height:700px !important;
+  text-align: left !important;
+  padding:25px !important;
   margin: 0 auto;
 }
 
