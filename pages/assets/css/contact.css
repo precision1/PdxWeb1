@@ -4,9 +4,6 @@ body, a,button, p, h2, nav, h1, .footercard {
 }
 
 
-.card.card-deck-map-contact{
-  margin-bottom:5%;
-}
 
 #billing-contact{
 text-align: left !important;
@@ -433,6 +430,7 @@ h1.main, p.demos {
 
 .card-deck-map-contact{
   margin: 0 auto;
+  margin-bottom:5%;
   width:100%;
   height:100%;
   padding-left: 10%;
