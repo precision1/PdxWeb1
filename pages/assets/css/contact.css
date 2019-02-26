@@ -1261,7 +1261,7 @@ textarea#textarea1.form-control{
 }
 
 .card-deck .card {
-
+  margin-bottom:5%;
   margin-left:-100px !important;
 }
   /*Footer*/
