@@ -512,7 +512,7 @@ and (min-device-width: 320px) {
 
 
 @media only screen
-and (min-device-width: 1500px) {
+and (max-width: 1500px) {
 
 
 .card-body1{
