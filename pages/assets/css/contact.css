@@ -1228,6 +1228,16 @@ width: 0px;
   ##Screen = B/w 481px to 767px
 */
 
+@media screen and (max-width: 1024px) {
+
+  .card-body1{
+    height:500px !important;
+  }
+
+}
+
+
+
 @media (min-width: 481px) and (max-width: 767px) {
  /*Contact and Billing forms*/
 .card-body.card-body-contact{
