@@ -1117,6 +1117,11 @@ body {
   border-bottom:2px solid #ccc;
 
 }
+
+.card-contact{
+  background-color: transparent;
+}
+
 .card > div {
   padding:0 1em;
 }
