@@ -514,7 +514,7 @@ and (min-device-width: 320px) {
 }
 
 
-@media only screen
+@media screen
 and (max-width: 800px) {
 
 
