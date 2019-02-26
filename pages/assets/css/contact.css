@@ -1228,13 +1228,7 @@ width: 0px;
   ##Screen = B/w 481px to 767px
 */
 
-@media only screen and (max-width: 1024px) {
 
-  .card-body1{
-    height:500px !important;
-  }
-
-}
 
 
 
@@ -1354,17 +1348,11 @@ margin-left:-50px;
       margin-left: -50px;
     }
 
-
 }
-
 
 /*//////////////End Media Queries///////////*/
 
 }
-
-
-
-
 
 }}
 
