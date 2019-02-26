@@ -1228,7 +1228,7 @@ width: 0px;
   ##Screen = B/w 481px to 767px
 */
 
-@media screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
   .card-body1{
     height:500px !important;
