@@ -1234,6 +1234,10 @@ width: 0px;
   margin-left:0px !important;
 }
 
+.card-body1{
+  height:500px !important;
+}
+
 .form-group{
   width:50px !important;
 }
