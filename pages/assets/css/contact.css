@@ -3,17 +3,20 @@ body, a,button, p, h2, nav, h1, .footercard {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*
 .card.card-deck-map-contact{
   margin-bottom:-120px;
-}
+} */
 
 #billing-contact{
 text-align: left !important;
 margin-left: 110px;
 }
+
+/*
 .card-body.card-body-contact{
 margin-left:100px;
-}
+} */
 
 
 .rights-reserved *{
@@ -1078,15 +1081,17 @@ body {
 
 
 
-.card-grid {
+/* .card-grid {
   width:100%;
   height:100%;
-}
+} */
+
+/*
 .card-grid:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 
 
@@ -1118,15 +1123,19 @@ body {
 
 }
 
+/*
 .card-contact{
   background-color: transparent;
   width: 75%;
   height:auto;
-}
+}   */
 
+
+
+/*
 .card > div {
   padding:0 1em;
-}
+}   */
 
 /*////////Media Queries//////////////////////*/
 /*
