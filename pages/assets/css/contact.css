@@ -1127,7 +1127,7 @@ body {
   width:95%;
   border-radius: 0px;
   box-shadow:none;
-  height:700px !important;
+  height:750px !important;
   text-align: left !important;
   padding:25px !important;
   margin: 0 auto;
@@ -1135,7 +1135,6 @@ body {
 
 .subtitle-contact{
   font-size:1.3rem;
-
 }
 
 
@@ -1154,7 +1153,7 @@ body {
 /*Maps*/
 .card.card-deck-map-contact{
   overflow: hidden;
-  height:700px !important;
+  height:750px !important;
 
 }
 
@@ -1368,7 +1367,7 @@ margin-left:-50px;
 }}
 
 
-.card-map-contact{
+.card.card-map-contact{
   background-color:transparent;
   border:none;
   box-shadow:none;
