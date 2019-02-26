@@ -442,7 +442,9 @@ h1.main, p.demos {
 }
 
 .contact-map{
-margin-top:50px;
+margin-top:5%;
+margin-left:3%;
+margin-right:3%;
 }
 
 .card-body1{
@@ -1117,7 +1119,7 @@ body {
   box-shadow:none;
   height:750px !important;
   text-align: left !important;
-  padding:25px !important;
+  padding:50px !important;
   margin: 0 auto;
 }
 
