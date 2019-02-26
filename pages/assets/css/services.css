@@ -614,6 +614,17 @@ input[type="button"]:hover {
   animation-duration: 0.4s;
 
 }
+
+
+.card-img-top1{
+  width:105%;
+  margin:-6px;
+
+}
+
+
+
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}
