@@ -1123,12 +1123,14 @@ body {
 
 }
 
-/*
+
 .card-contact{
-  background-color: transparent;
-  width: 75%;
+
+  border-radius: 0px;
   height:auto;
-}   */
+  box-shadow:none;
+  height:700px;
+}
 
 
 
