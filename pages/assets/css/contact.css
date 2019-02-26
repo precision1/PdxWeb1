@@ -1120,19 +1120,11 @@ body {
   border-radius:5px;
   border:1px solid #ccc;
   border-bottom:2px solid #ccc;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
- min-height: 320px;
- margin-bottom: 50px;
-
 }
 
 
 .card-contact{
-  width:75%;
+  width:95%;
   border-radius: 0px;
   box-shadow:none;
   height:700px !important;
