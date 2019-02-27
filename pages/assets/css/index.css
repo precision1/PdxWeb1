@@ -127,20 +127,19 @@ h1{
 
 .storemodal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
+/*    z-index: 1; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+/*    left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+/*    height: 100%; /* Full height */
+/*    overflow: auto; /* Enable scroll if needed */
+/*/*    background-color: rgb(0,0,0); /* Fallback color */
+/*    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* }
 
 /* Modal Content */
-.storemodal-content {
+/* .storemodal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -194,7 +193,7 @@ a.client-portal-modal{
 }
 
 /* The Close Button */
-.storeclose {
+/*  .storeclose {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -209,22 +208,22 @@ a.client-portal-modal{
 }
 
 /* The Client Portal Button */
-.hmemodal {
+/* .hmemodal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
+  /*   position: fixed; /* Stay in place */
+  /*   z-index: 1; /* Sit on top */
+/*     padding-top: 100px; /* Location of the box */
+/*     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+/*     height: 100%; /* Full height */
+/*     overflow: auto; /* Enable scroll if needed */
+/*     background-color: rgb(0,0,0); /* Fallback color */
+/*     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* }
 
 /* Modal Content */
-.home-modal-content {
+/* .home-modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -234,7 +233,7 @@ a.client-portal-modal{
 }
 
 /* The Close Button */
-.homeclose {
+/* .homeclose {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
