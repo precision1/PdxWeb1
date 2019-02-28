@@ -1119,15 +1119,7 @@ margin-right:30px;
   height: 100%;
 }
 
-.careers-view{
-  color:gray;
-  margin-bottom:20px;
-  text-align:center;
-}
 
-a.careers-view:hover{
-  text-decoration:none;
-}
 
 
 /*//////Glowing View Button////*/
@@ -1465,9 +1457,20 @@ img{
 .underline{
   text-align:center;
   color:#2e6da4;
-
-
 }
+
+.careers-view{
+  color:gray;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+a.careers-view:hover{
+  text-decoration:none;
+}
+
+
+/*           CAREERS                 */
 
 .benefits-container{
   width:100%;
