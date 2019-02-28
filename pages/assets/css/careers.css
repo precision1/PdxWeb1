@@ -1462,6 +1462,13 @@ img{
   text-align: center;
 }
 
+.underline{
+  text-align:center;
+  color:#2e6da4;
+
+
+}
+
 .benefits-container{
   width:100%;
   height:auto;
