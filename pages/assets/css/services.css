@@ -983,5 +983,8 @@ margin-left:-50px;
 
 .btn-primary{
   float:left;
+}
 
+.btn-primary:hover{
+  background-color: #2e6da4;
 }
