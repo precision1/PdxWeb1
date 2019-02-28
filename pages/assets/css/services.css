@@ -466,7 +466,7 @@ a{
 }
 
 /*/////// Zoom on images and videos/////////////*/
-.grow { transition: all .2s ease-in-out; }
+.grow {  }
 .grow :hover { background-color: #2e6da4; }
 
 
