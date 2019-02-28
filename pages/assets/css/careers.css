@@ -1451,10 +1451,14 @@ img{
       margin-top: 1px;
     } */
 
+/*           APPLY NOW SECTION                 */
 .pagecontainer{
   width:100%;
   height:auto;
+}
 
+.title{
+  text-align: center;
 }
 
 .benefits-container{
