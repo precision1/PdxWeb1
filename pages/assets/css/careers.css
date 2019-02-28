@@ -1135,6 +1135,17 @@ margin-right:30px;
   height: 100%;
 }
 
+.careers-view{
+  color:gray;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.careers-view:hover{
+  text-decoration:none;
+}
+
+
 /*//////Glowing View Button////*/
 .grow1{
   background-color: #337ab7;
@@ -1148,13 +1159,13 @@ margin-right:30px;
 }
 
 .grow1:hover{
-  background-color:
+  background-color: blue;
 }
 
 a.grow1{
   color:white;
   text-decoration:none;
-  background-color: blue;
+
 }
 
 /*///Typing Text for Benefits/////*/
