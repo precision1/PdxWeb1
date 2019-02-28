@@ -1433,13 +1433,13 @@ img{
   }
 
 
-  .pagecontainer {
+  /* .pagecontainer {
       width: 100%;
       height: auto;
       margin: 0 auto;
       margin-top: 25px;
       background-color: white !important;
-    }
+    } */
 
     .pagecontainer, h2{
     text-align: center;
