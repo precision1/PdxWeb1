@@ -1145,10 +1145,16 @@ margin-right:30px;
   margin:0 auto;
   width: 200px;
   height:60px;
-
-
 }
 
+.grow1:hover{
+  background-color:
+}
+
+a.grow1{
+  color:white;
+  text-decoration:none;
+}
 
 /*///Typing Text for Benefits/////*/
 #reg_ai{
