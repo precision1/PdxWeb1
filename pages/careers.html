@@ -298,6 +298,9 @@
     <!--New Footer-->
     </main>
 
+    <!--Footer-->
+    <!--New Footer-->
+
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
@@ -309,12 +312,22 @@
                                 <h4>Find Us</h4>
 
                                 <br>
-                              <span><ul> </ul><ul style="color:white;"> Headquarters </ul> <ul></ul> <ul>4215 Sorrento Valley Blvd., </ul>
-                                  <ul>San Diego, CA 92121</ul></span>
+                                <span>
+                                    <ul> </ul>
+                                    <ul style="color:white;"> Headquarters </ul>
+                                    <ul></ul>
+                                    <ul>4215 Sorrento Valley Blvd., </ul>
+                                    <ul>San Diego, CA 92121</ul>
+                                </span>
                                 <br>
 
-                                <span><ul> </ul><ul style="color:white;"> Mass Lab </ul> <ul></ul><ul>49 State Road, Suite N 103,</ul>
-                                  <ul>Dartmouth, MA 02747</ul></span>
+                                <span>
+                                    <ul> </ul>
+                                    <ul style="color:white;"> Mass Lab </ul>
+                                    <ul></ul>
+                                    <ul>49 State Road, Suite N 103,</ul>
+                                    <ul>Dartmouth, MA 02747</ul>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -337,137 +350,144 @@
                         </div>
                     </div>
                 </div>
-              </div>
-
             </div>
-          </div>
-          <div class="footer-content pt-5 pb-5">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 mb-50">
-                <div class="footer-widget">
-                    <div class="footer-logo">
-                        <a href="/index.html"><img src="../assets/images/Logo.svg" class="img-fluid"
-                                alt="logo"></a>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="/index.html"><img src="../assets/images/Logo.svg" class="img-fluid"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow Us</span>
+                                <a href="https://www.facebook.com/precisiondiagnostics"><i
+                                        class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://twitter.com/PrecisionDxLab"><i
+                                        class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="https://www.linkedin.com/company/precisiondxlab"><i
+                                        class="fab fa-linkedin linkedin-bg"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-text">
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="/services.html">Our Services</a></li>
+                                <li><a href="/about.html">About us</a></li>
+                                <li><a href="/contact.html">Contact us</a></li>
+                                <li><a href="/careers.html">Careers</a></li>
+                                <li><a href="https://www.dxlink.com/patientportal/signin.html?cn=precistox#/login">Patient
+                                        Portal</a></li>
+                                <li><a href="https://precisiontox.safemedicaldata.com/">Archived Reports</a></li>
+                                <li><a href="https://form.jotform.com/51114198189964">Customer Satisfaction Survey</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer-social-icon">
-                        <span>Follow Us</span>
-                        <a href="https://www.facebook.com/precisiondiagnostics"><i
-                                class="fab fa-facebook-f facebook-bg"></i></a>
-                        <a href="https://twitter.com/PrecisionDxLab"><i
-                                class="fab fa-twitter twitter-bg"></i></a>
-                        <a href="https://www.linkedin.com/company/precisiondxlab"><i
-                                class="fab fa-linkedin linkedin-bg"></i></a>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Get In Touch Today</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p></p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <!--Import jQuery before materialize.js-->
+                                    <script type="text/javascript"
+                                        src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                                    <!-- Compiled and minified JavaScript -->
+                                    <script
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                                    <script>
+                                        $(document).ready(function () {
+                                            var user, to, subject, text;
+                                            $("#send_email").click(function () {
+                                                // enter your email account that you want to recieve emails at.
+                                                to = "hrprecisiondx1@gmail.com";
+                                                name = $("#name").val();
+                                                user = $("#user_email").val();
+                                                text = $("#textarea1").val();
+                                                // $("#message").text("Sending E-mail...Please wait");
+                                                $.get("http://localhost:8080/send", {
+                                                    to: to,
+                                                    name: name,
+                                                    user: user,
+                                                    text: text
+                                                }, function (data) {
+                                                    if (data == "sent") {
+                                                        console.log("Email sent");
+
+                                                    }
+                                                });
+                                            });
+                                        });
+
+                                    </script>
+                                    <form id="myForm" action="http://localhost:8080/thanks" method="POST"
+                                       >
+
+                                        Name:
+                                        <input type="text" name="name" id="name">
+
+                                        <br> Email:
+                                        <input type="text" name="email" id="user_email">
+
+                                        <br> Enter your message:
+                                        <input type="text" textarea name="message" id="textarea1"></textarea>
+
+
+                                        <br>
+                                        <br>
+                                        <input type="submit" value="Send Form" id="send_email"
+                                            style="width:50%;  padding: 13px 20px !important"></input>
+                                        <script>
+                                            document.getElementById("myForm").addEventListener("submit", myFunction);
+
+                                            function myFunction() {
+                                                alert("The form was submitted");
+                                            }
+                                        </script>
+                                    </form>
+                            </div>
+                        </div>
+                        </form>
                     </div>
                 </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <h3>Useful Links</h3>
-                  </div>
-                  <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/services.html">Our Services</a></li>
-                    <li><a href="/about.html">About us</a></li>
-                    <li><a href="/contact.html">Contact us</a></li>
-                    <li><a href="/careers.html">Careers</a></li>
-                    <li><a href="https://www.dxlink.com/patientportal/signin.html?cn=%20precistox#/login">Patient
-                        Portal</a></li>
-                    <li><a href="https://precisiontox.safemedicaldata.com/">Archived Reports</a></li>
-                    <li><a href="https://form.jotform.com/51114198189964">Customer Satisfaction Survey</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <h3>Get In Touch Today</h3>
-                  </div>
-                  <div class="footer-text mb-25">
-                    <p></p>
-                  </div>
-                  <div class="subscribe-form">
-                    <form action="#">
-                      <!--Import jQuery before materialize.js-->
-                      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-                      <!-- Compiled and minified JavaScript -->
-                      <script
-                        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-                      <script>
-                        $(document).ready(function () {
-                          var user, to, subject, text;
-                          $("#send_email").click(function () {
-                            // enter your email account that you want to recieve emails at.
-                            to = "hrprecisiondx1@gmail.com";
-                            name = $("#name").val();
-                            user = $("#user_email").val();
-                            text = $("#textarea1").val();
-                            // $("#message").text("Sending E-mail...Please wait");
-                            $.get("http://localhost:8080/send", {
-                              to: to,
-                              name: name,
-                              user: user,
-                              text: text
-                            }, function (data) {
-                              if (data == "sent") {
-                                console.log("Email sent");
-
-                              }
-                            });
-                          });
-                        });
-
-                      </script>
-                      <form id="contact-form" action="http://localhost:8080/thanks" method="POST">
-
-                        Name:
-                        <input type="text" name="name" id="name">
-
-                        <br> Email:
-                        <input type="text" name="email" id="user_email">
-
-                        <br> Enter your message:
-                        <input type="text" textarea name="message" id="textarea1"></textarea>
-
-
-                        <br>
-                        <br>
-                        <input type="submit" value="Send Form" id="send_email" style="width:50%;">
-
-                      </form>
-                  </div>
-                </div>
-                </form>
-              </div>
             </div>
-          </div>
         </div>
-    </div>
-    </div>
-    <div class="copyright-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-            <div class="copyright-text">
-              <p>Copyright &copy; 2019 Precision Diagnostics, All Right Reserved</p>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-            <div class="footer-menu">
-              <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/careers.html">Careers</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/privacy.html">Privacy & Notices</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2019 Precision Diagnostics, All Right Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="/contact.html">Contact</a></li>
+                                <li><a href="/careers.html">Careers</a></li>
+                                <li><a href="/services.html">Services</a></li>
+                                <li><a href="/privacy.html">Privacy & Notices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!---/New Footer-->
 
