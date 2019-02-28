@@ -756,23 +756,7 @@ main{
 
 
 /*///////////////////Main Body//////////////////////*/
-.pagecontainer {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 25px;
-    background-color: white !important;
-  }
 
-  .pagecontainer, h2{
-  text-align: center;
-  }
-
-  .pagecontainer ul {
-    padding: 0;
-    margin-bottom: 1px;
-    margin-top: 1px;
-  }
   .headerimagecontainer {
     /* height: 340px; */
     position: relative;
@@ -1449,7 +1433,23 @@ img{
   }
 
 
+  .pagecontainer {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 25px;
+      background-color: white !important;
+    }
 
+    .pagecontainer, h2{
+    text-align: center;
+    }
+
+    .pagecontainer ul {
+      padding: 0;
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
 
 .benefits-container{
   width:100%;
