@@ -468,6 +468,7 @@ a{
 /*/////// Zoom on images and videos/////////////*/
 .grow { background-color: #337ab7;}
 .grow:hover { background-color: #2e6da4; }
+.btn-primary:hover { background-color: #2e6da4; }
 
 
 /*//////////////Video Pop Up///*/
