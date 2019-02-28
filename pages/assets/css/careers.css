@@ -1441,15 +1441,20 @@ img{
       background-color: white !important;
     } */
 
-    .pagecontainer, h2{
+  /*  .pagecontainer, h2{
     text-align: center;
-    }
+    } */
 
-    .pagecontainer ul {
+  /*  .pagecontainer ul {
       padding: 0;
       margin-bottom: 1px;
       margin-top: 1px;
-    }
+    } */
+
+.pagecontainer{
+  width:100%;
+  height:auto;
+}
 
 .benefits-container{
   width:100%;
