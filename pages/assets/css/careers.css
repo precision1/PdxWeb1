@@ -1122,27 +1122,7 @@ margin-right:30px;
 
 
 
-/*//////Glowing View Button////*/
-.grow1{
-  background-color: #337ab7;
-  border-radius: 5px;
-  padding: 20px 20px 20px 20px;
-  border-style: none;
-  color: white;
-  margin:0 auto;
-  width: 200px;
-  height:60px;
-}
 
-.grow1:hover{
-  background-color: #2e6da4;
-}
-
-a.grow1{
-  color:white;
-  text-decoration:none;
-
-}
 
 /*///Typing Text for Benefits/////*/
 #reg_ai{
@@ -1472,11 +1452,14 @@ a.careers-view:hover{
 .apply-now-container{
   background-color:#337ab7;
   margin: 0 auto;
+  border-radius:10px;
 }
 
 .apply-now{
   text-align:center;
-  color:black;
+  color:white;
+  padding:10px;
+
 }
 
 
@@ -1486,4 +1469,31 @@ a.careers-view:hover{
   width:100%;
   height:auto;
   background-color:red;
+}
+
+
+
+
+
+
+/*//////Glowing View Button////*/
+.grow1{
+  background-color: #337ab7;
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+  border-style: none;
+  color: white;
+  margin:0 auto;
+  width: 200px;
+  height:60px;
+}
+
+.grow1:hover{
+  background-color: #2e6da4;
+}
+
+a.grow1{
+  color:white;
+  text-decoration:none;
+
 }
