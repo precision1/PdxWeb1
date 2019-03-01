@@ -1469,7 +1469,15 @@ a.careers-view:hover{
   text-decoration:none;
 }
 
+.apply-now-container{
+  background-color:#337ab7;
+  margin: 0 auto;
+}
 
+.apply-now{
+  text-align:center;
+  color:black;
+}
 
 
 /*           CAREERS                 */
