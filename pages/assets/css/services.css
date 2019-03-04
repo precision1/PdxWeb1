@@ -988,3 +988,12 @@ margin-left:-50px;
 .btn-primary:hover{
   background-color: #2e6da4;
 }
+
+
+
+/*//////////////Services///////////*/
+
+.card-services{
+  background-color:transparent;
+  border-radius:0px;
+}
