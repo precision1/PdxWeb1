@@ -29,7 +29,7 @@ $(window).scroll(function() {
     };
 
 
-    $('#number1').jQuerySimpleCounter({end: 345, duration: 5000});
+    $('#number1').jQuerySimpleCounter({end: 372, duration: 5000});
     $('#number2').jQuerySimpleCounter({end: 27456,duration: 5000});
     $('#number3').jQuerySimpleCounter({end: 280,duration: 5000});
     $('#number4').jQuerySimpleCounter({end: 563430,duration: 5000});
