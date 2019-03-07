@@ -858,23 +858,20 @@ body {
  margin-bottom: 50px;
 }
 
-
-.card-group{
-  width:100%;
-  margin: 0px !important;
-
-}
-p.card-text{
-  font-size: .6rem !important;
-
-}
 /*////////Media Queries//////////////////////*/
 /*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
+@media (min-width: 1281px) {
 
+  .card-index{
+    height:100%;
+  }
+
+
+}
 
 /*
   ##Device = Laptops, Desktops
@@ -1086,16 +1083,6 @@ form{
     display: block;
     margin-bottom: 20px;
   }
-}
-
-
-@media (min-width: 1281px) {
-
-  .card-index{
-    height:100%;
-  }
-
-
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
