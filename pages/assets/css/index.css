@@ -846,14 +846,7 @@ body {
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+
 
 /* Style the counter cards */
 .card {
@@ -1078,10 +1071,19 @@ form{
 
 
 
-
+/*   Media Quieries */
 
 
 /*   INTERNET EXPLORER */
+
+/* Media Quiery: Columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
