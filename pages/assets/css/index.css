@@ -309,6 +309,7 @@ height:100%;
 .card-group{
   height:auto;
   width:100%;
+  background-color: blue;
   display: flex;
 }
 
