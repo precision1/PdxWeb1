@@ -309,8 +309,6 @@ height:100%;
 .card-group{
   height:auto;
   display: flex;
-  width:100%;
-  margin: 0px !important;
 }
 
 .col{
@@ -892,11 +890,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
 
  /*Core Values*/
-.card-group{
-  width:100%;
-  margin: 0px !important;
 
-}
 p.card-text{
   font-size: .6rem !important;
 
