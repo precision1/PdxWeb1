@@ -892,7 +892,17 @@ p.card-text{
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
- 
+ /*Core Values*/
+.card-group{
+  width:100%;
+  margin: 0px !important;
+
+}
+p.card-text{
+  font-size: .6rem !important;
+
+}
+
 /*Footer*/
 .rights-reserved {
   margin-left: 2px !important;
