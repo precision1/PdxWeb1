@@ -392,13 +392,8 @@ main{
   justify-content: center;
   align-items: center;
   height: auto;
-  width:75%;
   overflow: hidden;
   display: flex;
-}
-
-.about-video{
-  overflow:hidden;
 }
 
 .video-about{
