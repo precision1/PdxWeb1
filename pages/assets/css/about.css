@@ -1156,6 +1156,7 @@ padding:7%;
 }
 
 .nav{
+  overflow: hidden;
   padding-left:0;
   margin-bottom: 0;
   list-style: none;
