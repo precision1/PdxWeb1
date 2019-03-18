@@ -406,8 +406,17 @@ a{
 
 .services-main-paragraph{
   text-align:center;
+  tex
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+@media print {
+.services-main-paragraph {
+    widows: 3;
+  }
+}
+
 
 .services-images{
 
