@@ -1215,6 +1215,7 @@ padding:7%;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   box-shadow: none;
+  text-align: center;
 }
 
 .nav-tabs>li>a:hover{
