@@ -1261,12 +1261,20 @@ Primary style Timeline
 Main Components
 
 -------------------------------- */
+.timeline-container-new{
+    font-size:1.6rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #383838;
+    background-color: #f8f8f8;
+}
+
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 2em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
+
 }
 .cd-horizontal-timeline::before {
   /* never visible - this is used in jQuery to check the current MQ */
