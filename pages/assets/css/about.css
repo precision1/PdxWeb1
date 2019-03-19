@@ -1250,16 +1250,6 @@ Primary style Timeline
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #383838;
-  background-color: #f8f8f8;
-}
 
 a {
   color: #7b9d6f;
