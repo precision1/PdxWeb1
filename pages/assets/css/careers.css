@@ -85,10 +85,7 @@ body, a,button, p, h2, nav, h1, .footercard {
 
 
 
-  .card{
-      box-shadow: none;
-      margin-bottom:0px;
-  }
+
 
   #myBtn {
     display: none;
@@ -1468,12 +1465,15 @@ a.careers-view:hover{
 .employee-review-container{
   width:100%;
   height:auto;
-}
-
-.card-container-careers{
   display:flex;
   flex-wrap:wrap;
   margin: 0 auto;
+}
+
+.review-box{
+  width: 50%;
+  height: 150px;
+  background-color:blue;
 }
 
 
