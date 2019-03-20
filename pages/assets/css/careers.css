@@ -1471,8 +1471,8 @@ a.careers-view:hover{
 }
 
 .review-box{
-  width: 50%;
-  height: 150px;
+  width: 150px;
+  height: auto;
   background-color:blue;
 }
 
