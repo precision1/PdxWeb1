@@ -1468,6 +1468,7 @@ a.careers-view:hover{
   width:100%;
   height:auto;
   display:flex;
+  flex-wrap: wrap;
 
 }
 
