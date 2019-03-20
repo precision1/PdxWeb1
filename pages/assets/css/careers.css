@@ -86,7 +86,8 @@ body, a,button, p, h2, nav, h1, .footercard {
 
 
   .card{
-      box-shadow: 12px 12px 2px 1px darkgray;
+      box-shadow: none;
+      margin-bottom:0px;
   }
 
   #myBtn {
