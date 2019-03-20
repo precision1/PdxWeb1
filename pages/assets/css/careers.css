@@ -1467,9 +1467,11 @@ a.careers-view:hover{
 .employee-review-container{
   width:100%;
   height:auto;
-  display:flex;
-  flex-wrap: wrap;
+}
 
+.card-container-careers{
+  display:flex;
+  flex-wrap:wrap;
 }
 
 
