@@ -1472,6 +1472,7 @@ a.careers-view:hover{
 .card-container-careers{
   display:flex;
   flex-wrap:wrap;
+  margin: 0 auto;
 }
 
 
