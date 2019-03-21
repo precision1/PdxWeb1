@@ -1655,3 +1655,7 @@ iframe.timeline-frame{
   overflow:hidden;
   border:none;
 }
+
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default{
+  display:none;
+}
