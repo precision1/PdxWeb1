@@ -1647,3 +1647,9 @@ Main Components
     transform: translateX(0%);
   }
 }
+
+.timeline-frame{
+  width:100%;
+  height:auto;
+  margin: 0 auto;
+}
