@@ -29,64 +29,72 @@
 <body style="background-color: white;">
     <div class="body-container" style="background-color: white;">
 
-        <!--Header is here: uncollapse to see code-->
-        <header>
+      <!-- Header-->
+      <header>
 
-            <!-- Navbar -->
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
-                <a class="navbar-brand" href="/index.html">
-                    <img id="main-logo" src="/assets/images/Logo.svg" alt="Kiwi standing on oval">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
-                    style="background-color:lightgray;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navcustom">
+          <a class="navbar-brand" href="/index.html">
+            <img id="main-logo" src="/assets/images/Logo.svg" alt="Kiwi standing on oval">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+            style="background-color:lightgray;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="/services.html">Services
-                            <span class="sr-only">(current)</span>
-                        </a>
-                        <a class="nav-item nav-link aboutus" href="/about.html">About Us</a>
-                        <a class="nav-item nav-link" href="/contact.html">Contact</a>
-                        <a class="nav-item nav-link" href="/careers.html"
-                            style="background-color:rgb(1,51,120, 0.4);">Careers</a>
-                        <a class="nav-item nav-link" href= "#">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="/services.html">Services
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-item nav-link aboutus" href="/about.html">About
+                Us</a>
+              <a class="nav-item nav-link" href="/careers.html" style="background-color:rgb(1,51,120, 0.4);">Careers</a>
+              <a class="nav-item nav-link" href="/contact.html">Contact</a>
 
-                          <!-- Small modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-
-                          <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                              <div class="modal-content">
-                                ... Hello world!
-                              </div>
-                            </div>
-                          </div> </a>
-
-
-
-
-                        <!--Store Drop Down Menu-->
-                        <!-- <div class="dropdown">
-                            <button class="dropbtn">Store</button>
-                            <div class="dropdown-content">
-                                <a href="../pages/storeClientST.html">Client/Specimen Technician</a>
-                                <a href="../pages/storeRep.html">Sales Representative</a>
-                            </div>
-                        </div> -->
-
-
-                    </div>
+              <!--Store Drop Down Menu-->
+              <!-- <div class="dropdown">
+                <button class="dropbtn">Store</button>
+                <div class="dropdown-content">
+                  <a href="../pages/storeClientST.html">Client/Specimen Technician</a>
+                  <a href="../pages/storeRep.html">Sales Representative</a>
                 </div>
+              </div> -->
 
 
-            </nav>
+            </div>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn1">Client Portal</button>
 
-        </header>
-        <!--/Navbar-->
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="index-modal-title">Please navigate to your testing panel by choosing one of the two options.
+                </p>
+                <div class="modal-buttons-index">
+                  <button class="index-modal-btn-store">
+                    <a class="client-portal-modal" href="https://pdx.careevolve.com/doctors/framepage.asp">CareEvolve</a>
+                  </button>
+                  <button class="index-modal-btn-store">
+                    <a class="client-portal-modal" href="https://analytics.precisiondxlab.com/">Precision Analytics
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </nav>
+
+      </header>
+      <!--/Navbar-->
 
 <main>
         <!--Jumbotron-->
