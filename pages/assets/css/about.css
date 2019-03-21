@@ -1648,8 +1648,9 @@ Main Components
   }
 }
 
-.timeline-frame{
+iframe.timeline-frame{
   width:100%;
   height:auto;
   margin: 0 auto;
+  overflow:hidden;
 }
