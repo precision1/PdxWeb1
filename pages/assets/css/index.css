@@ -1107,7 +1107,7 @@ form{
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   button#myBtn1 {
     color:white !important;
     text-align: center;
@@ -1118,5 +1118,6 @@ form{
     padding-right: 15px;
     padding-left: 15px;
     font-size:1.1rem;
+    background-color:none;
   }
 }
