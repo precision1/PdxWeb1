@@ -1653,4 +1653,5 @@ iframe.timeline-frame{
   height:500px;
   margin: 0 auto;
   overflow:hidden;
+  border:none;
 }
