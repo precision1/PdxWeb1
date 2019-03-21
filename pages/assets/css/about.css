@@ -1650,7 +1650,7 @@ Main Components
 
 iframe.timeline-frame{
   width:100%;
-  height:auto;
+  height:500px;
   margin: 0 auto;
   overflow:hidden;
 }
