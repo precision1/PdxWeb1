@@ -1107,6 +1107,24 @@ form{
 }
 }
 
+button#myBtn1 {
+  background-color:white;
+  border:none;
+  height:80px;
+  width:150px;
+  align-content: flex-end;
+  margin:0;
+  padding:0;
+  color:black;
+
+
+}
+
+button#myBtn1:hover{
+  background-color:#2e6da4;
+  color:white;
+}
+
 @media only screen and (max-width: 1000px) {
   button#myBtn1 {
     color:white !important;
@@ -1124,7 +1142,7 @@ form{
   }
 
   button#myBtn1:hover{
-    background-color: rgb(1,51,120, 0.4);
+    background-color: rgb(1,51,120, 0.4) !important;
   }
 
   button.navbar-toggler collapsed{
