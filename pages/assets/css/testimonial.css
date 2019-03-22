@@ -1,6 +1,8 @@
 .testimonial-container {
 	background-color: rgba(245, 245, 245, 1);
 	width: 100%;
+	height: 50vh;
+	overflow:hidden;
 }
 
 .cd-testimonials-wrapper {
@@ -310,9 +312,6 @@ ul.cd-author-info li span {
 	}
 }
 
-.cd-testimonials-wrapper.cd-container{
-	height: 40vh;
-}
 
 .title{
   text-align: center;
