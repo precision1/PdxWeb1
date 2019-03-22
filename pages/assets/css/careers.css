@@ -1499,5 +1499,17 @@ iframe.testimonial-frame{
   margin: 0 auto;
   overflow:hidden;
   border:none;
+}
+
+.image-grid-container{
+  width: 100%;
+  height: auto;
+  background-color:blue;
+}
+
+.image{
+  width:50%;
+  height:50%;
+  background-color:black;
 
 }
