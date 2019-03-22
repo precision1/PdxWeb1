@@ -314,3 +314,12 @@ ul.cd-author-info li span {
 .cd-testimonials-wrapper.cd-container{
 	height: 50vh;
 }
+
+.title{
+  text-align: center;
+}
+
+.underline{
+  text-align:center;
+  color:#2e6da4;
+}
