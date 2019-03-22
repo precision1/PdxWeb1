@@ -1427,6 +1427,12 @@ img{
   height:auto;
   margin-top:50px;
 }
+.pagecontainer-testimonial{
+  width:100%;
+  height:auto;
+  margin-top:50px;
+  background-color: rgba(245, 245, 245, 1);
+}
 
 .title{
   text-align: center;
