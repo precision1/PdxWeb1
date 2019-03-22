@@ -321,3 +321,7 @@ ul.cd-author-info li span {
   text-align:center;
   color:#2e6da4;
 }
+
+body{
+	margin: 0 auto;
+}
