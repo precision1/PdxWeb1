@@ -310,3 +310,7 @@ ul.cd-author-info li span {
 		visibility: hidden;
 	}
 }
+
+..cd-testimonials-wrapper.cd-container{
+	height: 50vh;
+}
