@@ -1564,5 +1564,8 @@ iframe.testimonial-frame{
 .image-grid-container{
   width:100%;
   height:auto;
-  
+}
+
+.large-image{
+  object-fit: cover;
 }
