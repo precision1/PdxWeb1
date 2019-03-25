@@ -1231,3 +1231,7 @@ p.index-modal-subtitle{
   background-color: #2e6da4;
 
 }
+
+.modal-buttons-index{
+  display: flex;
+}
