@@ -601,7 +601,7 @@ input[type="button"]:hover {
 }
 
 /* Modal Content */
-.modal-content {
+/* .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -615,7 +615,7 @@ input[type="button"]:hover {
   animation-name: animatetop;
   animation-duration: 0.4s;
 
-}
+} */
 
 
 .card-img-top1{
