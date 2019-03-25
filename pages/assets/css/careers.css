@@ -1557,3 +1557,12 @@ iframe.testimonial-frame{
   text-decoration: none;
   cursor: pointer;
 }
+
+
+/*         IMAGE GRID              */
+
+.image-grid-container{
+  width:100%;
+  height:auto;
+  
+}
