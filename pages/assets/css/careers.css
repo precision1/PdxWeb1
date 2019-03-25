@@ -1577,6 +1577,6 @@ iframe.testimonial-frame{
 .small-image{
   object-fit: cover;
   width:33.33%;
-  height:75vh;
+  height:50vh;
   margin: 0 auto;
 }
