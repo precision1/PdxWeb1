@@ -1219,12 +1219,12 @@ p.index-modal-subtitle{
 .index-modal-btn-store{
   background-color: #337ab7;
   border-radius: 5px;
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
   border-style: none;
   color: white;
   margin:0 auto;
-  width: 200px;
-  height:60px;
+  width: 45%;
+  height:50px;
 }
 
 .index-modal-btn-store:hover{
