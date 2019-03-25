@@ -1235,3 +1235,7 @@ p.index-modal-subtitle{
 .modal-buttons-index{
   display: flex;
 }
+
+.navbar-nav{
+  margin: 0 auto;
+}
