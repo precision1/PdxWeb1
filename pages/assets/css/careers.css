@@ -1569,6 +1569,6 @@ iframe.testimonial-frame{
 .large-image{
   object-fit: cover;
   width:100%;
-  height:60vh;
+  height:100vh;
   margin: 0 auto;
 }
