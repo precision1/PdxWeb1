@@ -1654,6 +1654,7 @@ iframe.timeline-frame{
   margin: 0 auto;
   overflow:hidden;
   border:none;
+  margin-bottom:3%;
 }
 
 .ui-loader.ui-corner-all.ui-body-a.ui-loader-default{

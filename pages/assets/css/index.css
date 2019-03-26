@@ -1171,6 +1171,11 @@ p.services-main-paragraph.home-responsive-paragraph{
 
   }
 
+  .card-group{
+    display: block;
+  }
+
+
 
 }
 
