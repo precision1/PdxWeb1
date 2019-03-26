@@ -1156,7 +1156,7 @@ p.services-main-paragraph.home-responsive-paragraph{
 
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 850px){
 
   .carousel-container-home{
     display:block;
@@ -1175,7 +1175,9 @@ p.services-main-paragraph.home-responsive-paragraph{
     display: block;
   }
 
-
+p.card-text{
+  font-size:1rem;
+}
 
 }
 
