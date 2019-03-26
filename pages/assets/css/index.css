@@ -178,7 +178,6 @@ main{
 .card-left{
   width:50%;
   height:auto;
-  float: left;
 }
 
 .jumbotron-fluid-home{
@@ -197,7 +196,6 @@ main{
 .card-right{
   width:50%;
   height:100%;
-  float: right;
 }
 
 
@@ -1145,7 +1143,34 @@ button#myBtn1:hover{
   button.navbar-toggler collapsed{
     margin-right:3%;
   }
+
+  .responsive-title{
+    font-size:1.25rem;
+  }
+
+
 }
+
+@media only screen and (max-width: 650px){
+
+  .carousel-container-home{
+    flex: none;
+  }
+
+  .card-left{
+    width: 100%;
+  }
+
+  .carousel-home-container{
+    width: 100%;
+
+  }
+
+
+}
+
+
+
 
 button.navbar-toggler collapsed{
   margin-right:3%;
