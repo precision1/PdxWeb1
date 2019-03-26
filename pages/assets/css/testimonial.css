@@ -6,7 +6,7 @@ body{
 .testimonial-container {
 	background-color: rgba(245, 245, 245, 1);
 	width: 100%;
-	height: 50vh;
+	height: 100%;
 	overflow:hidden;
 }
 
@@ -271,12 +271,7 @@ ul.cd-author-info li span {
 }
 
 .flex-control-nav {
-	bottom: 30px;
-	position: absolute;
-	margin: 0 auto;
-	padding: 0;
 	text-align: center;
-	width: 100%;
 }
 
 .flex-control-nav li {
