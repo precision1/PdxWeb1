@@ -892,10 +892,6 @@ body {
 
  /*Core Values*/
 
-p.card-text{
-  font-size: .6rem !important;
-
-}
 
 /*Footer*/
 .rights-reserved {
@@ -1174,10 +1170,6 @@ p.services-main-paragraph.home-responsive-paragraph{
   .card-group{
     display: block;
   }
-
-p.card-text{
-  font-size:1rem;
-}
 
 }
 
