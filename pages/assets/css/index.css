@@ -178,6 +178,7 @@ main{
 .card-left{
   width:50%;
   height:auto;
+  margin: auto;
 }
 
 .jumbotron-fluid-home{
