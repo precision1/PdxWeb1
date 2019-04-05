@@ -1107,14 +1107,13 @@ button#myBtn1 {
   align-content: flex-end;
   margin:0;
   padding:0;
-  color:black;
+  color:white;
 
 
 }
 
 button#myBtn1:hover{
-  background-color:#2e6da4;
-  color:white;
+  background-color:rgb(1,51,120, 0.4);
 }
 
 @media only screen and (max-width: 1000px) {
