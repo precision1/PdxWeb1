@@ -1113,7 +1113,7 @@ button#myBtn1 {
 }
 
 button#myBtn1:hover{
-  background-color:rgb(1,51,120, 0.4);
+  background-color:#2e5da4;
 }
 
 @media only screen and (max-width: 1000px) {
