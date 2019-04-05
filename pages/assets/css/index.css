@@ -1100,7 +1100,7 @@ form{
 }
 
 button#myBtn1 {
-  background-color:#2e6da4;
+  background-color:#337ab7;
   border:none;
   height:80px;
   width:150px;
@@ -1119,7 +1119,7 @@ button#myBtn1 {
 }
 
 button#myBtn1:hover{
-  background-color:#2e5da4;
+  background-color:#2e6da4;
 }
 
 @media only screen and (max-width: 1000px) {
