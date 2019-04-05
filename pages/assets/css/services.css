@@ -1000,23 +1000,9 @@ margin-left:-50px;
   border-radius:0px;
 }
 
-button#myBtn1 {
-  background-color:white;
-  border:none;
-  height:80px;
-  width:150px;
-  align-content: flex-end;
-  margin:0;
-  padding:0;
-  color:black;
 
 
-}
 
-button#myBtn1:hover{
-  background-color:#2e6da4;
-  color:white;
-}
 
 /*////Modal-Client Portal///////*/
 /* The Modal (background) */
