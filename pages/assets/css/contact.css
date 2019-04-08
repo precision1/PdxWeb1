@@ -1472,3 +1472,7 @@ p.index-modal-subtitle{
 .card-grid{
   display:flex;
 }
+
+.card-wrap{
+  display:flex;
+}
