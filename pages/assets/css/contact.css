@@ -1144,6 +1144,18 @@ body {
   margin: 0 auto;
 }
 
+.card.card-contact{
+  width:95%;
+  border-radius: 0px;
+  box-shadow:none;
+  height:750px !important;
+  text-align: left !important;
+  padding:50px !important;
+  margin: 0 auto;
+
+}
+
+
 .subtitle-contact{
   font-size:1.3rem;
 }
