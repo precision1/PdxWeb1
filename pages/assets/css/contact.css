@@ -1091,9 +1091,7 @@ body {
 }
 
 
-.card-grid{
-  display:flex;
-}
+
 
 /* .card-grid {
   width:100%;
@@ -1469,4 +1467,8 @@ p.index-modal-subtitle{
 .index-modal-btn-store:hover{
   background-color: #2e6da4;
 
+}
+
+.card-grid{
+  display:flex;
 }
