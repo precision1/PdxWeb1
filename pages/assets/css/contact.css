@@ -1132,6 +1132,17 @@ body {
   border-radius:5px;
   border:1px solid #ccc;
   border-bottom:2px solid #ccc;
+  border-radius: 0px;
+  box-shadow:none;
+  height:750px !important;
+  text-align: left !important;
+  padding:50px !important;
+  margin: 0 auto;
+  box-shadow: none;
+  float: left;
+  min-height:350px;
+  min-width:400px;
+
 }
 
 
