@@ -1481,4 +1481,5 @@ p.index-modal-subtitle{
 
 .card-wrap{
   display:flex;
+  margin: 0 auto;
 }
