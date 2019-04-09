@@ -1483,3 +1483,8 @@ p.index-modal-subtitle{
   display:flex;
   margin: 0 auto;
 }
+
+h2.subtitle-contact{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
