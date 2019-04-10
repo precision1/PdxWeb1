@@ -443,9 +443,9 @@ h1.main, p.demos {
 }
 
 .contact-map{
-margin-top:5%;
-margin-left:7%;
-margin-right:7%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
 }
 
 .card-body1{
