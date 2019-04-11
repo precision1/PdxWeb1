@@ -651,7 +651,6 @@ input[type="button"]:hover {
 }
 .modal-header {
   padding: 2px 16px;
-  background-color: black;
   color: white;
 }
 .modal-body {height:80%;}
