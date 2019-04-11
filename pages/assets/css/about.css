@@ -988,7 +988,6 @@ ul li a i:hover {
 /*Core Principles*/
 .card-body{
   width: fit-content !important;
-  height: 500px !important;
 }
 
   p.card-text *{
