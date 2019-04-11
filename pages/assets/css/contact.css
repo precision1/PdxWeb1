@@ -5,6 +5,7 @@ body, a,button, p, h2, nav, h1, .footercard {
 
 .mailto-email{
   color:black;
+  font-size: 1 rem;
 }
 
 #billing-contact{
