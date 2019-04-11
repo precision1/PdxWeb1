@@ -614,7 +614,7 @@ margin-top:-70px;
 
 .card-index{
   border:none;
-  
+
 
 }
 
@@ -881,9 +881,6 @@ body {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
 
 /*
   ##Device = Tablets, Ipads (portrait)
@@ -893,7 +890,9 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
 
  /*Core Values*/
+.values{
 
+}
 
 /*Footer*/
 .rights-reserved {
@@ -1271,4 +1270,8 @@ p.index-modal-subtitle{
 
 .navbar-nav{
   margin: 0 auto;
+}
+
+.values-container{
+  width:100%;
 }
