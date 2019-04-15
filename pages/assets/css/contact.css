@@ -1487,3 +1487,9 @@ p.index-modal-subtitle{
 h2.subtitle-contact{
   font-size: 1.5rem; font-weight: 400;
 }
+
+.button-contact{
+  background-color: #337ab7;
+  color: white;
+  padding: 5px;
+}
