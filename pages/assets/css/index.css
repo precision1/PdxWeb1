@@ -1286,3 +1286,8 @@ p.index-modal-subtitle{
   height:auto;
   margin-top:50px;
 }
+
+a.client-portal-modal:hover{
+  color:white;
+  text-decoration: none;
+}
