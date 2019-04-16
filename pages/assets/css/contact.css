@@ -1493,3 +1493,7 @@ h2.subtitle-contact{
 #send_email{
   borner:none;
 }
+
+a#send_email{
+  borner:#337ab7;
+}
