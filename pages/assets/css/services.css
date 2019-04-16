@@ -82,6 +82,7 @@ body, a,button, p, h2, nav, h1, .footercard {
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
+  height:60%;
 }
 
 /* The Close Button */
