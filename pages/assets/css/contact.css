@@ -1461,3 +1461,8 @@ h2.subtitle-contact{
 a#send_email{
   borner:#337ab7;
 }
+
+.card-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
