@@ -1462,5 +1462,6 @@ a#send_email{
   borner:#337ab7;
 }
 
-.card-grid{
-  display: flex;
+.card.card-contact{
+  margin: 0 auto;
+}
