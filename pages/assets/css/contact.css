@@ -1470,7 +1470,7 @@ a#send_email{
   margin: 0 auto;
 }
 
-input[type="submit"]#send_email {
+a[type="submit"]#send_email {
     border-radius: 10px;
     border: none;
     box-shadow: none;
