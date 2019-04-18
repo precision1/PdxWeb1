@@ -1469,3 +1469,11 @@ a#send_email{
 .card-contact{
   margin: 0 auto;
 }
+
+input[type="submit"]#send_email {
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 50px!important;
+}
