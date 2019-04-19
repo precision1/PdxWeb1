@@ -878,9 +878,9 @@ ul li a i:hover {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 /* Services cards*/
-  #card-body1 {
+  /* #card-body1 {
   margin-bottom:-50px;
-}
+} */
 
 #card-body2{
   margin-bottom: 30px;
