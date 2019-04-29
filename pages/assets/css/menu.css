@@ -16,7 +16,7 @@ body{
   color: white;
 }
 
-ul {
+.top-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,11 +24,11 @@ ul {
   background-color: #333;
 }
 
-li {
+.top-nav li {
   float: left;
 }
 
-li a {
+.top-nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -36,6 +36,6 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.top-nav li a:hover {
   background-color: #111;
 }
