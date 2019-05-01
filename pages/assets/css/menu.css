@@ -19,7 +19,7 @@ body{
 }
 
 .main-nav li {
-/*  float: left; */
+float: left;
 }
 
 .main-nav li a {
@@ -58,8 +58,9 @@ body{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 16px;
   text-decoration: none;
+  font-size: 10px;
 }
 
 .top-nav li a:hover {
