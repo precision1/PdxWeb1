@@ -15,6 +15,7 @@ body{
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  float: right;
 }
 
 .main-nav li {
