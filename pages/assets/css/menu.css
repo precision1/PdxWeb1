@@ -2,18 +2,43 @@ body{
   margin: 0 auto;
 }
 
-.top-nav{
-  background-color:black;
-  width:100%;
-  height:25px;
-  color:white;
-}
-
 .main-nav{
   background-color:blue;
   width:100%;
   height:80px;
   color: white;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  float:right;
+}
+
+.main-nav li {
+  float: left;
+}
+
+.main-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.main-nav li a:hover {
+  background-color: #111;
+}
+
+.top-nav{
+  background-color:black;
+  width:100%;
+  height:25px;
+  color:white;
 }
 
 .top-nav ul {
