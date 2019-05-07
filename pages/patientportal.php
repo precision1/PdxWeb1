@@ -1,8 +1,9 @@
 <html>
 <body>
 
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["cindy.reyescortes@precisiondxlab.com"]; ?>
+Patient Name <?php echo $_GET["firstname"]; ?><br>
+Patient Last Name: <?php echo $_GET["lastname"]; ?>
+Patient Name <?php echo $_GET["firstname"]; ?><br>
 
 </body>
 </html>
