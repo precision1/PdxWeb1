@@ -66,3 +66,8 @@ float: left;
 .top-nav li a:hover {
   background-color: #111;
 }
+
+.top-nav li a.menu-no-color{
+  color:black;
+  background-color: white;
+}
