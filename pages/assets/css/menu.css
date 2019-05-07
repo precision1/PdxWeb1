@@ -85,6 +85,11 @@ float: left;
 }
 
 .main-logo{
-  width:50px;
-  height:auto;
+  float:left;
+}
+
+.main-logo-image{
+  width: 100px;
+  height: auto;
+  padding: 10px;
 }
