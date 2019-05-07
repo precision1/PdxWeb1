@@ -7,6 +7,7 @@ body{
   width:100%;
   height:46px;
   color: white;
+  float: right;
 }
 
 .main-nav ul {
