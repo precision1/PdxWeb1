@@ -28,6 +28,7 @@ float: left;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main-nav li a:hover {
