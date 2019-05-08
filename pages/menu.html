@@ -73,64 +73,54 @@ healthcare provider confirming the testing services are medically necessary for 
 
   <h4> Patient Information</h4>
 
-  <form action="/patientportal.php" method="get">
-
-  Full name:<br>
-  <input type="text" name="firstname" value="First, Last">
-  <br>
-
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br>
-
-  Date of Birth:<br>
-  <input type="text" name="dateofbirth" value="MM/DD/YYYY">
-  <br>
-
-  Phone Number:<br>
-  <input type="text" name="phonenumber" value="(XXX) XXX-XXXX">
-  <br>
-
-  Home Address:<br>
-  <input type="text" name="homeaddress" value="">
-  <br>
-
-  City:<br>
-  <input type="text" name="city" value="">
-  <br>
-
-  State:<br>
-  <input type="text" name="state" value="CA">
-  <br>
-
-  Your Statement ID:<br>
-  <input type="text" name="statementid" value="xxxxxx">
-  <br>
-
-  Your Date(s) of Lab Service:<br>
-  <input type="text" name="dateservice" value="MM/DD/YYYY, MM/DD/YYYY, MM/DD/YYYY">
-  <br>
-
-  Total annual household income:<br>
-  <input type="text" name="totalannualincome" value="$">
-  <br>
-
-  Number of persons in household:<br>
-  <input type="text" name="numberofpersons" value="x">
-  <br>
-
-  Employer (if any):<br>
-  <input type="text" name="employer" value="Name of employer">
-  <br>
-
-  Employer Address:<br>
-  <input type="text" name="employeraddress" value="Address">
-  <br>
-
-
-
-  <br><br>
-  <input type="submit" value="Submit">
+  <form name="contactform" method="post" action="patientportal.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
 </form>
 
   </div>
