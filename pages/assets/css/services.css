@@ -622,9 +622,6 @@ input[type="button"]:hover {
   width:104%;
 }
 
-
-
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}
