@@ -620,8 +620,6 @@ input[type="button"]:hover {
 
 .card-img-top1{
   width:104%;
-  margin:-6px;
-
 }
 
 
@@ -884,7 +882,7 @@ ul li a i:hover {
 
  #card-body2{
   margin-bottom: 30px;
-} 
+}
 }
 
 /*
